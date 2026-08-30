@@ -1,0 +1,7 @@
+# CODEOWNERS — claim-runner pod
+#
+# The constitution is owned by the control pod. Changes to it require
+# a pull request reviewed and approved by the control pod operator.
+# See decision 0006 in the control pod repository.
+
+.specify/memory/constitution.md @danielalasaga
