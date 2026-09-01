@@ -8,15 +8,15 @@ Amendments to the Core Principles block require a control pod decision on record
 
 ## Core Principles
 
-These principles are distributed to every engineering pod from `canonical/constitution/core-principles.md` in the control pod repository.
+These principles form the governed block of every engineering pod's constitution. They are distributed from `canonical/constitution/core-principles.md` in the control pod repository.
 
-Principles marked **non-negotiable** are enforced mechanically at plan time and may not be waived without a control pod decision on record. All other principles are strong defaults; a departure must be recorded in `decisions/`.
+Principles marked **non-negotiable** are enforced mechanically at plan time and may not be waived by a pod without a control pod decision on record. All other principles are strong defaults; a pod that departs from one must record its reasoning in its own `decisions/`.
 
 ### API Contracts
 
 **Every service exposes a `/health` endpoint.** `GET /health` must return HTTP 200 when the service is running and able to accept requests. No other behavior is specified; a minimal response body is acceptable. *Non-negotiable.*
 
-**API contracts are specified before implementation begins.** The interface a service exposes — paths, request shapes, response shapes, error codes — must be documented in `architecture/` before a spec enters the plan phase. Implementation that deviates from the documented contract requires the architecture document to be updated first, not after.
+**API contracts are specified before implementation begins.** The interface a service exposes — paths, request shapes, response shapes, error codes — must be documented in the pod's `architecture/` before a spec enters the plan phase. Implementation that deviates from the documented contract requires the architecture document to be updated first, not after.
 
 **Breaking changes to inter-service contracts require coordinated updates.** A change that alters an existing request or response field, removes a field, or changes a status code is a breaking change. The implementing service and all callers must be updated in the same spec. Additive changes (new optional fields) are non-breaking and do not require coordination.
 
