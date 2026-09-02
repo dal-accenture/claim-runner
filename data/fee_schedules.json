@@ -1,0 +1,427 @@
+[
+  {
+    "procedure_code": "99202",
+    "description": "Office visit, new patient, straightforward complexity",
+    "service_category": "GP",
+    "in_network": {
+      "allowed_amount": 95.0,
+      "copay": 25.0,
+      "copay_applies_before_deductible": true,
+      "coinsurance_pct": 0.0
+    },
+    "out_of_network": {
+      "allowed_amount": 70.0,
+      "copay": 0.0,
+      "copay_applies_before_deductible": false,
+      "coinsurance_pct": 0.4
+    }
+  },
+  {
+    "procedure_code": "99203",
+    "description": "Office visit, new patient, low complexity",
+    "service_category": "GP",
+    "in_network": {
+      "allowed_amount": 130.0,
+      "copay": 25.0,
+      "copay_applies_before_deductible": true,
+      "coinsurance_pct": 0.0
+    },
+    "out_of_network": {
+      "allowed_amount": 95.0,
+      "copay": 0.0,
+      "copay_applies_before_deductible": false,
+      "coinsurance_pct": 0.4
+    }
+  },
+  {
+    "procedure_code": "99204",
+    "description": "Office visit, new patient, moderate complexity",
+    "service_category": "GP",
+    "in_network": {
+      "allowed_amount": 185.0,
+      "copay": 40.0,
+      "copay_applies_before_deductible": true,
+      "coinsurance_pct": 0.0
+    },
+    "out_of_network": {
+      "allowed_amount": 135.0,
+      "copay": 0.0,
+      "copay_applies_before_deductible": false,
+      "coinsurance_pct": 0.4
+    }
+  },
+  {
+    "procedure_code": "99205",
+    "description": "Office visit, new patient, high complexity",
+    "service_category": "GP",
+    "in_network": {
+      "allowed_amount": 250.0,
+      "copay": 40.0,
+      "copay_applies_before_deductible": true,
+      "coinsurance_pct": 0.0
+    },
+    "out_of_network": {
+      "allowed_amount": 185.0,
+      "copay": 0.0,
+      "copay_applies_before_deductible": false,
+      "coinsurance_pct": 0.4
+    }
+  },
+  {
+    "procedure_code": "99211",
+    "description": "Office visit, established patient, minimal",
+    "service_category": "GP",
+    "in_network": {
+      "allowed_amount": 45.0,
+      "copay": 15.0,
+      "copay_applies_before_deductible": true,
+      "coinsurance_pct": 0.0
+    },
+    "out_of_network": {
+      "allowed_amount": 33.0,
+      "copay": 0.0,
+      "copay_applies_before_deductible": false,
+      "coinsurance_pct": 0.4
+    }
+  },
+  {
+    "procedure_code": "99212",
+    "description": "Office visit, established patient, straightforward",
+    "service_category": "GP",
+    "in_network": {
+      "allowed_amount": 80.0,
+      "copay": 25.0,
+      "copay_applies_before_deductible": true,
+      "coinsurance_pct": 0.0
+    },
+    "out_of_network": {
+      "allowed_amount": 58.0,
+      "copay": 0.0,
+      "copay_applies_before_deductible": false,
+      "coinsurance_pct": 0.4
+    }
+  },
+  {
+    "procedure_code": "99213",
+    "description": "Office visit, established patient, low complexity",
+    "service_category": "GP",
+    "in_network": {
+      "allowed_amount": 115.0,
+      "copay": 30.0,
+      "copay_applies_before_deductible": true,
+      "coinsurance_pct": 0.0
+    },
+    "out_of_network": {
+      "allowed_amount": 84.0,
+      "copay": 0.0,
+      "copay_applies_before_deductible": false,
+      "coinsurance_pct": 0.4
+    }
+  },
+  {
+    "procedure_code": "99214",
+    "description": "Office visit, established patient, moderate complexity",
+    "service_category": "GP",
+    "in_network": {
+      "allowed_amount": 170.0,
+      "copay": 40.0,
+      "copay_applies_before_deductible": true,
+      "coinsurance_pct": 0.0
+    },
+    "out_of_network": {
+      "allowed_amount": 124.0,
+      "copay": 0.0,
+      "copay_applies_before_deductible": false,
+      "coinsurance_pct": 0.4
+    }
+  },
+  {
+    "procedure_code": "99215",
+    "description": "Office visit, established patient, high complexity",
+    "service_category": "GP",
+    "in_network": {
+      "allowed_amount": 230.0,
+      "copay": 40.0,
+      "copay_applies_before_deductible": true,
+      "coinsurance_pct": 0.0
+    },
+    "out_of_network": {
+      "allowed_amount": 168.0,
+      "copay": 0.0,
+      "copay_applies_before_deductible": false,
+      "coinsurance_pct": 0.4
+    }
+  },
+  {
+    "procedure_code": "99395",
+    "description": "Preventive visit, established patient, 18-39 years",
+    "service_category": "GP",
+    "in_network": {
+      "allowed_amount": 185.0,
+      "copay": 0.0,
+      "copay_applies_before_deductible": true,
+      "coinsurance_pct": 0.0
+    },
+    "out_of_network": {
+      "allowed_amount": 135.0,
+      "copay": 0.0,
+      "copay_applies_before_deductible": false,
+      "coinsurance_pct": 0.4
+    }
+  },
+  {
+    "procedure_code": "99396",
+    "description": "Preventive visit, established patient, 40-64 years",
+    "service_category": "GP",
+    "in_network": {
+      "allowed_amount": 220.0,
+      "copay": 0.0,
+      "copay_applies_before_deductible": true,
+      "coinsurance_pct": 0.0
+    },
+    "out_of_network": {
+      "allowed_amount": 161.0,
+      "copay": 0.0,
+      "copay_applies_before_deductible": false,
+      "coinsurance_pct": 0.4
+    }
+  },
+  {
+    "procedure_code": "93000",
+    "description": "ECG with interpretation",
+    "service_category": "GP",
+    "in_network": {
+      "allowed_amount": 75.0,
+      "copay": 0.0,
+      "copay_applies_before_deductible": false,
+      "coinsurance_pct": 0.1
+    },
+    "out_of_network": {
+      "allowed_amount": 55.0,
+      "copay": 0.0,
+      "copay_applies_before_deductible": false,
+      "coinsurance_pct": 0.4
+    }
+  },
+  {
+    "procedure_code": "85025",
+    "description": "CBC with differential",
+    "service_category": "GP",
+    "in_network": {
+      "allowed_amount": 22.0,
+      "copay": 0.0,
+      "copay_applies_before_deductible": false,
+      "coinsurance_pct": 0.1
+    },
+    "out_of_network": {
+      "allowed_amount": 16.0,
+      "copay": 0.0,
+      "copay_applies_before_deductible": false,
+      "coinsurance_pct": 0.4
+    }
+  },
+  {
+    "procedure_code": "80053",
+    "description": "Comprehensive metabolic panel",
+    "service_category": "GP",
+    "in_network": {
+      "allowed_amount": 28.0,
+      "copay": 0.0,
+      "copay_applies_before_deductible": false,
+      "coinsurance_pct": 0.1
+    },
+    "out_of_network": {
+      "allowed_amount": 20.0,
+      "copay": 0.0,
+      "copay_applies_before_deductible": false,
+      "coinsurance_pct": 0.4
+    }
+  },
+  {
+    "procedure_code": "92504",
+    "description": "Binocular microscopy of the ear",
+    "service_category": "ENT",
+    "in_network": {
+      "allowed_amount": 95.0,
+      "copay": 50.0,
+      "copay_applies_before_deductible": true,
+      "coinsurance_pct": 0.0
+    },
+    "out_of_network": {
+      "allowed_amount": 69.0,
+      "copay": 0.0,
+      "copay_applies_before_deductible": false,
+      "coinsurance_pct": 0.4
+    }
+  },
+  {
+    "procedure_code": "92551",
+    "description": "Screening test, pure tone, air only",
+    "service_category": "ENT",
+    "in_network": {
+      "allowed_amount": 35.0,
+      "copay": 50.0,
+      "copay_applies_before_deductible": true,
+      "coinsurance_pct": 0.0
+    },
+    "out_of_network": {
+      "allowed_amount": 26.0,
+      "copay": 0.0,
+      "copay_applies_before_deductible": false,
+      "coinsurance_pct": 0.4
+    }
+  },
+  {
+    "procedure_code": "92552",
+    "description": "Pure tone audiometry, air only",
+    "service_category": "ENT",
+    "in_network": {
+      "allowed_amount": 55.0,
+      "copay": 50.0,
+      "copay_applies_before_deductible": true,
+      "coinsurance_pct": 0.0
+    },
+    "out_of_network": {
+      "allowed_amount": 40.0,
+      "copay": 0.0,
+      "copay_applies_before_deductible": false,
+      "coinsurance_pct": 0.4
+    }
+  },
+  {
+    "procedure_code": "92557",
+    "description": "Comprehensive audiometry",
+    "service_category": "ENT",
+    "in_network": {
+      "allowed_amount": 95.0,
+      "copay": 50.0,
+      "copay_applies_before_deductible": true,
+      "coinsurance_pct": 0.0
+    },
+    "out_of_network": {
+      "allowed_amount": 69.0,
+      "copay": 0.0,
+      "copay_applies_before_deductible": false,
+      "coinsurance_pct": 0.4
+    }
+  },
+  {
+    "procedure_code": "69210",
+    "description": "Removal of impacted cerumen",
+    "service_category": "ENT",
+    "in_network": {
+      "allowed_amount": 65.0,
+      "copay": 50.0,
+      "copay_applies_before_deductible": true,
+      "coinsurance_pct": 0.0
+    },
+    "out_of_network": {
+      "allowed_amount": 47.0,
+      "copay": 0.0,
+      "copay_applies_before_deductible": false,
+      "coinsurance_pct": 0.4
+    }
+  },
+  {
+    "procedure_code": "31575",
+    "description": "Laryngoscopy, flexible, diagnostic",
+    "service_category": "ENT",
+    "in_network": {
+      "allowed_amount": 285.0,
+      "copay": 75.0,
+      "copay_applies_before_deductible": false,
+      "coinsurance_pct": 0.1
+    },
+    "out_of_network": {
+      "allowed_amount": 208.0,
+      "copay": 0.0,
+      "copay_applies_before_deductible": false,
+      "coinsurance_pct": 0.4
+    }
+  },
+  {
+    "procedure_code": "42820",
+    "description": "Tonsillectomy/adenoidectomy, patient age 12 or under",
+    "service_category": "ENT",
+    "in_network": {
+      "allowed_amount": 2800.0,
+      "copay": 0.0,
+      "copay_applies_before_deductible": false,
+      "coinsurance_pct": 0.1
+    },
+    "out_of_network": {
+      "allowed_amount": 2044.0,
+      "copay": 0.0,
+      "copay_applies_before_deductible": false,
+      "coinsurance_pct": 0.4
+    }
+  },
+  {
+    "procedure_code": "42821",
+    "description": "Tonsillectomy/adenoidectomy, patient age over 12",
+    "service_category": "ENT",
+    "in_network": {
+      "allowed_amount": 3200.0,
+      "copay": 0.0,
+      "copay_applies_before_deductible": false,
+      "coinsurance_pct": 0.1
+    },
+    "out_of_network": {
+      "allowed_amount": 2336.0,
+      "copay": 0.0,
+      "copay_applies_before_deductible": false,
+      "coinsurance_pct": 0.4
+    }
+  },
+  {
+    "procedure_code": "30140",
+    "description": "Submucous resection of turbinate",
+    "service_category": "ENT",
+    "in_network": {
+      "allowed_amount": 3400.0,
+      "copay": 0.0,
+      "copay_applies_before_deductible": false,
+      "coinsurance_pct": 0.1
+    },
+    "out_of_network": {
+      "allowed_amount": 2482.0,
+      "copay": 0.0,
+      "copay_applies_before_deductible": false,
+      "coinsurance_pct": 0.4
+    }
+  },
+  {
+    "procedure_code": "30520",
+    "description": "Septoplasty",
+    "service_category": "ENT",
+    "in_network": {
+      "allowed_amount": 4100.0,
+      "copay": 0.0,
+      "copay_applies_before_deductible": false,
+      "coinsurance_pct": 0.1
+    },
+    "out_of_network": {
+      "allowed_amount": 2993.0,
+      "copay": 0.0,
+      "copay_applies_before_deductible": false,
+      "coinsurance_pct": 0.4
+    }
+  },
+  {
+    "procedure_code": "31240",
+    "description": "Nasal/sinus endoscopy, surgical",
+    "service_category": "ENT",
+    "in_network": {
+      "allowed_amount": 3800.0,
+      "copay": 0.0,
+      "copay_applies_before_deductible": false,
+      "coinsurance_pct": 0.1
+    },
+    "out_of_network": {
+      "allowed_amount": 2774.0,
+      "copay": 0.0,
+      "copay_applies_before_deductible": false,
+      "coinsurance_pct": 0.4
+    }
+  }
+]
