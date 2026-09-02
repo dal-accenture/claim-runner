@@ -64,11 +64,11 @@ These principles are authored by the control pod for the claim-runner pod specif
 
 **JSON files in `data/` are the intended and permanent data layer.** No spec may introduce a dependency on an external database, cache, or message broker. The practicum runs on a single machine with no external services, and that constraint holds for the lifetime of this system.
 
-**`members.json`, `plans.json`, and `fee_schedules.json` are read-only at runtime.** No service may write to these files during normal operation. Accumulator balances are seeded manually and are not updated after adjudication — this is an acknowledged practicum limitation.
+**All four JSON files are read-only at runtime.** The Data Service loads `members.json`, `plans.json`, `fee_schedules.json`, and `claims.json` at startup. No file is written to during normal operation. Accumulator balances are seeded manually and are not updated after adjudication. Claim records submitted via `POST /claims` are held in the Data Service's in-memory store only and do not survive a service restart. This is a deliberate practicum design (Decision 0010).
 
-**Claims Manager writes to `claims.json` after each adjudication.** This is the only file any service may write to. `claims.json` is the durable claim ledger and the backing store for `GET /claims/{claim_id}`.
+**The Data Service is the sole process that accesses the `data/` directory.** No other service may read from or write to any file in `data/`. Claims Manager, Benefits Determiner, and Pricer access all data exclusively via HTTP calls to the Data Service.
 
-**Each service resolves the data directory path from the `DATA_DIR` environment variable.** The default is `./data` relative to the repository root. Hardcoded paths to data files are not permitted.
+**The Data Service resolves its data directory path from the `DATA_DIR` environment variable.** The default is `./data` relative to the repository root. Hardcoded paths to data files are not permitted.
 
 ### Spec Scope
 
@@ -90,4 +90,4 @@ This applies to every artifact in the spec: request/response shapes, data file c
 
 ---
 
-**Version**: 1.0 | **Issued**: 2026-08-30 | **Issuing pod**: control
+**Version**: 1.1 | **Issued**: 2026-09-02 | **Issuing pod**: control
