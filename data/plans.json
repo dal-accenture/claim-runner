@@ -1,0 +1,764 @@
+[
+  {
+    "plan_id": "PLN-GOLD-001",
+    "plan_name": "Gold PPO",
+    "plan_year": "2025",
+    "plan_type": "PPO",
+    "effective_date": "2025-01-01",
+    "termination_date": "2025-12-31",
+    "network_provider_ids": [
+      "PRV-10001",
+      "PRV-10002",
+      "PRV-10003",
+      "PRV-10004",
+      "PRV-10005",
+      "PRV-10006",
+      "PRV-10007",
+      "PRV-10008",
+      "PRV-10009",
+      "PRV-10010",
+      "PRV-10011",
+      "PRV-10012",
+      "PRV-10013",
+      "PRV-10014",
+      "PRV-10015"
+    ],
+    "covered_procedure_codes": [
+      {
+        "code": "99202",
+        "description": "Office visit, new patient, straightforward complexity",
+        "requires_auth": false
+      },
+      {
+        "code": "99203",
+        "description": "Office visit, new patient, low complexity",
+        "requires_auth": false
+      },
+      {
+        "code": "99204",
+        "description": "Office visit, new patient, moderate complexity",
+        "requires_auth": false
+      },
+      {
+        "code": "99205",
+        "description": "Office visit, new patient, high complexity",
+        "requires_auth": false
+      },
+      {
+        "code": "99211",
+        "description": "Office visit, established patient, minimal",
+        "requires_auth": false
+      },
+      {
+        "code": "99212",
+        "description": "Office visit, established patient, straightforward",
+        "requires_auth": false
+      },
+      {
+        "code": "99213",
+        "description": "Office visit, established patient, low complexity",
+        "requires_auth": false
+      },
+      {
+        "code": "99214",
+        "description": "Office visit, established patient, moderate complexity",
+        "requires_auth": false
+      },
+      {
+        "code": "99215",
+        "description": "Office visit, established patient, high complexity",
+        "requires_auth": false
+      },
+      {
+        "code": "99395",
+        "description": "Preventive visit, established patient, 18-39 years",
+        "requires_auth": false
+      },
+      {
+        "code": "99396",
+        "description": "Preventive visit, established patient, 40-64 years",
+        "requires_auth": false
+      },
+      {
+        "code": "93000",
+        "description": "ECG with interpretation",
+        "requires_auth": false
+      },
+      {
+        "code": "85025",
+        "description": "CBC with differential",
+        "requires_auth": false
+      },
+      {
+        "code": "80053",
+        "description": "Comprehensive metabolic panel",
+        "requires_auth": false
+      },
+      {
+        "code": "92504",
+        "description": "Binocular microscopy of the ear",
+        "requires_auth": false
+      },
+      {
+        "code": "92551",
+        "description": "Screening test, pure tone, air only",
+        "requires_auth": false
+      },
+      {
+        "code": "92552",
+        "description": "Pure tone audiometry, air only",
+        "requires_auth": false
+      },
+      {
+        "code": "92557",
+        "description": "Comprehensive audiometry",
+        "requires_auth": false
+      },
+      {
+        "code": "69210",
+        "description": "Removal of impacted cerumen",
+        "requires_auth": false
+      },
+      {
+        "code": "31575",
+        "description": "Laryngoscopy, flexible, diagnostic",
+        "requires_auth": false
+      },
+      {
+        "code": "42820",
+        "description": "Tonsillectomy/adenoidectomy, patient age 12 or under",
+        "requires_auth": true
+      },
+      {
+        "code": "42821",
+        "description": "Tonsillectomy/adenoidectomy, patient age over 12",
+        "requires_auth": true
+      },
+      {
+        "code": "30140",
+        "description": "Submucous resection of turbinate",
+        "requires_auth": true
+      },
+      {
+        "code": "30520",
+        "description": "Septoplasty",
+        "requires_auth": true
+      },
+      {
+        "code": "31240",
+        "description": "Nasal/sinus endoscopy, surgical",
+        "requires_auth": true
+      }
+    ],
+    "excluded_procedure_codes": []
+  },
+  {
+    "plan_id": "PLN-SILVER-002",
+    "plan_name": "Silver PPO",
+    "plan_year": "2025",
+    "plan_type": "PPO",
+    "effective_date": "2025-01-01",
+    "termination_date": "2025-12-31",
+    "network_provider_ids": [
+      "PRV-10005",
+      "PRV-10006",
+      "PRV-10007",
+      "PRV-10008",
+      "PRV-10009",
+      "PRV-10010",
+      "PRV-10011",
+      "PRV-10012",
+      "PRV-10013",
+      "PRV-10014",
+      "PRV-10015",
+      "PRV-10016",
+      "PRV-10017",
+      "PRV-10018",
+      "PRV-10019",
+      "PRV-10020"
+    ],
+    "covered_procedure_codes": [
+      {
+        "code": "99202",
+        "description": "Office visit, new patient, straightforward complexity",
+        "requires_auth": false
+      },
+      {
+        "code": "99203",
+        "description": "Office visit, new patient, low complexity",
+        "requires_auth": false
+      },
+      {
+        "code": "99204",
+        "description": "Office visit, new patient, moderate complexity",
+        "requires_auth": false
+      },
+      {
+        "code": "99205",
+        "description": "Office visit, new patient, high complexity",
+        "requires_auth": false
+      },
+      {
+        "code": "99211",
+        "description": "Office visit, established patient, minimal",
+        "requires_auth": false
+      },
+      {
+        "code": "99212",
+        "description": "Office visit, established patient, straightforward",
+        "requires_auth": false
+      },
+      {
+        "code": "99213",
+        "description": "Office visit, established patient, low complexity",
+        "requires_auth": false
+      },
+      {
+        "code": "99214",
+        "description": "Office visit, established patient, moderate complexity",
+        "requires_auth": false
+      },
+      {
+        "code": "99215",
+        "description": "Office visit, established patient, high complexity",
+        "requires_auth": false
+      },
+      {
+        "code": "99395",
+        "description": "Preventive visit, established patient, 18-39 years",
+        "requires_auth": false
+      },
+      {
+        "code": "99396",
+        "description": "Preventive visit, established patient, 40-64 years",
+        "requires_auth": false
+      },
+      {
+        "code": "93000",
+        "description": "ECG with interpretation",
+        "requires_auth": false
+      },
+      {
+        "code": "85025",
+        "description": "CBC with differential",
+        "requires_auth": false
+      },
+      {
+        "code": "80053",
+        "description": "Comprehensive metabolic panel",
+        "requires_auth": false
+      },
+      {
+        "code": "92504",
+        "description": "Binocular microscopy of the ear",
+        "requires_auth": false
+      },
+      {
+        "code": "92551",
+        "description": "Screening test, pure tone, air only",
+        "requires_auth": false
+      },
+      {
+        "code": "92552",
+        "description": "Pure tone audiometry, air only",
+        "requires_auth": false
+      },
+      {
+        "code": "92557",
+        "description": "Comprehensive audiometry",
+        "requires_auth": false
+      },
+      {
+        "code": "69210",
+        "description": "Removal of impacted cerumen",
+        "requires_auth": false
+      },
+      {
+        "code": "31575",
+        "description": "Laryngoscopy, flexible, diagnostic",
+        "requires_auth": false
+      }
+    ],
+    "excluded_procedure_codes": [
+      {
+        "code": "42820",
+        "description": "Tonsillectomy/adenoidectomy, patient age 12 or under",
+        "exclusion_reason": "Requires specialist rider"
+      },
+      {
+        "code": "42821",
+        "description": "Tonsillectomy/adenoidectomy, patient age over 12",
+        "exclusion_reason": "Requires specialist rider"
+      },
+      {
+        "code": "30140",
+        "description": "Submucous resection of turbinate",
+        "exclusion_reason": "Requires specialist rider"
+      },
+      {
+        "code": "30520",
+        "description": "Septoplasty",
+        "exclusion_reason": "Requires specialist rider"
+      },
+      {
+        "code": "31240",
+        "description": "Nasal/sinus endoscopy, surgical",
+        "exclusion_reason": "Requires specialist rider"
+      }
+    ]
+  },
+  {
+    "plan_id": "PLN-BRONZE-003",
+    "plan_name": "Bronze HDHP",
+    "plan_year": "2025",
+    "plan_type": "HDHP",
+    "effective_date": "2025-01-01",
+    "termination_date": "2025-12-31",
+    "network_provider_ids": [
+      "PRV-10010",
+      "PRV-10011",
+      "PRV-10012",
+      "PRV-10013",
+      "PRV-10014",
+      "PRV-10015",
+      "PRV-10016",
+      "PRV-10017",
+      "PRV-10018",
+      "PRV-10019",
+      "PRV-10020",
+      "PRV-10021",
+      "PRV-10022",
+      "PRV-10023",
+      "PRV-10024",
+      "PRV-10025"
+    ],
+    "covered_procedure_codes": [
+      {
+        "code": "99202",
+        "description": "Office visit, new patient, straightforward complexity",
+        "requires_auth": false
+      },
+      {
+        "code": "99203",
+        "description": "Office visit, new patient, low complexity",
+        "requires_auth": false
+      },
+      {
+        "code": "99204",
+        "description": "Office visit, new patient, moderate complexity",
+        "requires_auth": false
+      },
+      {
+        "code": "99205",
+        "description": "Office visit, new patient, high complexity",
+        "requires_auth": false
+      },
+      {
+        "code": "99211",
+        "description": "Office visit, established patient, minimal",
+        "requires_auth": false
+      },
+      {
+        "code": "99212",
+        "description": "Office visit, established patient, straightforward",
+        "requires_auth": false
+      },
+      {
+        "code": "99213",
+        "description": "Office visit, established patient, low complexity",
+        "requires_auth": false
+      },
+      {
+        "code": "99214",
+        "description": "Office visit, established patient, moderate complexity",
+        "requires_auth": false
+      },
+      {
+        "code": "99215",
+        "description": "Office visit, established patient, high complexity",
+        "requires_auth": false
+      },
+      {
+        "code": "99395",
+        "description": "Preventive visit, established patient, 18-39 years",
+        "requires_auth": false
+      },
+      {
+        "code": "99396",
+        "description": "Preventive visit, established patient, 40-64 years",
+        "requires_auth": false
+      },
+      {
+        "code": "93000",
+        "description": "ECG with interpretation",
+        "requires_auth": false
+      },
+      {
+        "code": "85025",
+        "description": "CBC with differential",
+        "requires_auth": false
+      },
+      {
+        "code": "80053",
+        "description": "Comprehensive metabolic panel",
+        "requires_auth": false
+      },
+      {
+        "code": "92504",
+        "description": "Binocular microscopy of the ear",
+        "requires_auth": false
+      },
+      {
+        "code": "92551",
+        "description": "Screening test, pure tone, air only",
+        "requires_auth": false
+      },
+      {
+        "code": "92552",
+        "description": "Pure tone audiometry, air only",
+        "requires_auth": false
+      },
+      {
+        "code": "92557",
+        "description": "Comprehensive audiometry",
+        "requires_auth": false
+      },
+      {
+        "code": "69210",
+        "description": "Removal of impacted cerumen",
+        "requires_auth": false
+      },
+      {
+        "code": "31575",
+        "description": "Laryngoscopy, flexible, diagnostic",
+        "requires_auth": false
+      }
+    ],
+    "excluded_procedure_codes": [
+      {
+        "code": "42820",
+        "description": "Tonsillectomy/adenoidectomy, patient age 12 or under",
+        "exclusion_reason": "Requires specialist rider"
+      },
+      {
+        "code": "42821",
+        "description": "Tonsillectomy/adenoidectomy, patient age over 12",
+        "exclusion_reason": "Requires specialist rider"
+      },
+      {
+        "code": "30140",
+        "description": "Submucous resection of turbinate",
+        "exclusion_reason": "Requires specialist rider"
+      },
+      {
+        "code": "30520",
+        "description": "Septoplasty",
+        "exclusion_reason": "Requires specialist rider"
+      },
+      {
+        "code": "31240",
+        "description": "Nasal/sinus endoscopy, surgical",
+        "exclusion_reason": "Requires specialist rider"
+      }
+    ]
+  },
+  {
+    "plan_id": "PLN-PREMIER-004",
+    "plan_name": "Premier HMO",
+    "plan_year": "2025",
+    "plan_type": "HMO",
+    "effective_date": "2025-01-01",
+    "termination_date": "2025-12-31",
+    "network_provider_ids": [
+      "PRV-20001",
+      "PRV-20002",
+      "PRV-20003",
+      "PRV-20004",
+      "PRV-20005",
+      "PRV-20006",
+      "PRV-20007",
+      "PRV-20008",
+      "PRV-20009",
+      "PRV-20010"
+    ],
+    "covered_procedure_codes": [
+      {
+        "code": "99202",
+        "description": "Office visit, new patient, straightforward complexity",
+        "requires_auth": false
+      },
+      {
+        "code": "99203",
+        "description": "Office visit, new patient, low complexity",
+        "requires_auth": false
+      },
+      {
+        "code": "99204",
+        "description": "Office visit, new patient, moderate complexity",
+        "requires_auth": false
+      },
+      {
+        "code": "99205",
+        "description": "Office visit, new patient, high complexity",
+        "requires_auth": false
+      },
+      {
+        "code": "99211",
+        "description": "Office visit, established patient, minimal",
+        "requires_auth": false
+      },
+      {
+        "code": "99212",
+        "description": "Office visit, established patient, straightforward",
+        "requires_auth": false
+      },
+      {
+        "code": "99213",
+        "description": "Office visit, established patient, low complexity",
+        "requires_auth": false
+      },
+      {
+        "code": "99214",
+        "description": "Office visit, established patient, moderate complexity",
+        "requires_auth": false
+      },
+      {
+        "code": "99215",
+        "description": "Office visit, established patient, high complexity",
+        "requires_auth": false
+      },
+      {
+        "code": "99395",
+        "description": "Preventive visit, established patient, 18-39 years",
+        "requires_auth": false
+      },
+      {
+        "code": "99396",
+        "description": "Preventive visit, established patient, 40-64 years",
+        "requires_auth": false
+      },
+      {
+        "code": "93000",
+        "description": "ECG with interpretation",
+        "requires_auth": false
+      },
+      {
+        "code": "85025",
+        "description": "CBC with differential",
+        "requires_auth": false
+      },
+      {
+        "code": "80053",
+        "description": "Comprehensive metabolic panel",
+        "requires_auth": false
+      },
+      {
+        "code": "92504",
+        "description": "Binocular microscopy of the ear",
+        "requires_auth": true
+      },
+      {
+        "code": "92551",
+        "description": "Screening test, pure tone, air only",
+        "requires_auth": true
+      },
+      {
+        "code": "92552",
+        "description": "Pure tone audiometry, air only",
+        "requires_auth": true
+      },
+      {
+        "code": "92557",
+        "description": "Comprehensive audiometry",
+        "requires_auth": true
+      },
+      {
+        "code": "69210",
+        "description": "Removal of impacted cerumen",
+        "requires_auth": true
+      },
+      {
+        "code": "31575",
+        "description": "Laryngoscopy, flexible, diagnostic",
+        "requires_auth": true
+      },
+      {
+        "code": "42820",
+        "description": "Tonsillectomy/adenoidectomy, patient age 12 or under",
+        "requires_auth": true
+      },
+      {
+        "code": "42821",
+        "description": "Tonsillectomy/adenoidectomy, patient age over 12",
+        "requires_auth": true
+      },
+      {
+        "code": "30140",
+        "description": "Submucous resection of turbinate",
+        "requires_auth": true
+      },
+      {
+        "code": "30520",
+        "description": "Septoplasty",
+        "requires_auth": true
+      },
+      {
+        "code": "31240",
+        "description": "Nasal/sinus endoscopy, surgical",
+        "requires_auth": true
+      }
+    ],
+    "excluded_procedure_codes": []
+  },
+  {
+    "plan_id": "PLN-BASIC-005",
+    "plan_name": "Basic EPO",
+    "plan_year": "2025",
+    "plan_type": "EPO",
+    "effective_date": "2025-01-01",
+    "termination_date": "2025-12-31",
+    "network_provider_ids": [
+      "PRV-30001",
+      "PRV-30002",
+      "PRV-30003",
+      "PRV-30004",
+      "PRV-30005",
+      "PRV-30006",
+      "PRV-30007",
+      "PRV-30008",
+      "PRV-30009",
+      "PRV-30010",
+      "PRV-30011",
+      "PRV-30012"
+    ],
+    "covered_procedure_codes": [
+      {
+        "code": "99202",
+        "description": "Office visit, new patient, straightforward complexity",
+        "requires_auth": false
+      },
+      {
+        "code": "99203",
+        "description": "Office visit, new patient, low complexity",
+        "requires_auth": false
+      },
+      {
+        "code": "99204",
+        "description": "Office visit, new patient, moderate complexity",
+        "requires_auth": false
+      },
+      {
+        "code": "99205",
+        "description": "Office visit, new patient, high complexity",
+        "requires_auth": false
+      },
+      {
+        "code": "99211",
+        "description": "Office visit, established patient, minimal",
+        "requires_auth": false
+      },
+      {
+        "code": "99212",
+        "description": "Office visit, established patient, straightforward",
+        "requires_auth": false
+      },
+      {
+        "code": "99213",
+        "description": "Office visit, established patient, low complexity",
+        "requires_auth": false
+      },
+      {
+        "code": "99214",
+        "description": "Office visit, established patient, moderate complexity",
+        "requires_auth": false
+      },
+      {
+        "code": "99215",
+        "description": "Office visit, established patient, high complexity",
+        "requires_auth": false
+      },
+      {
+        "code": "92504",
+        "description": "Binocular microscopy of the ear",
+        "requires_auth": false
+      },
+      {
+        "code": "92551",
+        "description": "Screening test, pure tone, air only",
+        "requires_auth": false
+      },
+      {
+        "code": "92552",
+        "description": "Pure tone audiometry, air only",
+        "requires_auth": false
+      },
+      {
+        "code": "92557",
+        "description": "Comprehensive audiometry",
+        "requires_auth": false
+      },
+      {
+        "code": "69210",
+        "description": "Removal of impacted cerumen",
+        "requires_auth": false
+      }
+    ],
+    "excluded_procedure_codes": [
+      {
+        "code": "99395",
+        "description": "Preventive visit, established patient, 18-39 years",
+        "exclusion_reason": "Not covered under Basic EPO benefit"
+      },
+      {
+        "code": "99396",
+        "description": "Preventive visit, established patient, 40-64 years",
+        "exclusion_reason": "Not covered under Basic EPO benefit"
+      },
+      {
+        "code": "93000",
+        "description": "ECG with interpretation",
+        "exclusion_reason": "Not covered under Basic EPO benefit"
+      },
+      {
+        "code": "85025",
+        "description": "CBC with differential",
+        "exclusion_reason": "Not covered under Basic EPO benefit"
+      },
+      {
+        "code": "80053",
+        "description": "Comprehensive metabolic panel",
+        "exclusion_reason": "Not covered under Basic EPO benefit"
+      },
+      {
+        "code": "31575",
+        "description": "Laryngoscopy, flexible, diagnostic",
+        "exclusion_reason": "Not covered under Basic EPO benefit"
+      },
+      {
+        "code": "42820",
+        "description": "Tonsillectomy/adenoidectomy, patient age 12 or under",
+        "exclusion_reason": "Not covered under Basic EPO benefit"
+      },
+      {
+        "code": "42821",
+        "description": "Tonsillectomy/adenoidectomy, patient age over 12",
+        "exclusion_reason": "Not covered under Basic EPO benefit"
+      },
+      {
+        "code": "30140",
+        "description": "Submucous resection of turbinate",
+        "exclusion_reason": "Not covered under Basic EPO benefit"
+      },
+      {
+        "code": "30520",
+        "description": "Septoplasty",
+        "exclusion_reason": "Not covered under Basic EPO benefit"
+      },
+      {
+        "code": "31240",
+        "description": "Nasal/sinus endoscopy, surgical",
+        "exclusion_reason": "Not covered under Basic EPO benefit"
+      }
+    ]
+  }
+]

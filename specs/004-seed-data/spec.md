@@ -17,6 +17,15 @@ The implementation is a one-time generation script (`scripts/generate_seed_data.
 
 ---
 
+## Clarifications
+
+### Session 2026-09-02
+
+- Q: Should the generation script use a fixed random seed to ensure identical output on every run? → A: Yes — fixed seed (e.g., `random.seed(42)`) so re-running the script produces the same committed files and git diffs are meaningful.
+- Q: Should the generator assign members to accumulator state buckets first (controlling the 20/50/20/10% distribution), or generate claims organically and derive accumulators from the claim sums? → A: Claims-first organic — generate realistic claims for each member, then compute accumulator `used` values by summing `member_liability` across that member's paid claims. The 20/50/20/10% distribution is a target shape describing the intended data spread, not a hard constraint on exact bucket counts.
+
+---
+
 ## Out of Scope
 
 - Runtime data generation or seeding at service startup
@@ -173,14 +182,14 @@ Enrollment: single active enrollment per member. `effective_date: 2025-01-01`, `
 
 **Accumulator seeding (mid-year snapshot):**
 
-| State | % | Count |
+| State | % | Target count |
 |---|---|---|
-| Untouched (`used = 0.00`, `met = false`) | 20% | 40 |
-| Partially used (1%–80% of limit) | 50% | 100 |
-| Deductible met, OOP partially used | 20% | 40 |
-| OOP max met (both `met = true`) | 10% | 20 |
+| Untouched (`used = 0.00`, `met = false`) | 20% | ~40 |
+| Partially used (1%–80% of limit) | 50% | ~100 |
+| Deductible met, OOP partially used | 20% | ~40 |
+| OOP max met (both `met = true`) | 10% | ~20 |
 
-The `met` flag must be `true` if and only if `used >= limit`.
+These percentages are a target shape describing the intended spread; exact counts are not enforced. Accumulator `used` values are derived by summing `member_liability` across each member's paid claims (claims-first organic generation). The `met` flag must be `true` if and only if `used >= limit`.
 
 **Authorizations** (relevant for Gold and Premier plans only):
 
@@ -217,13 +226,13 @@ Claims are pre-adjudicated (status already set). Dates span `2025-01-01` through
 
 ### FR-6 — Generation script
 
-The script lives at `scripts/generate_seed_data.py`. It writes all four files to `data/`. The script must be re-runnable (idempotent — it overwrites existing files). It requires Python 3.11+ and no dependencies outside the standard library.
+The script lives at `scripts/generate_seed_data.py`. It writes all four files to `data/`. The script must be re-runnable (idempotent — it overwrites existing files). It requires Python 3.11+ and no dependencies outside the standard library. The script must call `random.seed(42)` at the top so every run produces identical output and committed files remain stable across regenerations.
 
 ---
 
 ## Domain Model
 
-Output file schemas are defined in `architecture/data-model.md`. This spec references those schemas and does not repeat them. All generated records must conform exactly to the v1.1 schemas.
+Output file schemas are defined in `.specify/memory/data-model.md`. This spec references those schemas and does not repeat them. All generated records must conform exactly to the v1.1 schemas.
 
 ---
 
@@ -258,7 +267,7 @@ The dataset must cover the following scenarios so integration tests can exercise
 
 ## Constraints
 
-- All four output files must conform to the v1.1 schemas in `architecture/data-model.md`. (Constitution: Data Layer)
+- All four output files must conform to the v1.1 schemas in `.specify/memory/data-model.md`. (Constitution: Data Layer)
 - The generation script is POSIX-compatible Python; no package manifest is added to the repository root. (Constitution: Technology Stack, AGENTS.md §2)
 - No application code in this repository. The script lives in `scripts/` in the pod repository, not in the control pod. (AGENTS.md §2)
 - This spec covers the data layer only. Changes to any service API triggered by the data design are a separate spec. (Constitution: Spec Scope, Decision 0001)

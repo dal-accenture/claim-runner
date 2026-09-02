@@ -1,0 +1,7049 @@
+[
+  {
+    "member_id": "MBR-10001",
+    "first_name": "Ashley",
+    "last_name": "Martin",
+    "date_of_birth": "1987-10-11",
+    "gender": "F",
+    "contact": {
+      "email": "member0001@example.com",
+      "phone": "555-0001",
+      "address": "1 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 67.2,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 147.2,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10002",
+    "first_name": "Andrew",
+    "last_name": "Young",
+    "date_of_birth": "1967-12-17",
+    "gender": "M",
+    "contact": {
+      "email": "member0002@example.com",
+      "phone": "555-0002",
+      "address": "2 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BASIC-005",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 5000.0,
+        "used": 50.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10003",
+    "first_name": "Paul",
+    "last_name": "Thompson",
+    "date_of_birth": "1973-03-24",
+    "gender": "M",
+    "contact": {
+      "email": "member0003@example.com",
+      "phone": "555-0003",
+      "address": "3 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10004",
+    "first_name": "Dorothy",
+    "last_name": "White",
+    "date_of_birth": "1957-04-27",
+    "gender": "F",
+    "contact": {
+      "email": "member0004@example.com",
+      "phone": "555-0004",
+      "address": "4 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BASIC-005",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 5000.0,
+        "used": 40.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10005",
+    "first_name": "Casey",
+    "last_name": "Martin",
+    "date_of_birth": "1973-11-08",
+    "gender": "X",
+    "contact": {
+      "email": "member0005@example.com",
+      "phone": "555-0005",
+      "address": "5 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 40.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10006",
+    "first_name": "Matthew",
+    "last_name": "White",
+    "date_of_birth": "1979-12-10",
+    "gender": "M",
+    "contact": {
+      "email": "member0006@example.com",
+      "phone": "555-0006",
+      "address": "6 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10007",
+    "first_name": "Sarah",
+    "last_name": "Wilson",
+    "date_of_birth": "1955-06-18",
+    "gender": "F",
+    "contact": {
+      "email": "member0007@example.com",
+      "phone": "555-0007",
+      "address": "7 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-GOLD-001",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 250.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 2000.0,
+        "used": 40.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10008",
+    "first_name": "Michael",
+    "last_name": "Jones",
+    "date_of_birth": "1978-04-13",
+    "gender": "M",
+    "contact": {
+      "email": "member0008@example.com",
+      "phone": "555-0008",
+      "address": "8 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-GOLD-001",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 250.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 2000.0,
+        "used": 50.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10009",
+    "first_name": "Barbara",
+    "last_name": "Miller",
+    "date_of_birth": "1979-07-14",
+    "gender": "F",
+    "contact": {
+      "email": "member0009@example.com",
+      "phone": "555-0009",
+      "address": "9 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 25.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10010",
+    "first_name": "Nancy",
+    "last_name": "Thompson",
+    "date_of_birth": "1988-07-02",
+    "gender": "F",
+    "contact": {
+      "email": "member0010@example.com",
+      "phone": "555-0010",
+      "address": "10 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 40.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10011",
+    "first_name": "Morgan",
+    "last_name": "Jackson",
+    "date_of_birth": "1974-10-23",
+    "gender": "X",
+    "contact": {
+      "email": "member0011@example.com",
+      "phone": "555-0011",
+      "address": "11 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10012",
+    "first_name": "Mary",
+    "last_name": "Moore",
+    "date_of_birth": "1974-08-01",
+    "gender": "F",
+    "contact": {
+      "email": "member0012@example.com",
+      "phone": "555-0012",
+      "address": "12 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-PREMIER-004",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 0.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10013",
+    "first_name": "Margaret",
+    "last_name": "Martinez",
+    "date_of_birth": "1983-07-28",
+    "gender": "F",
+    "contact": {
+      "email": "member0013@example.com",
+      "phone": "555-0013",
+      "address": "13 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 30.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10014",
+    "first_name": "Avery",
+    "last_name": "Thompson",
+    "date_of_birth": "1984-12-18",
+    "gender": "X",
+    "contact": {
+      "email": "member0014@example.com",
+      "phone": "555-0014",
+      "address": "14 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 55.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10015",
+    "first_name": "George",
+    "last_name": "Davis",
+    "date_of_birth": "2000-04-09",
+    "gender": "M",
+    "contact": {
+      "email": "member0015@example.com",
+      "phone": "555-0015",
+      "address": "15 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-PREMIER-004",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 0.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 1500.0,
+        "used": 30.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10016",
+    "first_name": "Avery",
+    "last_name": "Harris",
+    "date_of_birth": "2007-07-11",
+    "gender": "X",
+    "contact": {
+      "email": "member0016@example.com",
+      "phone": "555-0016",
+      "address": "16 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-PREMIER-004",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 0.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": [
+      {
+        "auth_id": "AUTH-00029",
+        "procedure_code": "42821",
+        "authorized_date": "2025-06-11",
+        "expiration_date": "2025-12-31"
+      },
+      {
+        "auth_id": "AUTH-00030",
+        "procedure_code": "31240",
+        "authorized_date": "2025-01-05",
+        "expiration_date": "2025-05-03"
+      },
+      {
+        "auth_id": "AUTH-00031",
+        "procedure_code": "30520",
+        "authorized_date": "2025-05-15",
+        "expiration_date": "2025-12-31"
+      },
+      {
+        "auth_id": "AUTH-00032",
+        "procedure_code": "31575",
+        "authorized_date": "2025-01-21",
+        "expiration_date": "2025-04-26"
+      }
+    ]
+  },
+  {
+    "member_id": "MBR-10017",
+    "first_name": "Steven",
+    "last_name": "Garcia",
+    "date_of_birth": "1982-08-05",
+    "gender": "M",
+    "contact": {
+      "email": "member0017@example.com",
+      "phone": "555-0017",
+      "address": "17 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 15.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10018",
+    "first_name": "Michelle",
+    "last_name": "Thompson",
+    "date_of_birth": "1965-07-19",
+    "gender": "F",
+    "contact": {
+      "email": "member0018@example.com",
+      "phone": "555-0018",
+      "address": "18 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10019",
+    "first_name": "Brian",
+    "last_name": "Smith",
+    "date_of_birth": "1979-11-14",
+    "gender": "M",
+    "contact": {
+      "email": "member0019@example.com",
+      "phone": "555-0019",
+      "address": "19 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-GOLD-001",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 250.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 2000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10020",
+    "first_name": "Barbara",
+    "last_name": "White",
+    "date_of_birth": "1993-01-09",
+    "gender": "F",
+    "contact": {
+      "email": "member0020@example.com",
+      "phone": "555-0020",
+      "address": "20 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-GOLD-001",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 250.0,
+        "used": 2.2,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 2000.0,
+        "used": 2.2,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10021",
+    "first_name": "Betty",
+    "last_name": "Anderson",
+    "date_of_birth": "1977-08-11",
+    "gender": "F",
+    "contact": {
+      "email": "member0021@example.com",
+      "phone": "555-0021",
+      "address": "21 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-PREMIER-004",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 0.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": [
+      {
+        "auth_id": "AUTH-00036",
+        "procedure_code": "69210",
+        "authorized_date": "2025-06-20",
+        "expiration_date": "2025-12-31"
+      },
+      {
+        "auth_id": "AUTH-00037",
+        "procedure_code": "92551",
+        "authorized_date": "2025-01-17",
+        "expiration_date": "2025-05-15"
+      },
+      {
+        "auth_id": "AUTH-00038",
+        "procedure_code": "30520",
+        "authorized_date": "2025-06-18",
+        "expiration_date": "2025-12-31"
+      }
+    ]
+  },
+  {
+    "member_id": "MBR-10022",
+    "first_name": "Mark",
+    "last_name": "Thomas",
+    "date_of_birth": "1957-07-09",
+    "gender": "M",
+    "contact": {
+      "email": "member0022@example.com",
+      "phone": "555-0022",
+      "address": "22 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-GOLD-001",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 250.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 2000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10023",
+    "first_name": "Jennifer",
+    "last_name": "Harris",
+    "date_of_birth": "2007-12-18",
+    "gender": "F",
+    "contact": {
+      "email": "member0023@example.com",
+      "phone": "555-0023",
+      "address": "23 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 40.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10024",
+    "first_name": "Alex",
+    "last_name": "Taylor",
+    "date_of_birth": "1992-11-03",
+    "gender": "X",
+    "contact": {
+      "email": "member0024@example.com",
+      "phone": "555-0024",
+      "address": "24 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 15.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10025",
+    "first_name": "Robert",
+    "last_name": "Smith",
+    "date_of_birth": "2004-04-27",
+    "gender": "M",
+    "contact": {
+      "email": "member0025@example.com",
+      "phone": "555-0025",
+      "address": "25 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BASIC-005",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 5000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10026",
+    "first_name": "Mary",
+    "last_name": "Young",
+    "date_of_birth": "1993-04-05",
+    "gender": "F",
+    "contact": {
+      "email": "member0026@example.com",
+      "phone": "555-0026",
+      "address": "26 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-PREMIER-004",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 0.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10027",
+    "first_name": "Joshua",
+    "last_name": "Brown",
+    "date_of_birth": "1959-08-23",
+    "gender": "M",
+    "contact": {
+      "email": "member0027@example.com",
+      "phone": "555-0027",
+      "address": "27 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 67.2,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 197.2,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10028",
+    "first_name": "Matthew",
+    "last_name": "Taylor",
+    "date_of_birth": "2005-10-20",
+    "gender": "M",
+    "contact": {
+      "email": "member0028@example.com",
+      "phone": "555-0028",
+      "address": "28 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10029",
+    "first_name": "David",
+    "last_name": "Garcia",
+    "date_of_birth": "2003-02-19",
+    "gender": "M",
+    "contact": {
+      "email": "member0029@example.com",
+      "phone": "555-0029",
+      "address": "29 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-GOLD-001",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 250.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 2000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10030",
+    "first_name": "James",
+    "last_name": "Martinez",
+    "date_of_birth": "1953-07-23",
+    "gender": "M",
+    "contact": {
+      "email": "member0030@example.com",
+      "phone": "555-0030",
+      "address": "30 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BASIC-005",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 5000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10031",
+    "first_name": "Thomas",
+    "last_name": "Williams",
+    "date_of_birth": "1986-12-27",
+    "gender": "M",
+    "contact": {
+      "email": "member0031@example.com",
+      "phone": "555-0031",
+      "address": "31 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-GOLD-001",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 250.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 2000.0,
+        "used": 90.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10032",
+    "first_name": "Daniel",
+    "last_name": "Brown",
+    "date_of_birth": "1969-05-28",
+    "gender": "M",
+    "contact": {
+      "email": "member0032@example.com",
+      "phone": "555-0032",
+      "address": "32 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 2.8,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 2.8,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10033",
+    "first_name": "Michelle",
+    "last_name": "Brown",
+    "date_of_birth": "1983-10-26",
+    "gender": "F",
+    "contact": {
+      "email": "member0033@example.com",
+      "phone": "555-0033",
+      "address": "33 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-GOLD-001",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 250.0,
+        "used": 4.4,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 2000.0,
+        "used": 4.4,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10034",
+    "first_name": "Robert",
+    "last_name": "Taylor",
+    "date_of_birth": "1987-07-22",
+    "gender": "M",
+    "contact": {
+      "email": "member0034@example.com",
+      "phone": "555-0034",
+      "address": "34 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-GOLD-001",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 250.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 2000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10035",
+    "first_name": "Margaret",
+    "last_name": "Williams",
+    "date_of_birth": "1987-11-11",
+    "gender": "F",
+    "contact": {
+      "email": "member0035@example.com",
+      "phone": "555-0035",
+      "address": "35 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-PREMIER-004",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 0.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10036",
+    "first_name": "James",
+    "last_name": "Jackson",
+    "date_of_birth": "1982-08-04",
+    "gender": "M",
+    "contact": {
+      "email": "member0036@example.com",
+      "phone": "555-0036",
+      "address": "36 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 49.6,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 89.6,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10037",
+    "first_name": "Sandra",
+    "last_name": "Taylor",
+    "date_of_birth": "1985-08-23",
+    "gender": "F",
+    "contact": {
+      "email": "member0037@example.com",
+      "phone": "555-0037",
+      "address": "37 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 30.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10038",
+    "first_name": "Barbara",
+    "last_name": "Jackson",
+    "date_of_birth": "1993-12-17",
+    "gender": "F",
+    "contact": {
+      "email": "member0038@example.com",
+      "phone": "555-0038",
+      "address": "38 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BASIC-005",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 5000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10039",
+    "first_name": "Matthew",
+    "last_name": "Young",
+    "date_of_birth": "1983-09-25",
+    "gender": "M",
+    "contact": {
+      "email": "member0039@example.com",
+      "phone": "555-0039",
+      "address": "39 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-GOLD-001",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 250.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 2000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10040",
+    "first_name": "Dorothy",
+    "last_name": "White",
+    "date_of_birth": "1989-12-19",
+    "gender": "F",
+    "contact": {
+      "email": "member0040@example.com",
+      "phone": "555-0040",
+      "address": "40 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-PREMIER-004",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 0.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10041",
+    "first_name": "Karen",
+    "last_name": "Anderson",
+    "date_of_birth": "1982-04-27",
+    "gender": "F",
+    "contact": {
+      "email": "member0041@example.com",
+      "phone": "555-0041",
+      "address": "41 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-PREMIER-004",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 0.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": [
+      {
+        "auth_id": "AUTH-00039",
+        "procedure_code": "92504",
+        "authorized_date": "2025-06-16",
+        "expiration_date": "2025-12-31"
+      },
+      {
+        "auth_id": "AUTH-00040",
+        "procedure_code": "42821",
+        "authorized_date": "2025-01-17",
+        "expiration_date": "2025-03-02"
+      },
+      {
+        "auth_id": "AUTH-00041",
+        "procedure_code": "92557",
+        "authorized_date": "2025-05-04",
+        "expiration_date": "2025-12-31"
+      },
+      {
+        "auth_id": "AUTH-00042",
+        "procedure_code": "31575",
+        "authorized_date": "2025-01-26",
+        "expiration_date": "2025-04-23"
+      }
+    ]
+  },
+  {
+    "member_id": "MBR-10042",
+    "first_name": "Michael",
+    "last_name": "Wilson",
+    "date_of_birth": "1951-04-25",
+    "gender": "M",
+    "contact": {
+      "email": "member0042@example.com",
+      "phone": "555-0042",
+      "address": "42 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 40.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10043",
+    "first_name": "Andrew",
+    "last_name": "Moore",
+    "date_of_birth": "1998-11-13",
+    "gender": "M",
+    "contact": {
+      "email": "member0043@example.com",
+      "phone": "555-0043",
+      "address": "43 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-GOLD-001",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 250.0,
+        "used": 250.0,
+        "met": true
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 2000.0,
+        "used": 380.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": [
+      {
+        "auth_id": "AUTH-00011",
+        "procedure_code": "30140",
+        "authorized_date": "2025-05-11",
+        "expiration_date": "2025-12-31"
+      }
+    ]
+  },
+  {
+    "member_id": "MBR-10044",
+    "first_name": "Nancy",
+    "last_name": "Smith",
+    "date_of_birth": "1950-06-06",
+    "gender": "F",
+    "contact": {
+      "email": "member0044@example.com",
+      "phone": "555-0044",
+      "address": "44 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10045",
+    "first_name": "Joshua",
+    "last_name": "Miller",
+    "date_of_birth": "2002-05-11",
+    "gender": "M",
+    "contact": {
+      "email": "member0045@example.com",
+      "phone": "555-0045",
+      "address": "45 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-PREMIER-004",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 0.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 1500.0,
+        "used": 25.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10046",
+    "first_name": "Karen",
+    "last_name": "Young",
+    "date_of_birth": "1969-05-18",
+    "gender": "F",
+    "contact": {
+      "email": "member0046@example.com",
+      "phone": "555-0046",
+      "address": "46 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 56.8,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 56.8,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10047",
+    "first_name": "Mary",
+    "last_name": "Martin",
+    "date_of_birth": "1992-02-08",
+    "gender": "F",
+    "contact": {
+      "email": "member0047@example.com",
+      "phone": "555-0047",
+      "address": "47 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 2.8,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 52.8,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10048",
+    "first_name": "Paul",
+    "last_name": "Harris",
+    "date_of_birth": "1972-04-23",
+    "gender": "M",
+    "contact": {
+      "email": "member0048@example.com",
+      "phone": "555-0048",
+      "address": "48 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10049",
+    "first_name": "Joshua",
+    "last_name": "Harris",
+    "date_of_birth": "1951-01-03",
+    "gender": "M",
+    "contact": {
+      "email": "member0049@example.com",
+      "phone": "555-0049",
+      "address": "49 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 56.8,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 151.8,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10050",
+    "first_name": "Lisa",
+    "last_name": "Davis",
+    "date_of_birth": "1974-12-08",
+    "gender": "F",
+    "contact": {
+      "email": "member0050@example.com",
+      "phone": "555-0050",
+      "address": "50 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 50.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10051",
+    "first_name": "Anthony",
+    "last_name": "Moore",
+    "date_of_birth": "1975-08-18",
+    "gender": "M",
+    "contact": {
+      "email": "member0051@example.com",
+      "phone": "555-0051",
+      "address": "51 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 90.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10052",
+    "first_name": "Kenneth",
+    "last_name": "Taylor",
+    "date_of_birth": "1989-12-18",
+    "gender": "M",
+    "contact": {
+      "email": "member0052@example.com",
+      "phone": "555-0052",
+      "address": "52 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10053",
+    "first_name": "Mark",
+    "last_name": "Taylor",
+    "date_of_birth": "1951-05-10",
+    "gender": "M",
+    "contact": {
+      "email": "member0053@example.com",
+      "phone": "555-0053",
+      "address": "53 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 15.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10054",
+    "first_name": "Karen",
+    "last_name": "Davis",
+    "date_of_birth": "1994-12-07",
+    "gender": "F",
+    "contact": {
+      "email": "member0054@example.com",
+      "phone": "555-0054",
+      "address": "54 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-PREMIER-004",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 0.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": [
+      {
+        "auth_id": "AUTH-00063",
+        "procedure_code": "69210",
+        "authorized_date": "2025-06-25",
+        "expiration_date": "2025-12-31"
+      },
+      {
+        "auth_id": "AUTH-00064",
+        "procedure_code": "92551",
+        "authorized_date": "2025-01-18",
+        "expiration_date": "2025-02-22"
+      }
+    ]
+  },
+  {
+    "member_id": "MBR-10055",
+    "first_name": "Nancy",
+    "last_name": "Brown",
+    "date_of_birth": "1984-09-25",
+    "gender": "F",
+    "contact": {
+      "email": "member0055@example.com",
+      "phone": "555-0055",
+      "address": "55 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10056",
+    "first_name": "Charles",
+    "last_name": "Miller",
+    "date_of_birth": "1977-12-16",
+    "gender": "M",
+    "contact": {
+      "email": "member0056@example.com",
+      "phone": "555-0056",
+      "address": "56 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-GOLD-001",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 250.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 2000.0,
+        "used": 50.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10057",
+    "first_name": "Karen",
+    "last_name": "Moore",
+    "date_of_birth": "1956-02-27",
+    "gender": "F",
+    "contact": {
+      "email": "member0057@example.com",
+      "phone": "555-0057",
+      "address": "57 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-PREMIER-004",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 0.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 1500.0,
+        "used": 45.7,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": [
+      {
+        "auth_id": "AUTH-00065",
+        "procedure_code": "30520",
+        "authorized_date": "2025-04-06",
+        "expiration_date": "2025-12-31"
+      },
+      {
+        "auth_id": "AUTH-00066",
+        "procedure_code": "92552",
+        "authorized_date": "2025-01-06",
+        "expiration_date": "2025-03-24"
+      },
+      {
+        "auth_id": "AUTH-00067",
+        "procedure_code": "42820",
+        "authorized_date": "2025-05-02",
+        "expiration_date": "2025-12-31"
+      }
+    ]
+  },
+  {
+    "member_id": "MBR-10058",
+    "first_name": "Jessica",
+    "last_name": "Martinez",
+    "date_of_birth": "1992-06-06",
+    "gender": "F",
+    "contact": {
+      "email": "member0058@example.com",
+      "phone": "555-0058",
+      "address": "58 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BASIC-005",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 5000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10059",
+    "first_name": "Anthony",
+    "last_name": "Smith",
+    "date_of_birth": "1969-09-05",
+    "gender": "M",
+    "contact": {
+      "email": "member0059@example.com",
+      "phone": "555-0059",
+      "address": "59 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-GOLD-001",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 250.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 2000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10060",
+    "first_name": "Karen",
+    "last_name": "Johnson",
+    "date_of_birth": "1980-09-10",
+    "gender": "F",
+    "contact": {
+      "email": "member0060@example.com",
+      "phone": "555-0060",
+      "address": "60 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 40.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10061",
+    "first_name": "Barbara",
+    "last_name": "Harris",
+    "date_of_birth": "1994-01-19",
+    "gender": "F",
+    "contact": {
+      "email": "member0061@example.com",
+      "phone": "555-0061",
+      "address": "61 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10062",
+    "first_name": "Lisa",
+    "last_name": "Harris",
+    "date_of_birth": "1988-08-11",
+    "gender": "F",
+    "contact": {
+      "email": "member0062@example.com",
+      "phone": "555-0062",
+      "address": "62 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-GOLD-001",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 250.0,
+        "used": 250.0,
+        "met": true
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 2000.0,
+        "used": 560.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": [
+      {
+        "auth_id": "AUTH-00001",
+        "procedure_code": "42820",
+        "authorized_date": "2025-04-06",
+        "expiration_date": "2025-12-31"
+      }
+    ]
+  },
+  {
+    "member_id": "MBR-10063",
+    "first_name": "Susan",
+    "last_name": "Johnson",
+    "date_of_birth": "2003-08-04",
+    "gender": "F",
+    "contact": {
+      "email": "member0063@example.com",
+      "phone": "555-0063",
+      "address": "63 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-PREMIER-004",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 0.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": [
+      {
+        "auth_id": "AUTH-00025",
+        "procedure_code": "31240",
+        "authorized_date": "2025-04-09",
+        "expiration_date": "2025-12-31"
+      },
+      {
+        "auth_id": "AUTH-00026",
+        "procedure_code": "92552",
+        "authorized_date": "2025-01-07",
+        "expiration_date": "2025-03-20"
+      },
+      {
+        "auth_id": "AUTH-00027",
+        "procedure_code": "92557",
+        "authorized_date": "2025-04-25",
+        "expiration_date": "2025-12-31"
+      },
+      {
+        "auth_id": "AUTH-00028",
+        "procedure_code": "92551",
+        "authorized_date": "2025-01-25",
+        "expiration_date": "2025-02-06"
+      }
+    ]
+  },
+  {
+    "member_id": "MBR-10064",
+    "first_name": "Michael",
+    "last_name": "Thomas",
+    "date_of_birth": "1988-02-19",
+    "gender": "M",
+    "contact": {
+      "email": "member0064@example.com",
+      "phone": "555-0064",
+      "address": "64 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BASIC-005",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 5000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10065",
+    "first_name": "Robert",
+    "last_name": "Jones",
+    "date_of_birth": "1961-10-10",
+    "gender": "M",
+    "contact": {
+      "email": "member0065@example.com",
+      "phone": "555-0065",
+      "address": "65 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10066",
+    "first_name": "Jennifer",
+    "last_name": "Davis",
+    "date_of_birth": "1994-09-25",
+    "gender": "F",
+    "contact": {
+      "email": "member0066@example.com",
+      "phone": "555-0066",
+      "address": "66 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10067",
+    "first_name": "Paul",
+    "last_name": "Young",
+    "date_of_birth": "1958-09-13",
+    "gender": "M",
+    "contact": {
+      "email": "member0067@example.com",
+      "phone": "555-0067",
+      "address": "67 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 40.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10068",
+    "first_name": "Ashley",
+    "last_name": "White",
+    "date_of_birth": "1976-10-14",
+    "gender": "F",
+    "contact": {
+      "email": "member0068@example.com",
+      "phone": "555-0068",
+      "address": "68 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-GOLD-001",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 250.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 2000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10069",
+    "first_name": "Lisa",
+    "last_name": "Moore",
+    "date_of_birth": "1964-10-24",
+    "gender": "F",
+    "contact": {
+      "email": "member0069@example.com",
+      "phone": "555-0069",
+      "address": "69 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-GOLD-001",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 250.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 2000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10070",
+    "first_name": "David",
+    "last_name": "Miller",
+    "date_of_birth": "1970-04-09",
+    "gender": "M",
+    "contact": {
+      "email": "member0070@example.com",
+      "phone": "555-0070",
+      "address": "70 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BASIC-005",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 5000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10071",
+    "first_name": "Jordan",
+    "last_name": "Garcia",
+    "date_of_birth": "1958-03-18",
+    "gender": "X",
+    "contact": {
+      "email": "member0071@example.com",
+      "phone": "555-0071",
+      "address": "71 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-PREMIER-004",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 0.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": [
+      {
+        "auth_id": "AUTH-00049",
+        "procedure_code": "31240",
+        "authorized_date": "2025-04-18",
+        "expiration_date": "2025-12-31"
+      },
+      {
+        "auth_id": "AUTH-00050",
+        "procedure_code": "31575",
+        "authorized_date": "2025-01-22",
+        "expiration_date": "2025-05-10"
+      },
+      {
+        "auth_id": "AUTH-00051",
+        "procedure_code": "92551",
+        "authorized_date": "2025-05-24",
+        "expiration_date": "2025-12-31"
+      },
+      {
+        "auth_id": "AUTH-00052",
+        "procedure_code": "30520",
+        "authorized_date": "2025-01-28",
+        "expiration_date": "2025-03-11"
+      }
+    ]
+  },
+  {
+    "member_id": "MBR-10072",
+    "first_name": "Jennifer",
+    "last_name": "Garcia",
+    "date_of_birth": "2007-07-15",
+    "gender": "F",
+    "contact": {
+      "email": "member0072@example.com",
+      "phone": "555-0072",
+      "address": "72 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BASIC-005",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1000.0,
+        "used": 7.5,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 5000.0,
+        "used": 7.5,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10073",
+    "first_name": "Michelle",
+    "last_name": "Harris",
+    "date_of_birth": "2003-01-08",
+    "gender": "F",
+    "contact": {
+      "email": "member0073@example.com",
+      "phone": "555-0073",
+      "address": "73 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10074",
+    "first_name": "Lisa",
+    "last_name": "Martinez",
+    "date_of_birth": "1984-08-03",
+    "gender": "F",
+    "contact": {
+      "email": "member0074@example.com",
+      "phone": "555-0074",
+      "address": "74 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10075",
+    "first_name": "Daniel",
+    "last_name": "Wilson",
+    "date_of_birth": "1983-11-19",
+    "gender": "M",
+    "contact": {
+      "email": "member0075@example.com",
+      "phone": "555-0075",
+      "address": "75 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-PREMIER-004",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 0.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": [
+      {
+        "auth_id": "AUTH-00033",
+        "procedure_code": "30520",
+        "authorized_date": "2025-06-03",
+        "expiration_date": "2025-12-31"
+      },
+      {
+        "auth_id": "AUTH-00034",
+        "procedure_code": "92504",
+        "authorized_date": "2025-01-10",
+        "expiration_date": "2025-05-15"
+      },
+      {
+        "auth_id": "AUTH-00035",
+        "procedure_code": "31575",
+        "authorized_date": "2025-04-02",
+        "expiration_date": "2025-12-31"
+      }
+    ]
+  },
+  {
+    "member_id": "MBR-10076",
+    "first_name": "Jessica",
+    "last_name": "Jackson",
+    "date_of_birth": "2006-09-08",
+    "gender": "F",
+    "contact": {
+      "email": "member0076@example.com",
+      "phone": "555-0076",
+      "address": "76 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 50.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10077",
+    "first_name": "Taylor",
+    "last_name": "Wilson",
+    "date_of_birth": "1982-03-03",
+    "gender": "X",
+    "contact": {
+      "email": "member0077@example.com",
+      "phone": "555-0077",
+      "address": "77 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 2.8,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 2.8,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10078",
+    "first_name": "Patricia",
+    "last_name": "Garcia",
+    "date_of_birth": "1983-05-20",
+    "gender": "F",
+    "contact": {
+      "email": "member0078@example.com",
+      "phone": "555-0078",
+      "address": "78 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 50.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10079",
+    "first_name": "Brian",
+    "last_name": "Martinez",
+    "date_of_birth": "1973-02-15",
+    "gender": "M",
+    "contact": {
+      "email": "member0079@example.com",
+      "phone": "555-0079",
+      "address": "79 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 50.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10080",
+    "first_name": "Lisa",
+    "last_name": "Thomas",
+    "date_of_birth": "1991-09-18",
+    "gender": "F",
+    "contact": {
+      "email": "member0080@example.com",
+      "phone": "555-0080",
+      "address": "80 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BASIC-005",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 5000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10081",
+    "first_name": "Joshua",
+    "last_name": "White",
+    "date_of_birth": "1979-10-02",
+    "gender": "M",
+    "contact": {
+      "email": "member0081@example.com",
+      "phone": "555-0081",
+      "address": "81 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 75.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10082",
+    "first_name": "Sandra",
+    "last_name": "Anderson",
+    "date_of_birth": "1971-05-01",
+    "gender": "F",
+    "contact": {
+      "email": "member0082@example.com",
+      "phone": "555-0082",
+      "address": "82 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10083",
+    "first_name": "Michael",
+    "last_name": "Davis",
+    "date_of_birth": "1985-10-19",
+    "gender": "M",
+    "contact": {
+      "email": "member0083@example.com",
+      "phone": "555-0083",
+      "address": "83 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10084",
+    "first_name": "Alex",
+    "last_name": "Wilson",
+    "date_of_birth": "1971-01-25",
+    "gender": "X",
+    "contact": {
+      "email": "member0084@example.com",
+      "phone": "555-0084",
+      "address": "84 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10085",
+    "first_name": "Charles",
+    "last_name": "Harris",
+    "date_of_birth": "1972-11-15",
+    "gender": "M",
+    "contact": {
+      "email": "member0085@example.com",
+      "phone": "555-0085",
+      "address": "85 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 65.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10086",
+    "first_name": "Matthew",
+    "last_name": "Garcia",
+    "date_of_birth": "1986-07-21",
+    "gender": "M",
+    "contact": {
+      "email": "member0086@example.com",
+      "phone": "555-0086",
+      "address": "86 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-GOLD-001",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 250.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 2000.0,
+        "used": 100.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10087",
+    "first_name": "Dorothy",
+    "last_name": "Williams",
+    "date_of_birth": "1973-06-14",
+    "gender": "F",
+    "contact": {
+      "email": "member0087@example.com",
+      "phone": "555-0087",
+      "address": "87 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-GOLD-001",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 250.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 2000.0,
+        "used": 40.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10088",
+    "first_name": "Nancy",
+    "last_name": "Anderson",
+    "date_of_birth": "1970-02-28",
+    "gender": "F",
+    "contact": {
+      "email": "member0088@example.com",
+      "phone": "555-0088",
+      "address": "88 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10089",
+    "first_name": "Charles",
+    "last_name": "Anderson",
+    "date_of_birth": "1989-12-16",
+    "gender": "M",
+    "contact": {
+      "email": "member0089@example.com",
+      "phone": "555-0089",
+      "address": "89 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 50.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10090",
+    "first_name": "Casey",
+    "last_name": "Thomas",
+    "date_of_birth": "1967-09-02",
+    "gender": "X",
+    "contact": {
+      "email": "member0090@example.com",
+      "phone": "555-0090",
+      "address": "90 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BASIC-005",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 5000.0,
+        "used": 50.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10091",
+    "first_name": "Ashley",
+    "last_name": "Williams",
+    "date_of_birth": "1975-05-11",
+    "gender": "F",
+    "contact": {
+      "email": "member0091@example.com",
+      "phone": "555-0091",
+      "address": "91 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10092",
+    "first_name": "Linda",
+    "last_name": "Thomas",
+    "date_of_birth": "1967-09-27",
+    "gender": "F",
+    "contact": {
+      "email": "member0092@example.com",
+      "phone": "555-0092",
+      "address": "92 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 2.2,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 2.2,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10093",
+    "first_name": "James",
+    "last_name": "Thompson",
+    "date_of_birth": "1973-07-02",
+    "gender": "M",
+    "contact": {
+      "email": "member0093@example.com",
+      "phone": "555-0093",
+      "address": "93 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-PREMIER-004",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 0.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10094",
+    "first_name": "Jessica",
+    "last_name": "Martin",
+    "date_of_birth": "1954-10-25",
+    "gender": "F",
+    "contact": {
+      "email": "member0094@example.com",
+      "phone": "555-0094",
+      "address": "94 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 2.8,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 2.8,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10095",
+    "first_name": "Joshua",
+    "last_name": "White",
+    "date_of_birth": "1968-01-07",
+    "gender": "M",
+    "contact": {
+      "email": "member0095@example.com",
+      "phone": "555-0095",
+      "address": "95 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-PREMIER-004",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 0.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10096",
+    "first_name": "Matthew",
+    "last_name": "Thompson",
+    "date_of_birth": "1978-05-15",
+    "gender": "M",
+    "contact": {
+      "email": "member0096@example.com",
+      "phone": "555-0096",
+      "address": "96 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 50.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10097",
+    "first_name": "Dorothy",
+    "last_name": "Brown",
+    "date_of_birth": "1995-11-20",
+    "gender": "F",
+    "contact": {
+      "email": "member0097@example.com",
+      "phone": "555-0097",
+      "address": "97 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-GOLD-001",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 250.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 2000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": [
+      {
+        "auth_id": "AUTH-00020",
+        "procedure_code": "30520",
+        "authorized_date": "2025-04-11",
+        "expiration_date": "2025-12-31"
+      }
+    ]
+  },
+  {
+    "member_id": "MBR-10098",
+    "first_name": "Sarah",
+    "last_name": "Garcia",
+    "date_of_birth": "1956-09-01",
+    "gender": "F",
+    "contact": {
+      "email": "member0098@example.com",
+      "phone": "555-0098",
+      "address": "98 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BASIC-005",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 5000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10099",
+    "first_name": "Emily",
+    "last_name": "Jackson",
+    "date_of_birth": "1994-04-27",
+    "gender": "F",
+    "contact": {
+      "email": "member0099@example.com",
+      "phone": "555-0099",
+      "address": "99 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10100",
+    "first_name": "David",
+    "last_name": "White",
+    "date_of_birth": "1962-11-27",
+    "gender": "M",
+    "contact": {
+      "email": "member0100@example.com",
+      "phone": "555-0100",
+      "address": "100 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 33.6,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 73.6,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10101",
+    "first_name": "Barbara",
+    "last_name": "Harris",
+    "date_of_birth": "1966-12-10",
+    "gender": "F",
+    "contact": {
+      "email": "member0101@example.com",
+      "phone": "555-0101",
+      "address": "101 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-PREMIER-004",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 0.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 1500.0,
+        "used": 40.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": [
+      {
+        "auth_id": "AUTH-00053",
+        "procedure_code": "30520",
+        "authorized_date": "2025-05-10",
+        "expiration_date": "2025-12-31"
+      },
+      {
+        "auth_id": "AUTH-00054",
+        "procedure_code": "92552",
+        "authorized_date": "2025-01-21",
+        "expiration_date": "2025-05-05"
+      }
+    ]
+  },
+  {
+    "member_id": "MBR-10102",
+    "first_name": "Kimberly",
+    "last_name": "Wilson",
+    "date_of_birth": "1974-08-16",
+    "gender": "F",
+    "contact": {
+      "email": "member0102@example.com",
+      "phone": "555-0102",
+      "address": "102 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-GOLD-001",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 250.0,
+        "used": 250.0,
+        "met": true
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 2000.0,
+        "used": 320.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": [
+      {
+        "auth_id": "AUTH-00013",
+        "procedure_code": "42821",
+        "authorized_date": "2025-05-18",
+        "expiration_date": "2025-12-31"
+      },
+      {
+        "auth_id": "AUTH-00014",
+        "procedure_code": "31240",
+        "authorized_date": "2025-01-23",
+        "expiration_date": "2025-03-17"
+      }
+    ]
+  },
+  {
+    "member_id": "MBR-10103",
+    "first_name": "Sarah",
+    "last_name": "White",
+    "date_of_birth": "1999-03-13",
+    "gender": "F",
+    "contact": {
+      "email": "member0103@example.com",
+      "phone": "555-0103",
+      "address": "103 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-GOLD-001",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 250.0,
+        "used": 250.0,
+        "met": true
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 2000.0,
+        "used": 320.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": [
+      {
+        "auth_id": "AUTH-00015",
+        "procedure_code": "30140",
+        "authorized_date": "2025-06-02",
+        "expiration_date": "2025-12-31"
+      },
+      {
+        "auth_id": "AUTH-00016",
+        "procedure_code": "42820",
+        "authorized_date": "2025-01-14",
+        "expiration_date": "2025-02-15"
+      },
+      {
+        "auth_id": "AUTH-00017",
+        "procedure_code": "42821",
+        "authorized_date": "2025-04-28",
+        "expiration_date": "2025-12-31"
+      }
+    ]
+  },
+  {
+    "member_id": "MBR-10104",
+    "first_name": "Jessica",
+    "last_name": "Young",
+    "date_of_birth": "1972-12-05",
+    "gender": "F",
+    "contact": {
+      "email": "member0104@example.com",
+      "phone": "555-0104",
+      "address": "104 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BASIC-005",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 5000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10105",
+    "first_name": "Jennifer",
+    "last_name": "Wilson",
+    "date_of_birth": "1968-07-11",
+    "gender": "F",
+    "contact": {
+      "email": "member0105@example.com",
+      "phone": "555-0105",
+      "address": "105 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 2.8,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 17.8,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10106",
+    "first_name": "Kenneth",
+    "last_name": "Wilson",
+    "date_of_birth": "2007-05-24",
+    "gender": "M",
+    "contact": {
+      "email": "member0106@example.com",
+      "phone": "555-0106",
+      "address": "106 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10107",
+    "first_name": "Anthony",
+    "last_name": "Moore",
+    "date_of_birth": "1950-03-15",
+    "gender": "M",
+    "contact": {
+      "email": "member0107@example.com",
+      "phone": "555-0107",
+      "address": "107 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10108",
+    "first_name": "Reese",
+    "last_name": "Harris",
+    "date_of_birth": "1975-06-18",
+    "gender": "X",
+    "contact": {
+      "email": "member0108@example.com",
+      "phone": "555-0108",
+      "address": "108 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 40.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10109",
+    "first_name": "Kevin",
+    "last_name": "Thomas",
+    "date_of_birth": "1988-06-28",
+    "gender": "M",
+    "contact": {
+      "email": "member0109@example.com",
+      "phone": "555-0109",
+      "address": "109 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BASIC-005",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 5000.0,
+        "used": 75.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10110",
+    "first_name": "Jessica",
+    "last_name": "Davis",
+    "date_of_birth": "1971-07-08",
+    "gender": "F",
+    "contact": {
+      "email": "member0110@example.com",
+      "phone": "555-0110",
+      "address": "110 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10111",
+    "first_name": "Paul",
+    "last_name": "Johnson",
+    "date_of_birth": "1990-12-16",
+    "gender": "M",
+    "contact": {
+      "email": "member0111@example.com",
+      "phone": "555-0111",
+      "address": "111 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BASIC-005",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 5000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10112",
+    "first_name": "Steven",
+    "last_name": "Thomas",
+    "date_of_birth": "1997-11-05",
+    "gender": "M",
+    "contact": {
+      "email": "member0112@example.com",
+      "phone": "555-0112",
+      "address": "112 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 75.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10113",
+    "first_name": "Dorothy",
+    "last_name": "Johnson",
+    "date_of_birth": "1961-09-19",
+    "gender": "F",
+    "contact": {
+      "email": "member0113@example.com",
+      "phone": "555-0113",
+      "address": "113 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-GOLD-001",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 250.0,
+        "used": 250.0,
+        "met": true
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 2000.0,
+        "used": 690.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": [
+      {
+        "auth_id": "AUTH-00010",
+        "procedure_code": "42821",
+        "authorized_date": "2025-05-07",
+        "expiration_date": "2025-12-31"
+      }
+    ]
+  },
+  {
+    "member_id": "MBR-10114",
+    "first_name": "Nancy",
+    "last_name": "Brown",
+    "date_of_birth": "1951-02-17",
+    "gender": "F",
+    "contact": {
+      "email": "member0114@example.com",
+      "phone": "555-0114",
+      "address": "114 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10115",
+    "first_name": "Andrew",
+    "last_name": "Smith",
+    "date_of_birth": "1969-03-14",
+    "gender": "M",
+    "contact": {
+      "email": "member0115@example.com",
+      "phone": "555-0115",
+      "address": "115 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-PREMIER-004",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 0.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10116",
+    "first_name": "Richard",
+    "last_name": "Williams",
+    "date_of_birth": "2000-05-11",
+    "gender": "M",
+    "contact": {
+      "email": "member0116@example.com",
+      "phone": "555-0116",
+      "address": "116 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 50.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10117",
+    "first_name": "George",
+    "last_name": "Thomas",
+    "date_of_birth": "1963-06-28",
+    "gender": "M",
+    "contact": {
+      "email": "member0117@example.com",
+      "phone": "555-0117",
+      "address": "117 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-PREMIER-004",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 0.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 1500.0,
+        "used": 15.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": [
+      {
+        "auth_id": "AUTH-00045",
+        "procedure_code": "30140",
+        "authorized_date": "2025-05-10",
+        "expiration_date": "2025-12-31"
+      },
+      {
+        "auth_id": "AUTH-00046",
+        "procedure_code": "30520",
+        "authorized_date": "2025-01-13",
+        "expiration_date": "2025-05-25"
+      },
+      {
+        "auth_id": "AUTH-00047",
+        "procedure_code": "92552",
+        "authorized_date": "2025-05-22",
+        "expiration_date": "2025-12-31"
+      },
+      {
+        "auth_id": "AUTH-00048",
+        "procedure_code": "31575",
+        "authorized_date": "2025-01-20",
+        "expiration_date": "2025-02-26"
+      }
+    ]
+  },
+  {
+    "member_id": "MBR-10118",
+    "first_name": "Emily",
+    "last_name": "Thomas",
+    "date_of_birth": "1975-11-23",
+    "gender": "F",
+    "contact": {
+      "email": "member0118@example.com",
+      "phone": "555-0118",
+      "address": "118 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 7.5,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 7.5,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10119",
+    "first_name": "Dorothy",
+    "last_name": "Thompson",
+    "date_of_birth": "1995-10-03",
+    "gender": "F",
+    "contact": {
+      "email": "member0119@example.com",
+      "phone": "555-0119",
+      "address": "119 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10120",
+    "first_name": "Daniel",
+    "last_name": "Martinez",
+    "date_of_birth": "1992-12-03",
+    "gender": "M",
+    "contact": {
+      "email": "member0120@example.com",
+      "phone": "555-0120",
+      "address": "120 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-GOLD-001",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 250.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 2000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10121",
+    "first_name": "Sandra",
+    "last_name": "Brown",
+    "date_of_birth": "1997-12-28",
+    "gender": "F",
+    "contact": {
+      "email": "member0121@example.com",
+      "phone": "555-0121",
+      "address": "121 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10122",
+    "first_name": "David",
+    "last_name": "White",
+    "date_of_birth": "2005-12-10",
+    "gender": "M",
+    "contact": {
+      "email": "member0122@example.com",
+      "phone": "555-0122",
+      "address": "122 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10123",
+    "first_name": "James",
+    "last_name": "Johnson",
+    "date_of_birth": "1990-01-10",
+    "gender": "M",
+    "contact": {
+      "email": "member0123@example.com",
+      "phone": "555-0123",
+      "address": "123 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-GOLD-001",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 250.0,
+        "used": 250.0,
+        "met": true
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 2000.0,
+        "used": 280.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": [
+      {
+        "auth_id": "AUTH-00012",
+        "procedure_code": "42820",
+        "authorized_date": "2025-05-24",
+        "expiration_date": "2025-12-31"
+      }
+    ]
+  },
+  {
+    "member_id": "MBR-10124",
+    "first_name": "Donald",
+    "last_name": "Taylor",
+    "date_of_birth": "1974-03-08",
+    "gender": "M",
+    "contact": {
+      "email": "member0124@example.com",
+      "phone": "555-0124",
+      "address": "124 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10125",
+    "first_name": "Kenneth",
+    "last_name": "Jackson",
+    "date_of_birth": "1971-11-26",
+    "gender": "M",
+    "contact": {
+      "email": "member0125@example.com",
+      "phone": "555-0125",
+      "address": "125 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-PREMIER-004",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 0.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 1500.0,
+        "used": 40.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10126",
+    "first_name": "Charles",
+    "last_name": "Garcia",
+    "date_of_birth": "1978-02-20",
+    "gender": "M",
+    "contact": {
+      "email": "member0126@example.com",
+      "phone": "555-0126",
+      "address": "126 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10127",
+    "first_name": "Betty",
+    "last_name": "Young",
+    "date_of_birth": "1958-08-19",
+    "gender": "F",
+    "contact": {
+      "email": "member0127@example.com",
+      "phone": "555-0127",
+      "address": "127 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10128",
+    "first_name": "Richard",
+    "last_name": "Davis",
+    "date_of_birth": "2000-11-09",
+    "gender": "M",
+    "contact": {
+      "email": "member0128@example.com",
+      "phone": "555-0128",
+      "address": "128 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10129",
+    "first_name": "Andrew",
+    "last_name": "Wilson",
+    "date_of_birth": "1970-01-26",
+    "gender": "M",
+    "contact": {
+      "email": "member0129@example.com",
+      "phone": "555-0129",
+      "address": "129 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10130",
+    "first_name": "Andrew",
+    "last_name": "Martinez",
+    "date_of_birth": "1970-09-06",
+    "gender": "M",
+    "contact": {
+      "email": "member0130@example.com",
+      "phone": "555-0130",
+      "address": "130 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 50.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10131",
+    "first_name": "Jennifer",
+    "last_name": "White",
+    "date_of_birth": "1954-10-10",
+    "gender": "F",
+    "contact": {
+      "email": "member0131@example.com",
+      "phone": "555-0131",
+      "address": "131 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 40.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10132",
+    "first_name": "Paul",
+    "last_name": "Wilson",
+    "date_of_birth": "1988-05-07",
+    "gender": "M",
+    "contact": {
+      "email": "member0132@example.com",
+      "phone": "555-0132",
+      "address": "132 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10133",
+    "first_name": "Betty",
+    "last_name": "Harris",
+    "date_of_birth": "1979-04-13",
+    "gender": "F",
+    "contact": {
+      "email": "member0133@example.com",
+      "phone": "555-0133",
+      "address": "133 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 2.2,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 2.2,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10134",
+    "first_name": "Brian",
+    "last_name": "Taylor",
+    "date_of_birth": "1986-05-23",
+    "gender": "M",
+    "contact": {
+      "email": "member0134@example.com",
+      "phone": "555-0134",
+      "address": "134 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10135",
+    "first_name": "Anthony",
+    "last_name": "Smith",
+    "date_of_birth": "1967-11-13",
+    "gender": "M",
+    "contact": {
+      "email": "member0135@example.com",
+      "phone": "555-0135",
+      "address": "135 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BASIC-005",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 5000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10136",
+    "first_name": "Karen",
+    "last_name": "Smith",
+    "date_of_birth": "1971-11-25",
+    "gender": "F",
+    "contact": {
+      "email": "member0136@example.com",
+      "phone": "555-0136",
+      "address": "136 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-PREMIER-004",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 0.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10137",
+    "first_name": "Robert",
+    "last_name": "Young",
+    "date_of_birth": "1984-08-27",
+    "gender": "M",
+    "contact": {
+      "email": "member0137@example.com",
+      "phone": "555-0137",
+      "address": "137 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-GOLD-001",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 250.0,
+        "used": 250.0,
+        "met": true
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 2000.0,
+        "used": 320.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": [
+      {
+        "auth_id": "AUTH-00002",
+        "procedure_code": "42820",
+        "authorized_date": "2025-05-22",
+        "expiration_date": "2025-12-31"
+      },
+      {
+        "auth_id": "AUTH-00003",
+        "procedure_code": "31240",
+        "authorized_date": "2025-01-14",
+        "expiration_date": "2025-05-20"
+      },
+      {
+        "auth_id": "AUTH-00004",
+        "procedure_code": "42821",
+        "authorized_date": "2025-05-14",
+        "expiration_date": "2025-12-31"
+      }
+    ]
+  },
+  {
+    "member_id": "MBR-10138",
+    "first_name": "Lisa",
+    "last_name": "Davis",
+    "date_of_birth": "1954-04-21",
+    "gender": "F",
+    "contact": {
+      "email": "member0138@example.com",
+      "phone": "555-0138",
+      "address": "138 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BASIC-005",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 5000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10139",
+    "first_name": "Thomas",
+    "last_name": "Young",
+    "date_of_birth": "2003-11-25",
+    "gender": "M",
+    "contact": {
+      "email": "member0139@example.com",
+      "phone": "555-0139",
+      "address": "139 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-PREMIER-004",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 0.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 1500.0,
+        "used": 25.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": [
+      {
+        "auth_id": "AUTH-00059",
+        "procedure_code": "42820",
+        "authorized_date": "2025-05-10",
+        "expiration_date": "2025-12-31"
+      },
+      {
+        "auth_id": "AUTH-00060",
+        "procedure_code": "30140",
+        "authorized_date": "2025-01-06",
+        "expiration_date": "2025-03-11"
+      },
+      {
+        "auth_id": "AUTH-00061",
+        "procedure_code": "31575",
+        "authorized_date": "2025-05-07",
+        "expiration_date": "2025-12-31"
+      },
+      {
+        "auth_id": "AUTH-00062",
+        "procedure_code": "92504",
+        "authorized_date": "2025-01-08",
+        "expiration_date": "2025-03-05"
+      }
+    ]
+  },
+  {
+    "member_id": "MBR-10140",
+    "first_name": "Richard",
+    "last_name": "Brown",
+    "date_of_birth": "1964-05-26",
+    "gender": "M",
+    "contact": {
+      "email": "member0140@example.com",
+      "phone": "555-0140",
+      "address": "140 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10141",
+    "first_name": "Ashley",
+    "last_name": "Johnson",
+    "date_of_birth": "1971-06-24",
+    "gender": "F",
+    "contact": {
+      "email": "member0141@example.com",
+      "phone": "555-0141",
+      "address": "141 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10142",
+    "first_name": "Barbara",
+    "last_name": "Williams",
+    "date_of_birth": "1956-06-24",
+    "gender": "F",
+    "contact": {
+      "email": "member0142@example.com",
+      "phone": "555-0142",
+      "address": "142 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-PREMIER-004",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 0.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 1500.0,
+        "used": 25.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": [
+      {
+        "auth_id": "AUTH-00022",
+        "procedure_code": "92552",
+        "authorized_date": "2025-06-04",
+        "expiration_date": "2025-12-31"
+      },
+      {
+        "auth_id": "AUTH-00023",
+        "procedure_code": "92551",
+        "authorized_date": "2025-01-17",
+        "expiration_date": "2025-03-25"
+      },
+      {
+        "auth_id": "AUTH-00024",
+        "procedure_code": "30140",
+        "authorized_date": "2025-05-12",
+        "expiration_date": "2025-12-31"
+      }
+    ]
+  },
+  {
+    "member_id": "MBR-10143",
+    "first_name": "Paul",
+    "last_name": "Garcia",
+    "date_of_birth": "2004-03-26",
+    "gender": "M",
+    "contact": {
+      "email": "member0143@example.com",
+      "phone": "555-0143",
+      "address": "143 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-GOLD-001",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 250.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 2000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10144",
+    "first_name": "Kevin",
+    "last_name": "Taylor",
+    "date_of_birth": "1999-09-09",
+    "gender": "M",
+    "contact": {
+      "email": "member0144@example.com",
+      "phone": "555-0144",
+      "address": "144 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10145",
+    "first_name": "Charles",
+    "last_name": "Wilson",
+    "date_of_birth": "1966-08-26",
+    "gender": "M",
+    "contact": {
+      "email": "member0145@example.com",
+      "phone": "555-0145",
+      "address": "145 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10146",
+    "first_name": "Anthony",
+    "last_name": "Anderson",
+    "date_of_birth": "1968-02-15",
+    "gender": "M",
+    "contact": {
+      "email": "member0146@example.com",
+      "phone": "555-0146",
+      "address": "146 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10147",
+    "first_name": "Jennifer",
+    "last_name": "Jones",
+    "date_of_birth": "1968-04-28",
+    "gender": "F",
+    "contact": {
+      "email": "member0147@example.com",
+      "phone": "555-0147",
+      "address": "147 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10148",
+    "first_name": "Betty",
+    "last_name": "Thompson",
+    "date_of_birth": "1975-02-26",
+    "gender": "F",
+    "contact": {
+      "email": "member0148@example.com",
+      "phone": "555-0148",
+      "address": "148 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-GOLD-001",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 250.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 2000.0,
+        "used": 50.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": [
+      {
+        "auth_id": "AUTH-00005",
+        "procedure_code": "42821",
+        "authorized_date": "2025-05-14",
+        "expiration_date": "2025-12-31"
+      },
+      {
+        "auth_id": "AUTH-00006",
+        "procedure_code": "42820",
+        "authorized_date": "2025-01-04",
+        "expiration_date": "2025-04-22"
+      }
+    ]
+  },
+  {
+    "member_id": "MBR-10149",
+    "first_name": "Betty",
+    "last_name": "Smith",
+    "date_of_birth": "1976-09-04",
+    "gender": "F",
+    "contact": {
+      "email": "member0149@example.com",
+      "phone": "555-0149",
+      "address": "149 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10150",
+    "first_name": "Ashley",
+    "last_name": "Taylor",
+    "date_of_birth": "1957-10-13",
+    "gender": "F",
+    "contact": {
+      "email": "member0150@example.com",
+      "phone": "555-0150",
+      "address": "150 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-GOLD-001",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 250.0,
+        "used": 13.2,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 2000.0,
+        "used": 38.2,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10151",
+    "first_name": "Donald",
+    "last_name": "Brown",
+    "date_of_birth": "1997-04-16",
+    "gender": "M",
+    "contact": {
+      "email": "member0151@example.com",
+      "phone": "555-0151",
+      "address": "151 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10152",
+    "first_name": "Mary",
+    "last_name": "Young",
+    "date_of_birth": "1981-09-11",
+    "gender": "F",
+    "contact": {
+      "email": "member0152@example.com",
+      "phone": "555-0152",
+      "address": "152 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10153",
+    "first_name": "George",
+    "last_name": "Davis",
+    "date_of_birth": "1970-02-21",
+    "gender": "M",
+    "contact": {
+      "email": "member0153@example.com",
+      "phone": "555-0153",
+      "address": "153 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-GOLD-001",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 250.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 2000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10154",
+    "first_name": "Ashley",
+    "last_name": "Martinez",
+    "date_of_birth": "1970-07-04",
+    "gender": "F",
+    "contact": {
+      "email": "member0154@example.com",
+      "phone": "555-0154",
+      "address": "154 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10155",
+    "first_name": "Richard",
+    "last_name": "Johnson",
+    "date_of_birth": "1995-05-16",
+    "gender": "M",
+    "contact": {
+      "email": "member0155@example.com",
+      "phone": "555-0155",
+      "address": "155 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10156",
+    "first_name": "David",
+    "last_name": "Brown",
+    "date_of_birth": "1977-09-05",
+    "gender": "M",
+    "contact": {
+      "email": "member0156@example.com",
+      "phone": "555-0156",
+      "address": "156 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 90.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10157",
+    "first_name": "Betty",
+    "last_name": "White",
+    "date_of_birth": "1975-11-24",
+    "gender": "F",
+    "contact": {
+      "email": "member0157@example.com",
+      "phone": "555-0157",
+      "address": "157 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-GOLD-001",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 250.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 2000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": [
+      {
+        "auth_id": "AUTH-00007",
+        "procedure_code": "31240",
+        "authorized_date": "2025-06-10",
+        "expiration_date": "2025-12-31"
+      },
+      {
+        "auth_id": "AUTH-00008",
+        "procedure_code": "30520",
+        "authorized_date": "2025-01-02",
+        "expiration_date": "2025-03-13"
+      },
+      {
+        "auth_id": "AUTH-00009",
+        "procedure_code": "30140",
+        "authorized_date": "2025-06-02",
+        "expiration_date": "2025-12-31"
+      }
+    ]
+  },
+  {
+    "member_id": "MBR-10158",
+    "first_name": "Emily",
+    "last_name": "Jackson",
+    "date_of_birth": "1971-12-24",
+    "gender": "F",
+    "contact": {
+      "email": "member0158@example.com",
+      "phone": "555-0158",
+      "address": "158 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10159",
+    "first_name": "Richard",
+    "last_name": "Jackson",
+    "date_of_birth": "1985-02-27",
+    "gender": "M",
+    "contact": {
+      "email": "member0159@example.com",
+      "phone": "555-0159",
+      "address": "159 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BASIC-005",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 5000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10160",
+    "first_name": "Joshua",
+    "last_name": "Young",
+    "date_of_birth": "1952-05-02",
+    "gender": "M",
+    "contact": {
+      "email": "member0160@example.com",
+      "phone": "555-0160",
+      "address": "160 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BASIC-005",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 5000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10161",
+    "first_name": "Donald",
+    "last_name": "Miller",
+    "date_of_birth": "1951-08-08",
+    "gender": "M",
+    "contact": {
+      "email": "member0161@example.com",
+      "phone": "555-0161",
+      "address": "161 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10162",
+    "first_name": "Donald",
+    "last_name": "Brown",
+    "date_of_birth": "1970-06-18",
+    "gender": "M",
+    "contact": {
+      "email": "member0162@example.com",
+      "phone": "555-0162",
+      "address": "162 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BASIC-005",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 5000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10163",
+    "first_name": "Donald",
+    "last_name": "Johnson",
+    "date_of_birth": "1989-05-07",
+    "gender": "M",
+    "contact": {
+      "email": "member0163@example.com",
+      "phone": "555-0163",
+      "address": "163 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-GOLD-001",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 250.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 2000.0,
+        "used": 90.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10164",
+    "first_name": "Linda",
+    "last_name": "White",
+    "date_of_birth": "1994-11-07",
+    "gender": "F",
+    "contact": {
+      "email": "member0164@example.com",
+      "phone": "555-0164",
+      "address": "164 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-PREMIER-004",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 0.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 1500.0,
+        "used": 25.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10165",
+    "first_name": "George",
+    "last_name": "Smith",
+    "date_of_birth": "1980-06-08",
+    "gender": "M",
+    "contact": {
+      "email": "member0165@example.com",
+      "phone": "555-0165",
+      "address": "165 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10166",
+    "first_name": "Richard",
+    "last_name": "Moore",
+    "date_of_birth": "1959-02-27",
+    "gender": "M",
+    "contact": {
+      "email": "member0166@example.com",
+      "phone": "555-0166",
+      "address": "166 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BASIC-005",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1000.0,
+        "used": 2.8,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 5000.0,
+        "used": 2.8,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10167",
+    "first_name": "Kevin",
+    "last_name": "Miller",
+    "date_of_birth": "1986-04-27",
+    "gender": "M",
+    "contact": {
+      "email": "member0167@example.com",
+      "phone": "555-0167",
+      "address": "167 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 50.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10168",
+    "first_name": "Daniel",
+    "last_name": "Anderson",
+    "date_of_birth": "2005-10-01",
+    "gender": "M",
+    "contact": {
+      "email": "member0168@example.com",
+      "phone": "555-0168",
+      "address": "168 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-GOLD-001",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 250.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 2000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10169",
+    "first_name": "Karen",
+    "last_name": "Jones",
+    "date_of_birth": "2005-09-09",
+    "gender": "F",
+    "contact": {
+      "email": "member0169@example.com",
+      "phone": "555-0169",
+      "address": "169 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 25.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10170",
+    "first_name": "Charles",
+    "last_name": "Brown",
+    "date_of_birth": "1965-03-01",
+    "gender": "M",
+    "contact": {
+      "email": "member0170@example.com",
+      "phone": "555-0170",
+      "address": "170 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-PREMIER-004",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 0.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": [
+      {
+        "auth_id": "AUTH-00068",
+        "procedure_code": "31575",
+        "authorized_date": "2025-06-10",
+        "expiration_date": "2025-12-31"
+      },
+      {
+        "auth_id": "AUTH-00069",
+        "procedure_code": "92557",
+        "authorized_date": "2025-01-25",
+        "expiration_date": "2025-05-08"
+      },
+      {
+        "auth_id": "AUTH-00070",
+        "procedure_code": "42821",
+        "authorized_date": "2025-06-08",
+        "expiration_date": "2025-12-31"
+      }
+    ]
+  },
+  {
+    "member_id": "MBR-10171",
+    "first_name": "Margaret",
+    "last_name": "Davis",
+    "date_of_birth": "1998-06-01",
+    "gender": "F",
+    "contact": {
+      "email": "member0171@example.com",
+      "phone": "555-0171",
+      "address": "171 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 50.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10172",
+    "first_name": "Susan",
+    "last_name": "Wilson",
+    "date_of_birth": "1964-03-24",
+    "gender": "F",
+    "contact": {
+      "email": "member0172@example.com",
+      "phone": "555-0172",
+      "address": "172 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10173",
+    "first_name": "Paul",
+    "last_name": "Martin",
+    "date_of_birth": "2006-12-03",
+    "gender": "M",
+    "contact": {
+      "email": "member0173@example.com",
+      "phone": "555-0173",
+      "address": "173 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10174",
+    "first_name": "Joshua",
+    "last_name": "White",
+    "date_of_birth": "2002-09-19",
+    "gender": "M",
+    "contact": {
+      "email": "member0174@example.com",
+      "phone": "555-0174",
+      "address": "174 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BASIC-005",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1000.0,
+        "used": 54.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 5000.0,
+        "used": 94.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10175",
+    "first_name": "Linda",
+    "last_name": "White",
+    "date_of_birth": "1987-04-20",
+    "gender": "F",
+    "contact": {
+      "email": "member0175@example.com",
+      "phone": "555-0175",
+      "address": "175 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-PREMIER-004",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 0.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 1500.0,
+        "used": 70.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10176",
+    "first_name": "Robert",
+    "last_name": "Martin",
+    "date_of_birth": "1956-08-21",
+    "gender": "M",
+    "contact": {
+      "email": "member0176@example.com",
+      "phone": "555-0176",
+      "address": "176 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10177",
+    "first_name": "Mary",
+    "last_name": "Johnson",
+    "date_of_birth": "1988-07-14",
+    "gender": "F",
+    "contact": {
+      "email": "member0177@example.com",
+      "phone": "555-0177",
+      "address": "177 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10178",
+    "first_name": "David",
+    "last_name": "Harris",
+    "date_of_birth": "1969-08-03",
+    "gender": "M",
+    "contact": {
+      "email": "member0178@example.com",
+      "phone": "555-0178",
+      "address": "178 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BASIC-005",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 5000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10179",
+    "first_name": "Michael",
+    "last_name": "Anderson",
+    "date_of_birth": "1971-03-03",
+    "gender": "M",
+    "contact": {
+      "email": "member0179@example.com",
+      "phone": "555-0179",
+      "address": "179 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-PREMIER-004",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 0.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": [
+      {
+        "auth_id": "AUTH-00043",
+        "procedure_code": "30140",
+        "authorized_date": "2025-04-08",
+        "expiration_date": "2025-12-31"
+      },
+      {
+        "auth_id": "AUTH-00044",
+        "procedure_code": "92552",
+        "authorized_date": "2025-01-23",
+        "expiration_date": "2025-05-15"
+      }
+    ]
+  },
+  {
+    "member_id": "MBR-10180",
+    "first_name": "Richard",
+    "last_name": "Wilson",
+    "date_of_birth": "1998-11-19",
+    "gender": "M",
+    "contact": {
+      "email": "member0180@example.com",
+      "phone": "555-0180",
+      "address": "180 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 2.2,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 2.2,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10181",
+    "first_name": "Emily",
+    "last_name": "Anderson",
+    "date_of_birth": "1989-10-17",
+    "gender": "F",
+    "contact": {
+      "email": "member0181@example.com",
+      "phone": "555-0181",
+      "address": "181 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10182",
+    "first_name": "Lisa",
+    "last_name": "White",
+    "date_of_birth": "1999-10-14",
+    "gender": "F",
+    "contact": {
+      "email": "member0182@example.com",
+      "phone": "555-0182",
+      "address": "182 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10183",
+    "first_name": "Linda",
+    "last_name": "Brown",
+    "date_of_birth": "1982-11-21",
+    "gender": "F",
+    "contact": {
+      "email": "member0183@example.com",
+      "phone": "555-0183",
+      "address": "183 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-GOLD-001",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 250.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 2000.0,
+        "used": 40.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": [
+      {
+        "auth_id": "AUTH-00021",
+        "procedure_code": "31240",
+        "authorized_date": "2025-05-27",
+        "expiration_date": "2025-12-31"
+      }
+    ]
+  },
+  {
+    "member_id": "MBR-10184",
+    "first_name": "Emily",
+    "last_name": "Miller",
+    "date_of_birth": "1989-08-08",
+    "gender": "F",
+    "contact": {
+      "email": "member0184@example.com",
+      "phone": "555-0184",
+      "address": "184 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-GOLD-001",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 250.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 2000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10185",
+    "first_name": "Sandra",
+    "last_name": "Anderson",
+    "date_of_birth": "1982-08-13",
+    "gender": "F",
+    "contact": {
+      "email": "member0185@example.com",
+      "phone": "555-0185",
+      "address": "185 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-GOLD-001",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 250.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 2000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10186",
+    "first_name": "Paul",
+    "last_name": "Brown",
+    "date_of_birth": "1975-07-11",
+    "gender": "M",
+    "contact": {
+      "email": "member0186@example.com",
+      "phone": "555-0186",
+      "address": "186 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 40.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10187",
+    "first_name": "Matthew",
+    "last_name": "Taylor",
+    "date_of_birth": "1978-11-16",
+    "gender": "M",
+    "contact": {
+      "email": "member0187@example.com",
+      "phone": "555-0187",
+      "address": "187 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-PREMIER-004",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 0.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 1500.0,
+        "used": 15.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": [
+      {
+        "auth_id": "AUTH-00055",
+        "procedure_code": "92551",
+        "authorized_date": "2025-06-26",
+        "expiration_date": "2025-12-31"
+      },
+      {
+        "auth_id": "AUTH-00056",
+        "procedure_code": "69210",
+        "authorized_date": "2025-01-11",
+        "expiration_date": "2025-03-22"
+      },
+      {
+        "auth_id": "AUTH-00057",
+        "procedure_code": "30140",
+        "authorized_date": "2025-06-27",
+        "expiration_date": "2025-12-31"
+      },
+      {
+        "auth_id": "AUTH-00058",
+        "procedure_code": "42820",
+        "authorized_date": "2025-01-24",
+        "expiration_date": "2025-02-21"
+      }
+    ]
+  },
+  {
+    "member_id": "MBR-10188",
+    "first_name": "Jennifer",
+    "last_name": "Williams",
+    "date_of_birth": "1967-02-03",
+    "gender": "F",
+    "contact": {
+      "email": "member0188@example.com",
+      "phone": "555-0188",
+      "address": "188 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-GOLD-001",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 250.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 2000.0,
+        "used": 50.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10189",
+    "first_name": "Paul",
+    "last_name": "Brown",
+    "date_of_birth": "1969-12-12",
+    "gender": "M",
+    "contact": {
+      "email": "member0189@example.com",
+      "phone": "555-0189",
+      "address": "189 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BRONZE-003",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 7000.0,
+        "used": 25.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10190",
+    "first_name": "Richard",
+    "last_name": "Thompson",
+    "date_of_birth": "1964-10-18",
+    "gender": "M",
+    "contact": {
+      "email": "member0190@example.com",
+      "phone": "555-0190",
+      "address": "190 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-PREMIER-004",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 0.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10191",
+    "first_name": "Kevin",
+    "last_name": "Anderson",
+    "date_of_birth": "1962-07-12",
+    "gender": "M",
+    "contact": {
+      "email": "member0191@example.com",
+      "phone": "555-0191",
+      "address": "191 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-GOLD-001",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 250.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 2000.0,
+        "used": 50.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10192",
+    "first_name": "Paul",
+    "last_name": "Johnson",
+    "date_of_birth": "1976-10-10",
+    "gender": "M",
+    "contact": {
+      "email": "member0192@example.com",
+      "phone": "555-0192",
+      "address": "192 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BASIC-005",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 5000.0,
+        "used": 25.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10193",
+    "first_name": "Donald",
+    "last_name": "Brown",
+    "date_of_birth": "1986-09-07",
+    "gender": "M",
+    "contact": {
+      "email": "member0193@example.com",
+      "phone": "555-0193",
+      "address": "193 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-GOLD-001",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 250.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 2000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10194",
+    "first_name": "Barbara",
+    "last_name": "Harris",
+    "date_of_birth": "1958-02-12",
+    "gender": "F",
+    "contact": {
+      "email": "member0194@example.com",
+      "phone": "555-0194",
+      "address": "194 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 40.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10195",
+    "first_name": "Emily",
+    "last_name": "Taylor",
+    "date_of_birth": "1994-05-19",
+    "gender": "F",
+    "contact": {
+      "email": "member0195@example.com",
+      "phone": "555-0195",
+      "address": "195 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 40.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10196",
+    "first_name": "Daniel",
+    "last_name": "Jackson",
+    "date_of_birth": "1965-10-22",
+    "gender": "M",
+    "contact": {
+      "email": "member0196@example.com",
+      "phone": "555-0196",
+      "address": "196 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-SILVER-002",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 750.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 4500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10197",
+    "first_name": "Matthew",
+    "last_name": "Smith",
+    "date_of_birth": "1960-05-23",
+    "gender": "M",
+    "contact": {
+      "email": "member0197@example.com",
+      "phone": "555-0197",
+      "address": "197 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-BASIC-005",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 1000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 5000.0,
+        "used": 40.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10198",
+    "first_name": "Anthony",
+    "last_name": "Anderson",
+    "date_of_birth": "1954-01-06",
+    "gender": "M",
+    "contact": {
+      "email": "member0198@example.com",
+      "phone": "555-0198",
+      "address": "198 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-GOLD-001",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 250.0,
+        "used": 250.0,
+        "met": true
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 2000.0,
+        "used": 380.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": [
+      {
+        "auth_id": "AUTH-00018",
+        "procedure_code": "31240",
+        "authorized_date": "2025-06-13",
+        "expiration_date": "2025-12-31"
+      },
+      {
+        "auth_id": "AUTH-00019",
+        "procedure_code": "30520",
+        "authorized_date": "2025-01-23",
+        "expiration_date": "2025-05-10"
+      }
+    ]
+  },
+  {
+    "member_id": "MBR-10199",
+    "first_name": "Barbara",
+    "last_name": "Moore",
+    "date_of_birth": "1970-07-03",
+    "gender": "F",
+    "contact": {
+      "email": "member0199@example.com",
+      "phone": "555-0199",
+      "address": "199 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-GOLD-001",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 250.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 2000.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  },
+  {
+    "member_id": "MBR-10200",
+    "first_name": "Barbara",
+    "last_name": "Smith",
+    "date_of_birth": "1994-12-17",
+    "gender": "F",
+    "contact": {
+      "email": "member0200@example.com",
+      "phone": "555-0200",
+      "address": "200 Practice Lane, Springfield, IL 62701"
+    },
+    "enrollment": {
+      "plan_id": "PLN-PREMIER-004",
+      "effective_date": "2025-01-01",
+      "termination_date": null
+    },
+    "accumulators": {
+      "plan_year": "2025",
+      "individual_deductible": {
+        "limit": 0.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_deductible": null,
+      "individual_oop_max": {
+        "limit": 1500.0,
+        "used": 0.0,
+        "met": false
+      },
+      "family_oop_max": null
+    },
+    "authorizations": []
+  }
+]
