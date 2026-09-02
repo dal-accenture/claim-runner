@@ -6,15 +6,15 @@ The pod repository contains four independently runnable services and a shared da
 
 ```
 claim-runner/
-├── data-service/            # Data Service API — port 8083
-├── claims-manager/          # Claims Manager API — port 8080
-├── benefits-determiner/     # Benefits Determiner API — port 8081
+├── data_service/            # Data Service API — port 8083
+├── claims_manager/          # Claims Manager API — port 8080
+├── benefits_determiner/     # Benefits Determiner API — port 8081
 ├── pricer/                  # Pricer API — port 8082
 ├── data/                    # Shared JSON data files (read by Data Service only)
 │   ├── members.json         # Read-only at runtime
 │   ├── plans.json           # Read-only at runtime
 │   ├── fee_schedules.json   # Read-only at runtime
-│   └── claims.json          # Written by Data Service after each POST /claims
+│   └── claims.json          # Read at startup; in-memory only at runtime (Decision 0010)
 └── start.sh                 # Central startup script
 ```
 
@@ -75,4 +75,4 @@ The Data Service is the only service that reads from or writes to `data/`. It lo
 | `DATA_DIR` | Data Service only | `./data` |
 | `DATA_SERVICE_URL` | Claims Manager, Benefits Determiner, Pricer | `http://localhost:8083` |
 
-Claims Manager writes new claim records through `POST /claims` on the Data Service. The Data Service persists the updated record to `claims.json` synchronously. Accumulator balances are seeded in `members.json` and not updated — see `architecture/data-model.md` for the known limitations.
+Claims Manager writes new claim records through `POST /claims` on the Data Service. The Data Service stores the record in memory only — `claims.json` is read at startup and not written at runtime (Decision 0010). Accumulator balances are seeded in `members.json` and not updated — see `architecture/data-model.md` for the known limitations.
