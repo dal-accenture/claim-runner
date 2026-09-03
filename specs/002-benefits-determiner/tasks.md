@@ -94,7 +94,7 @@
 
 - [x] T017 Write integration tests in `benefits_determiner/tests/test_api.py` using FastAPI `TestClient` + `respx` to mock `httpx` Data Service calls — cover: AC-1 (eligible, covered, no auth), AC-2 (PLAN_TERMINATED), AC-3 (excluded procedure), AC-4 (auth on file, valid), AC-5 (auth required, not on file), AC-6 (expired auth → AUTH_REQUIRED_NOT_ON_FILE), AC-7 (OON provider, not a denial), AC-8 (mixed lines, overall_covered false), AC-9 (all lines covered, overall_covered true), AC-10 (missing field → 422), AC-11 (GET /health → 200), AC-12 (Data Service unreachable → 503)
 - [x] T018 Run `pytest benefits_determiner/tests/ -v` and verify all tests pass (no live Data Service required)
-- [ ] T019 Start Benefits Determiner against live seed data (`DATA_SERVICE_URL=http://localhost:8083`) and run `quickstart.md` Scenarios 1–5 manually, verifying expected responses
+- [x] T019 Start Benefits Determiner against live seed data (`DATA_SERVICE_URL=http://localhost:8083`) and run `quickstart.md` Scenarios 1–5 manually, verifying expected responses
 
 ---
 

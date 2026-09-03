@@ -15,6 +15,17 @@ Implement the Pricer as a FastAPI service on port 8082. Given a member, a plan, 
 
 ---
 
+## Clarifications
+
+### Session 2026-09-02
+
+- Q: Should the Pricer load `members.json`, `fee_schedules.json`, and `plans.json` directly from disk at startup, or call the Data Service via HTTP for those lookups? → A: HTTP calls to Data Service — `GET /members/{member_id}`, `GET /plans/{plan_id}`, `GET /fee-schedules/{procedure_code}`; configured via `DATA_SERVICE_URL` env var. Constitution v1.1 prohibits direct file access by adjudication services.
+- Q: When a single claim has multiple lines, should deductible consumption from earlier lines be tracked in a running counter (so later lines see the reduced remaining deductible), or should each line read `individual_deductible.used` from the seeded record independently? → A: Running counter — `deductible_used_this_claim` accumulates across lines exactly as `oop_used_this_claim` does; each subsequent line sees the reduced remaining deductible.
+- Q: When pricing a multi-unit line (`units: 2`), should the allowed amount be `fee_schedule_rate × units`, or is `units` informational only and `billed_amount` already reflects quantity? → A: Multiply by units — both `billed_amount` and `fee_schedule_rate` are per-unit; line totals are `× units`. `allowed_amount = min(billed_amount, fee_schedule_rate) × units`.
+- Q: If the Data Service is unreachable when the Pricer calls `GET /members/{id}`, `GET /plans/{id}`, or `GET /fee-schedules/{code}` mid-request, what should the service return to Claims Manager? → A: `503 Service Unavailable` with `{"detail": "Data Service unavailable"}` — explicit connectivity signal, consistent with Benefits Determiner.
+
+---
+
 ## Out of Scope
 
 - Coverage or eligibility determination — that is Benefits Determiner's responsibility
@@ -30,11 +41,19 @@ Implement the Pricer as a FastAPI service on port 8082. Given a member, a plan, 
 
 ### FR-1 — Allowed amount calculation (per line)
 
-Look up `procedure_code` in `fee_schedules.json`. Select `in_network.allowed_amount` or `out_of_network.allowed_amount` based on `network_status`. The allowed amount is `min(billed_amount, fee_schedule_rate)`. The contractual adjustment is `billed_amount - allowed_amount` (reason code: `CO-45`).
+Call `GET /fee-schedules/{procedure_code}` on the Data Service. If the response is `404`, return `422` with the unrecognized code identified in the error body. Select `in_network.allowed_amount` or `out_of_network.allowed_amount` based on `network_status`.
+
+Both `billed_amount` and `fee_schedule_rate` are per-unit; multiply by `units` to get line totals:
+- `line_billed = billed_amount × units`
+- `line_fee_schedule_rate = fee_schedule_rate × units`
+- `allowed_amount = min(line_billed, line_fee_schedule_rate)`
+- `contractual_adjustment = line_billed - allowed_amount` (reason code: `CO-45`)
 
 ### FR-2 — Cost-sharing application (per line)
 
-Apply in the following order. A running `oop_used_this_claim` counter accumulates member liability across lines to enforce the OOP cap correctly on multi-line claims.
+Apply in the following order. Two running counters accumulate across all lines in the request:
+- `oop_used_this_claim` — tracks total member liability applied so far (for OOP cap enforcement)
+- `deductible_used_this_claim` — tracks total deductible applied so far (so later lines see the reduced remaining deductible)
 
 **Step 1 — OOP max pre-check**  
 If `member.individual_oop_max.met = true` (or accumulated `oop_used` already meets the limit), set `member_liability = 0.00` and `payer_liability = allowed_amount` for this line. Skip remaining steps.
@@ -43,9 +62,10 @@ If `member.individual_oop_max.met = true` (or accumulated `oop_used` already mee
 If `fee_schedules.copay_applies_before_deductible = true` for this code and network status, apply the copay. Advance `oop_used_this_claim` by `copay_applied`.
 
 **Step 3 — Deductible**  
-`remaining_deductible = individual_deductible.limit - individual_deductible.used`.  
+`remaining_deductible = individual_deductible.limit - (individual_deductible.used + deductible_used_this_claim)`.  
 `balance_after_copay = allowed_amount - copay_applied`.  
-`deductible_applied = min(balance_after_copay, remaining_deductible)`.  
+`deductible_applied = min(balance_after_copay, max(0, remaining_deductible))`.  
+Advance `deductible_used_this_claim` by `deductible_applied`.  
 Advance `oop_used_this_claim` by `deductible_applied`.
 
 **Step 4 — Copay (after deductible)**  
@@ -74,7 +94,7 @@ Include an `accumulator_snapshot` in the response with before/after values for d
 
 ### FR-5 — Health check
 
-`GET /health` returns `200` when the service is running and data files are loaded.
+`GET /health` returns `200` when the service is running. No Data Service reachability check is required at startup — the service starts independently and fails individual requests if the Data Service is unavailable.
 
 ---
 
@@ -115,8 +135,8 @@ POST /price
 | `network_status` | Yes | `IN_NETWORK` or `OUT_OF_NETWORK` |
 | `claim_lines` | Yes | At least one line |
 | `claim_lines[].procedure_code` | Yes | Must exist in `fee_schedules.json`; returns `422` if not found |
-| `claim_lines[].units` | Yes | Positive integer |
-| `claim_lines[].billed_amount` | Yes | Positive number |
+| `claim_lines[].units` | Yes | Positive integer; line totals are `per-unit value × units` |
+| `claim_lines[].billed_amount` | Yes | Positive number; per-unit charged amount |
 
 ### Response
 
@@ -205,15 +225,15 @@ POST /price
 
 Claims Manager only. Called with covered claim lines only (lines denied by Benefits Determiner are excluded from the Pricer request).
 
-### Data files loaded at startup
+### Data Service calls
 
-| File | Access | Fields used |
+| Endpoint | When called | Fields used |
 |---|---|---|
-| `fee_schedules.json` | Read | `procedure_code`, `in_network`, `out_of_network`, `copay_applies_before_deductible` |
-| `members.json` | Read | `member_id`, `accumulators.individual_deductible`, `accumulators.individual_oop_max` |
-| `plans.json` | Read | `plan_id` — used to validate the incoming `plan_id`; cost-sharing rules come from `fee_schedules.json` |
+| `GET /members/{member_id}` | FR-2 accumulator lookup | `accumulators.individual_deductible`, `accumulators.individual_oop_max` |
+| `GET /plans/{plan_id}` | FR-2 plan validation | `plan_id` (existence check only; cost-sharing rules come from fee schedules) |
+| `GET /fee-schedules/{procedure_code}` | FR-1 allowed amount | `in_network`, `out_of_network`, `copay_applies_before_deductible` |
 
-`DATA_DIR` environment variable controls the data directory path; default is `./data`.
+`DATA_SERVICE_URL` environment variable sets the Data Service base URL; default is `http://localhost:8083`.
 
 ---
 
@@ -221,7 +241,9 @@ Claims Manager only. Called with covered claim lines only (lines denied by Benef
 
 - **Language / framework:** Python 3.11+, FastAPI (constitution: Technology Stack)
 - **Startup:** Service must be independently startable without Claims Manager or Benefits Determiner running
-- **`/health` gate:** Must return `200` when all three data files are successfully loaded
+- **`/health` gate:** Must return `200` when the service is running; does not require Data Service to be reachable at startup
+- **Data access:** All member, plan, and fee schedule lookups via HTTP calls to Data Service (`DATA_SERVICE_URL`); no direct file access (constitution v1.1: Data Layer)
+- **Data Service error handling:** Any connection error or unexpected HTTP status from the Data Service returns `503 Service Unavailable` with `{"detail": "Data Service unavailable"}` to the caller
 - **Pure read:** No writes to any data file (constitution: Data Layer)
 - **Multi-line OOP enforcement:** The OOP cap must be enforced across lines within a single request, not just per-line independently
 
@@ -232,6 +254,7 @@ Claims Manager only. Called with covered claim lines only (lines denied by Benef
 | Case | Expected behavior |
 |---|---|
 | Member's deductible already fully met | `deductible_applied = 0.00`; coinsurance applied to full allowed amount |
+| Multi-line claim, deductible consumed on line 1 | Line 2 sees reduced remaining deductible via `deductible_used_this_claim` running counter |
 | Member's OOP max already met (`met: true` in `members.json`) | `member_liability = 0.00` for all lines; payer absorbs 100% |
 | OOP max hit partway through a multi-line claim | Line that crosses the threshold is capped; all subsequent lines have `member_liability = 0.00` |
 | Out-of-network procedure | Uses `out_of_network.allowed_amount` and `out_of_network.coinsurance_pct` |
@@ -239,6 +262,7 @@ Claims Manager only. Called with covered claim lines only (lines denied by Benef
 | Procedure code not in `fee_schedules.json` | Returns `422` with the unrecognized code identified in the error body |
 | `member_id` not in `members.json` | Returns `404` |
 | `plan_id` not in `plans.json` | Returns `404` |
+| Data Service unreachable during any lookup | `503 Service Unavailable` with `{"detail": "Data Service unavailable"}` |
 
 ---
 
@@ -264,4 +288,5 @@ Claims Manager only. Called with covered claim lines only (lines denied by Benef
 8. `accumulator_snapshot.individual_deductible_used_before` matches the `used` value seeded in `members.json`; `_after` reflects the projected balance after this claim's deductible charges.
 9. `totals.member_liability + totals.payer_liability = totals.allowed_amount` for every response.
 10. `CO-45` adjustment reason code is present on any line where `billed_amount > allowed_amount`.
-11. `GET /health` returns `200` when all three data files are loaded.
+11. `GET /health` returns `200` when the service is running.
+12. A Data Service connection error during a pricing request returns `503 Service Unavailable` with `{"detail": "Data Service unavailable"}`.

@@ -33,18 +33,23 @@ echo "Starting Data Service on port ${DATA_PORT} ..."
 wait_for_health "http://localhost:${DATA_PORT}/health" "Data Service"
 
 # --- 2. Benefits Determiner (depends on Data Service) ---
-# TODO: start benefits determiner when spec 002 is implemented
-# (cd benefits_determiner && PORT=${BENEFITS_PORT} uvicorn main:app --host 0.0.0.0 --port ${BENEFITS_PORT}) &
-# wait_for_health "http://localhost:${BENEFITS_PORT}/health" "Benefits Determiner"
+echo "Starting Benefits Determiner on port ${BENEFITS_PORT} ..."
+PORT=${BENEFITS_PORT} uvicorn benefits_determiner.main:app --host 0.0.0.0 --port ${BENEFITS_PORT} &
+
+wait_for_health "http://localhost:${BENEFITS_PORT}/health" "Benefits Determiner"
 
 # --- 3. Pricer (depends on Data Service) ---
-# TODO: start pricer when spec 003 is implemented
-# (cd pricer && PORT=${PRICER_PORT} uvicorn main:app --host 0.0.0.0 --port ${PRICER_PORT}) &
-# wait_for_health "http://localhost:${PRICER_PORT}/health" "Pricer"
+echo "Starting Pricer on port ${PRICER_PORT} ..."
+PORT=${PRICER_PORT} uvicorn pricer.main:app --host 0.0.0.0 --port ${PRICER_PORT} &
+
+wait_for_health "http://localhost:${PRICER_PORT}/health" "Pricer"
 
 # --- 4. Claims Manager (depends on Benefits Determiner + Pricer) ---
-# TODO: start claims manager when spec 001 is implemented
-# (cd claims_manager && PORT=${CLAIMS_PORT} uvicorn main:app --host 0.0.0.0 --port ${CLAIMS_PORT}) &
+# NOTE: Benefits Determiner (step 2) remains a TODO until spec 002 is implemented.
+echo "Starting Claims Manager on port ${CLAIMS_PORT} ..."
+PORT=${CLAIMS_PORT} uvicorn claims_manager.main:app --host 0.0.0.0 --port ${CLAIMS_PORT} &
+
+wait_for_health "http://localhost:${CLAIMS_PORT}/health" "Claims Manager"
 
 echo "All services started."
 wait

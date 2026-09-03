@@ -1,113 +1,138 @@
-# Implementation Plan: [FEATURE]
+# Implementation Plan: Claims Manager
 
-**Branch**: `[###-feature-name]` | **Date**: [DATE] | **Spec**: [link]
+**Branch**: `001-claims-manager` | **Date**: 2026-09-03 | **Spec**: `specs/001-claims-manager/spec.md`
 
-**Input**: Feature specification from `/specs/[###-feature-name]/spec.md`
+**Input**: Feature specification from `/specs/001-claims-manager/spec.md`
 
-**Note**: This template is filled in by the `/speckit-plan` command; its definition describes the execution workflow.
+---
 
 ## Summary
 
-[Extract from feature spec: primary requirement + technical approach from research]
+Implement Claims Manager as a FastAPI service on port 8080. It is the sole external entry point for adjudication: it accepts `POST /claims/batch`, validates each claim, orchestrates Benefits Determiner (POST) and Pricer (POST) for each valid claim, merges results, writes adjudicated claims to the Data Service, and returns all results in submission order. `GET /claims/{claim_id}` retrieves stored results from the Data Service. All data access goes through the Data Service via HTTP (constitution v1.1 Data Layer).
+
+---
 
 ## Technical Context
 
-<!--
-  ACTION REQUIRED: Replace the content in this section with the technical details
-  for the project. The structure here is presented in advisory capacity to guide
-  the iteration process.
--->
+**Language/Version**: Python 3.11+
 
-**Language/Version**: [e.g., Python 3.11, Swift 5.9, Rust 1.75 or NEEDS CLARIFICATION]
+**Primary Dependencies**: `fastapi`, `uvicorn[standard]`, `httpx`, `pydantic`
 
-**Primary Dependencies**: [e.g., FastAPI, UIKit, LLVM or NEEDS CLARIFICATION]
+**Storage**: Data Service (port 8083) via HTTP — no direct file access
 
-**Storage**: [if applicable, e.g., PostgreSQL, CoreData, files or N/A]
+**Testing**: `pytest`, `respx` (httpx mocking), FastAPI `TestClient`
 
-**Testing**: [e.g., pytest, XCTest, cargo test or NEEDS CLARIFICATION]
+**Target Platform**: Single machine, POSIX shell
 
-**Target Platform**: [e.g., Linux server, iOS 15+, WASM or NEEDS CLARIFICATION]
+**Project Type**: web-service
 
-**Project Type**: [e.g., library/cli/web-service/mobile-app/compiler/desktop-app or NEEDS CLARIFICATION]
+**Performance Goals**: Practicum — no throughput targets
 
-**Performance Goals**: [domain-specific, e.g., 1000 req/s, 10k lines/sec, 60 fps or NEEDS CLARIFICATION]
+**Constraints**: Independently startable without Benefits Determiner or Pricer; must not import from `benefits_determiner/` or `pricer/`
 
-**Constraints**: [domain-specific, e.g., <200ms p95, <100MB memory, offline-capable or NEEDS CLARIFICATION]
+**Scale/Scope**: Practicum — small seed dataset, no concurrency requirements
 
-**Scale/Scope**: [domain-specific, e.g., 10k users, 1M LOC, 50 screens or NEEDS CLARIFICATION]
+---
 
 ## Constitution Check
 
-*GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
+| Principle | Status | Notes |
+|---|---|---|
+| `/health` endpoint required (non-negotiable) | ✓ PASS | FR-6 defines `GET /health → 200 {"status": "UP"}` |
+| Integration test before spec complete (non-negotiable) | ✓ PASS | Tasks phase includes `TestClient` + `respx` integration tests |
+| Env vars, no hardcoded values | ✓ PASS | `BENEFITS_DETERMINER_URL`, `PRICER_URL`, `DATA_SERVICE_URL`, `PORT` all env-configurable |
+| No external runtime dependencies | ✓ PASS | httpx only; no DB/broker |
+| Startup + shutdown logged | ✓ PASS | Startup logs port and all upstream URLs |
+| Professional claims only (permanent) | ✓ PASS | No institutional claim support |
+| Python + FastAPI only | ✓ PASS | |
+| Each service has its own requirements.txt | ✓ PASS | `claims_manager/requirements.txt` |
+| Independently startable | ✓ PASS | Service starts without BD/Pricer running |
+| No cross-service imports | ✓ PASS | All coupling is HTTP only |
+| Data Service is sole file accessor | ✓ PASS | All data via HTTP; no `DATA_DIR` or file I/O in Claims Manager |
+| Claims Manager is sole orchestrator | ✓ PASS | BD and Pricer do not call each other |
+| `plan_id`/`network_status` forwarded from BD | ✓ PASS | Not re-derived in Claims Manager |
+| `start.sh` wires Claims Manager | ✓ PASS | Step 4 in `start.sh` already stubbed; will be uncommented at implementation |
 
-[Gates determined based on constitution file]
+All gates pass. No violations to justify.
+
+---
 
 ## Project Structure
 
 ### Documentation (this feature)
 
 ```text
-specs/[###-feature]/
-├── plan.md              # This file (/speckit-plan command output)
-├── research.md          # Phase 0 output (/speckit-plan command)
-├── data-model.md        # Phase 1 output (/speckit-plan command)
-├── quickstart.md        # Phase 1 output (/speckit-plan command)
-├── contracts/           # Phase 1 output (/speckit-plan command)
-└── tasks.md             # Phase 2 output (/speckit-tasks command - NOT created by /speckit-plan)
+specs/001-claims-manager/
+├── plan.md              # This file
+├── research.md          # Phase 0 output
+├── data-model.md        # Phase 1 output
+├── quickstart.md        # Phase 1 output
+├── contracts/
+│   ├── post-claims-batch.md
+│   └── get-claim.md
+└── tasks.md             # /speckit-tasks output (not yet created)
 ```
 
-### Source Code (repository root)
-<!--
-  ACTION REQUIRED: Replace the placeholder tree below with the concrete layout
-  for this feature. Delete unused options and expand the chosen structure with
-  real paths (e.g., apps/admin, packages/something). The delivered plan must
-  not include Option labels.
--->
+### Source Code
 
 ```text
-# [REMOVE IF UNUSED] Option 1: Single project (DEFAULT)
-src/
-├── models/
-├── services/
-├── cli/
-└── lib/
+claims_manager/
+├── __init__.py
+├── requirements.txt
+├── models.py            # Pydantic request/response models, exception classes
+├── data_client.py       # httpx wrappers: Data Service, Benefits Determiner, Pricer
+├── adjudication.py      # Pure functions: validate_claim, build_denied_line, compute_totals, build_result
+└── main.py              # FastAPI app, lifespan, exception handlers, routes
 
-tests/
-├── contract/
-├── integration/
-└── unit/
-
-# [REMOVE IF UNUSED] Option 2: Web application (when "frontend" + "backend" detected)
-backend/
-├── src/
-│   ├── models/
-│   ├── services/
-│   └── api/
-└── tests/
-
-frontend/
-├── src/
-│   ├── components/
-│   ├── pages/
-│   └── services/
-└── tests/
-
-# [REMOVE IF UNUSED] Option 3: Mobile + API (when "iOS/Android" detected)
-api/
-└── [same as backend above]
-
-ios/ or android/
-└── [platform-specific structure: feature modules, UI flows, platform tests]
+claims_manager/tests/
+├── __init__.py
+├── test_adjudication.py # Unit tests for pure functions
+└── test_api.py          # Integration tests (TestClient + respx)
 ```
 
-**Structure Decision**: [Document the selected structure and reference the real
-directories captured above]
+---
+
+## Key Design Decisions (from research.md)
+
+| # | Decision | Reference |
+|---|---|---|
+| 1 | Sync `httpx.Client` in lifespan | research.md Decision 1 |
+| 2 | Abort entire batch on any downstream 5xx | research.md Decision 2 |
+| 3 | Check `GET /claims/{id}` before adjudicating (dedup) | research.md Decision 3 |
+| 4 | Pass through `contractual_adjustment` from Pricer | research.md Decision 4 |
+| 5 | `totals: null` for VALIDATION_ERROR/CONFLICT; billed only for DENIED | research.md Decision 5 |
+| 6 | `POST /claims` sends full AdjudicationResult JSON | research.md Decision 6 |
+| 7 | Uncomment Pricer + Claims Manager in `start.sh` | research.md Decision 7 |
+| 8 | `adjudicated_at` UTC ISO 8601 with `Z` suffix | research.md Decision 8 |
+| 9 | Process claims sequentially in submission order | research.md Decision 9 |
+| 10 | `diagnosis_codes` accepted, not evaluated or forwarded | research.md Decision 10 |
+
+---
+
+## Per-Claim Processing Flow
+
+```
+for claim in batch:
+    1. Validate fields (FR-2) → VALIDATION_ERROR if fails
+    2. Check batch-local claim_id uniqueness → VALIDATION_ERROR if duplicate
+    3. Call DS GET /claims/{id} → CONFLICT if 200; abort batch if 5xx
+    4. Call DS GET /members/{id} → DENIED/NOT_ELIGIBLE if 404; abort batch if 5xx
+    5. Call BD POST /benefits/determine → abort batch if 5xx
+    6. If all lines denied → DENIED (skip Pricer)
+    7. Call Pricer POST /price (covered lines only) → abort batch if 5xx
+    8. Merge BD denied lines + Pricer line_detail → line_detail array
+    9. Compute totals, determine status (PAID/DENIED/PARTIALLY_PAID)
+    10. Record result in-memory
+
+after all claims processed:
+    11. Call DS POST /claims for each adjudicated result
+    12. Return BatchResponse with all results in submission order
+```
+
+Note: VALIDATION_ERROR and CONFLICT results are recorded but never written to the Data Service (steps 1–3 short-circuit before step 11).
+
+---
 
 ## Complexity Tracking
 
-> **Fill ONLY if Constitution Check has violations that must be justified**
-
-| Violation | Why Needed | Simpler Alternative Rejected Because |
-|-----------|------------|-------------------------------------|
-| [e.g., 4th project] | [current need] | [why 3 projects insufficient] |
-| [e.g., Repository pattern] | [specific problem] | [why direct DB access insufficient] |
+No constitution violations. No complexity tracking entry required.

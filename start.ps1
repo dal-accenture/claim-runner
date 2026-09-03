@@ -14,11 +14,9 @@ function Wait-ForHealth {
     Write-Host "Waiting for $ServiceName at $Url ..."
     for ($i = 0; $i -lt $MaxSeconds; $i++) {
         try {
-            $r = Invoke-RestMethod -Uri $Url -Method Get -ErrorAction Stop
-            if ($r.status -eq "UP") {
-                Write-Host "$ServiceName is UP."
-                return
-            }
+            Invoke-RestMethod -Uri $Url -Method Get -ErrorAction Stop | Out-Null
+            Write-Host "$ServiceName is UP."
+            return
         } catch { }
         Start-Sleep -Seconds 1
     }
@@ -39,40 +37,41 @@ $dataJob = Start-Job -ScriptBlock {
 Wait-ForHealth "http://localhost:$DataPort/health" "Data Service"
 
 # --- 2. Benefits Determiner (depends on Data Service) ---
-# TODO: uncomment when spec 002 is implemented
-# $env:PORT = $BenefitsPort
-# $benefitsJob = Start-Job -ScriptBlock {
-#     param($port, $repoRoot)
-#     Set-Location (Join-Path $repoRoot "benefits_determiner")
-#     $env:PORT = $port
-#     python -m uvicorn main:app --host 0.0.0.0 --port $port
-# } -ArgumentList $BenefitsPort, $PSScriptRoot
-# Wait-ForHealth "http://localhost:$BenefitsPort/health" "Benefits Determiner"
+Write-Host "Starting Benefits Determiner on port $BenefitsPort ..."
+$benefitsJob = Start-Job -ScriptBlock {
+    param($port, $repoRoot)
+    Set-Location $repoRoot
+    $env:PORT = $port
+    python -m uvicorn benefits_determiner.main:app --host 0.0.0.0 --port $port
+} -ArgumentList $BenefitsPort, $PSScriptRoot
+
+Wait-ForHealth "http://localhost:$BenefitsPort/health" "Benefits Determiner"
 
 # --- 3. Pricer (depends on Data Service) ---
-# TODO: uncomment when spec 003 is implemented
-# $env:PORT = $PricerPort
-# $pricerJob = Start-Job -ScriptBlock {
-#     param($port, $repoRoot)
-#     Set-Location (Join-Path $repoRoot "pricer")
-#     $env:PORT = $port
-#     python -m uvicorn main:app --host 0.0.0.0 --port $port
-# } -ArgumentList $PricerPort, $PSScriptRoot
-# Wait-ForHealth "http://localhost:$PricerPort/health" "Pricer"
+Write-Host "Starting Pricer on port $PricerPort ..."
+$pricerJob = Start-Job -ScriptBlock {
+    param($port, $repoRoot)
+    Set-Location $repoRoot
+    $env:PORT = $port
+    python -m uvicorn pricer.main:app --host 0.0.0.0 --port $port
+} -ArgumentList $PricerPort, $PSScriptRoot
+
+Wait-ForHealth "http://localhost:$PricerPort/health" "Pricer"
 
 # --- 4. Claims Manager (depends on Benefits Determiner + Pricer) ---
-# TODO: uncomment when spec 001 is implemented
-# $env:PORT = $ClaimsPort
-# $claimsJob = Start-Job -ScriptBlock {
-#     param($port, $repoRoot)
-#     Set-Location (Join-Path $repoRoot "claims_manager")
-#     $env:PORT = $port
-#     python -m uvicorn main:app --host 0.0.0.0 --port $port
-# } -ArgumentList $ClaimsPort, $PSScriptRoot
+Write-Host "Starting Claims Manager on port $ClaimsPort ..."
+$claimsJob = Start-Job -ScriptBlock {
+    param($port, $repoRoot)
+    Set-Location $repoRoot
+    $env:PORT = $port
+    python -m uvicorn claims_manager.main:app --host 0.0.0.0 --port $port
+} -ArgumentList $ClaimsPort, $PSScriptRoot
+
+Wait-ForHealth "http://localhost:$ClaimsPort/health" "Claims Manager"
 
 Write-Host "All services started. Press Ctrl+C to stop."
 try {
-    Wait-Job $dataJob | Out-Null
+    Wait-Job $dataJob, $benefitsJob, $pricerJob, $claimsJob | Out-Null
 } finally {
     Get-Job | Stop-Job
     Get-Job | Remove-Job
