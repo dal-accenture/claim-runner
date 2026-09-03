@@ -48,7 +48,7 @@ These principles are authored by the control pod for the claim-runner pod specif
 
 ### Technology Stack
 
-**All three services are implemented in Python using FastAPI.** No spec may introduce a different language or web framework for any service in this pod. A spec that proposes migrating a service to another stack is out of scope for the practicum.
+**All four services are implemented in Python using FastAPI.** No spec may introduce a different language or web framework for any service in this pod. A spec that proposes migrating a service to another stack is out of scope for the practicum.
 
 **Each service declares its dependencies in its own `requirements.txt`.** There is no shared package manifest at the repository root. A dependency needed by more than one service is listed independently in each service's `requirements.txt` — it is not duplicated, and it is not placed inside any single service directory.
 
@@ -84,10 +84,10 @@ This applies to every artifact in the spec: request/response shapes, data file c
 
 ### Central Startup
 
-**`start.sh` is the single authoritative way to start the full system.** It starts services in dependency order (Benefits Determiner and Pricer before Claims Manager) and gates each step on the upstream service's `/health` endpoint returning 200.
+**`start.sh` (POSIX) and `start.ps1` (PowerShell) are the authoritative ways to start the full system.** Both start services in dependency order — Data Service first, then Benefits Determiner and Pricer in parallel, then Claims Manager — and gate each step on the upstream service's `/health` endpoint returning 200.
 
-**`start.sh` is POSIX shell with no external dependencies beyond what the services themselves require.** It must work on any machine where the three services can be started individually.
+**`start.sh` is POSIX shell and `start.ps1` is PowerShell 5.1+; neither may introduce external dependencies beyond what the services themselves require.** Both must work on any machine where the four services can be started individually.
 
 ---
 
-**Version**: 1.1 | **Issued**: 2026-09-02 | **Issuing pod**: control
+**Version**: 1.2 | **Issued**: 2026-09-03 | **Issuing pod**: claim-runner (pending control pod ratification)
