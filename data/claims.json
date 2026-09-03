@@ -3910,177 +3910,42 @@
     ]
   },
   {
-    "claim_id": "CLM-20250720-121",
-    "member_id": "MBR-10017",
-    "provider_id": "PRV-10019",
-    "date_of_service": "2025-07-20",
-    "received_at": "2025-07-20T09:00:00Z",
-    "adjudicated_at": "2025-07-20T09:01:00Z",
-    "status": "DENIED",
+    "claim_id": "CLM-20250422-121",
+    "member_id": "MBR-10007",
+    "provider_id": "PRV-10004",
+    "date_of_service": "2025-04-22",
+    "received_at": "2025-04-22T09:00:00Z",
+    "adjudicated_at": "2025-04-22T09:01:00Z",
+    "status": "PARTIALLY_PAID",
     "totals": {
-      "billed_amount": 0.0,
-      "allowed_amount": 0.0,
-      "member_liability": 0.0,
-      "payer_liability": 0.0
+      "billed_amount": 142.5,
+      "allowed_amount": 95.0,
+      "member_liability": 25.0,
+      "payer_liability": 70.0
     },
     "denial_reasons": [
       {
-        "code": "NOT_COVERED",
-        "description": "Procedure not covered under member plan",
-        "procedure_code": "30140"
-      }
-    ],
-    "line_detail": [
-      {
-        "line_number": 1,
-        "procedure_code": "30140",
-        "billed_amount": 0.0,
-        "allowed_amount": 0.0,
-        "deductible_applied": 0.0,
-        "copay_applied": 0.0,
-        "coinsurance_applied": 0.0,
-        "member_liability": 0.0,
-        "payer_liability": 0.0,
-        "adjustment_reason_code": "CO-96",
-        "line_status": "DENIED"
-      }
-    ]
-  },
-  {
-    "claim_id": "CLM-20250228-122",
-    "member_id": "MBR-10002",
-    "provider_id": "PRV-30006",
-    "date_of_service": "2025-02-28",
-    "received_at": "2025-02-28T09:00:00Z",
-    "adjudicated_at": "2025-02-28T09:01:00Z",
-    "status": "DENIED",
-    "totals": {
-      "billed_amount": 0.0,
-      "allowed_amount": 0.0,
-      "member_liability": 0.0,
-      "payer_liability": 0.0
-    },
-    "denial_reasons": [
-      {
-        "code": "NOT_COVERED",
-        "description": "Procedure not covered under member plan",
-        "procedure_code": "85025"
-      }
-    ],
-    "line_detail": [
-      {
-        "line_number": 1,
-        "procedure_code": "85025",
-        "billed_amount": 0.0,
-        "allowed_amount": 0.0,
-        "deductible_applied": 0.0,
-        "copay_applied": 0.0,
-        "coinsurance_applied": 0.0,
-        "member_liability": 0.0,
-        "payer_liability": 0.0,
-        "adjustment_reason_code": "CO-96",
-        "line_status": "DENIED"
-      }
-    ]
-  },
-  {
-    "claim_id": "CLM-20250829-123",
-    "member_id": "MBR-10025",
-    "provider_id": "PRV-30007",
-    "date_of_service": "2025-08-29",
-    "received_at": "2025-08-29T09:00:00Z",
-    "adjudicated_at": "2025-08-29T09:01:00Z",
-    "status": "DENIED",
-    "totals": {
-      "billed_amount": 0.0,
-      "allowed_amount": 0.0,
-      "member_liability": 0.0,
-      "payer_liability": 0.0
-    },
-    "denial_reasons": [
-      {
-        "code": "NOT_COVERED",
-        "description": "Procedure not covered under member plan",
-        "procedure_code": "93000"
-      }
-    ],
-    "line_detail": [
-      {
-        "line_number": 1,
-        "procedure_code": "93000",
-        "billed_amount": 0.0,
-        "allowed_amount": 0.0,
-        "deductible_applied": 0.0,
-        "copay_applied": 0.0,
-        "coinsurance_applied": 0.0,
-        "member_liability": 0.0,
-        "payer_liability": 0.0,
-        "adjustment_reason_code": "CO-96",
-        "line_status": "DENIED"
-      }
-    ]
-  },
-  {
-    "claim_id": "CLM-20250217-124",
-    "member_id": "MBR-10014",
-    "provider_id": "PRV-10017",
-    "date_of_service": "2025-02-17",
-    "received_at": "2025-02-17T09:00:00Z",
-    "adjudicated_at": "2025-02-17T09:01:00Z",
-    "status": "DENIED",
-    "totals": {
-      "billed_amount": 0.0,
-      "allowed_amount": 0.0,
-      "member_liability": 0.0,
-      "payer_liability": 0.0
-    },
-    "denial_reasons": [
-      {
-        "code": "NOT_COVERED",
-        "description": "Procedure not covered under member plan",
-        "procedure_code": "30520"
-      }
-    ],
-    "line_detail": [
-      {
-        "line_number": 1,
-        "procedure_code": "30520",
-        "billed_amount": 0.0,
-        "allowed_amount": 0.0,
-        "deductible_applied": 0.0,
-        "copay_applied": 0.0,
-        "coinsurance_applied": 0.0,
-        "member_liability": 0.0,
-        "payer_liability": 0.0,
-        "adjustment_reason_code": "CO-96",
-        "line_status": "DENIED"
-      }
-    ]
-  },
-  {
-    "claim_id": "CLM-20250717-125",
-    "member_id": "MBR-10010",
-    "provider_id": "PRV-10014",
-    "date_of_service": "2025-07-17",
-    "received_at": "2025-07-17T09:00:00Z",
-    "adjudicated_at": "2025-07-17T09:01:00Z",
-    "status": "DENIED",
-    "totals": {
-      "billed_amount": 0.0,
-      "allowed_amount": 0.0,
-      "member_liability": 0.0,
-      "payer_liability": 0.0
-    },
-    "denial_reasons": [
-      {
-        "code": "NOT_COVERED",
-        "description": "Procedure not covered under member plan",
+        "code": "AUTH_REQUIRED_NOT_ON_FILE",
+        "description": "Prior authorization required and not on file",
         "procedure_code": "42820"
       }
     ],
     "line_detail": [
       {
         "line_number": 1,
+        "procedure_code": "99202",
+        "billed_amount": 142.5,
+        "allowed_amount": 95.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 25.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 25.0,
+        "payer_liability": 70.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      },
+      {
+        "line_number": 2,
         "procedure_code": "42820",
         "billed_amount": 0.0,
         "allowed_amount": 0.0,
@@ -4095,30 +3960,43 @@
     ]
   },
   {
-    "claim_id": "CLM-20250702-126",
-    "member_id": "MBR-10038",
-    "provider_id": "PRV-30002",
-    "date_of_service": "2025-07-02",
-    "received_at": "2025-07-02T09:00:00Z",
-    "adjudicated_at": "2025-07-02T09:01:00Z",
-    "status": "DENIED",
+    "claim_id": "CLM-20250604-122",
+    "member_id": "MBR-10008",
+    "provider_id": "PRV-10013",
+    "date_of_service": "2025-06-04",
+    "received_at": "2025-06-04T09:00:00Z",
+    "adjudicated_at": "2025-06-04T09:01:00Z",
+    "status": "PARTIALLY_PAID",
     "totals": {
-      "billed_amount": 0.0,
-      "allowed_amount": 0.0,
-      "member_liability": 0.0,
-      "payer_liability": 0.0
+      "billed_amount": 195.0,
+      "allowed_amount": 130.0,
+      "member_liability": 25.0,
+      "payer_liability": 105.0
     },
     "denial_reasons": [
       {
-        "code": "NOT_COVERED",
-        "description": "Procedure not covered under member plan",
-        "procedure_code": "31575"
+        "code": "AUTH_REQUIRED_NOT_ON_FILE",
+        "description": "Prior authorization required and not on file",
+        "procedure_code": "30140"
       }
     ],
     "line_detail": [
       {
         "line_number": 1,
-        "procedure_code": "31575",
+        "procedure_code": "99203",
+        "billed_amount": 195.0,
+        "allowed_amount": 130.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 25.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 25.0,
+        "payer_liability": 105.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      },
+      {
+        "line_number": 2,
+        "procedure_code": "30140",
         "billed_amount": 0.0,
         "allowed_amount": 0.0,
         "deductible_applied": 0.0,
@@ -4132,29 +4010,192 @@
     ]
   },
   {
-    "claim_id": "CLM-20250310-127",
-    "member_id": "MBR-10030",
-    "provider_id": "PRV-30003",
-    "date_of_service": "2025-03-10",
-    "received_at": "2025-03-10T09:00:00Z",
-    "adjudicated_at": "2025-03-10T09:01:00Z",
-    "status": "DENIED",
+    "claim_id": "CLM-20250108-123",
+    "member_id": "MBR-10012",
+    "provider_id": "PRV-20005",
+    "date_of_service": "2025-01-08",
+    "received_at": "2025-01-08T09:00:00Z",
+    "adjudicated_at": "2025-01-08T09:01:00Z",
+    "status": "PARTIALLY_PAID",
     "totals": {
-      "billed_amount": 0.0,
-      "allowed_amount": 0.0,
-      "member_liability": 0.0,
-      "payer_liability": 0.0
+      "billed_amount": 172.5,
+      "allowed_amount": 115.0,
+      "member_liability": 30.0,
+      "payer_liability": 85.0
+    },
+    "denial_reasons": [
+      {
+        "code": "AUTH_REQUIRED_NOT_ON_FILE",
+        "description": "Prior authorization required and not on file",
+        "procedure_code": "92552"
+      }
+    ],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "99213",
+        "billed_amount": 172.5,
+        "allowed_amount": 115.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 30.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 30.0,
+        "payer_liability": 85.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      },
+      {
+        "line_number": 2,
+        "procedure_code": "92552",
+        "billed_amount": 0.0,
+        "allowed_amount": 0.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 0.0,
+        "payer_liability": 0.0,
+        "adjustment_reason_code": "CO-96",
+        "line_status": "DENIED"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250228-124",
+    "member_id": "MBR-10015",
+    "provider_id": "PRV-20006",
+    "date_of_service": "2025-02-28",
+    "received_at": "2025-02-28T09:00:00Z",
+    "adjudicated_at": "2025-02-28T09:01:00Z",
+    "status": "PARTIALLY_PAID",
+    "totals": {
+      "billed_amount": 255.0,
+      "allowed_amount": 170.0,
+      "member_liability": 40.0,
+      "payer_liability": 130.0
+    },
+    "denial_reasons": [
+      {
+        "code": "AUTH_REQUIRED_NOT_ON_FILE",
+        "description": "Prior authorization required and not on file",
+        "procedure_code": "92557"
+      }
+    ],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "99214",
+        "billed_amount": 255.0,
+        "allowed_amount": 170.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 40.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 40.0,
+        "payer_liability": 130.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      },
+      {
+        "line_number": 2,
+        "procedure_code": "92557",
+        "billed_amount": 0.0,
+        "allowed_amount": 0.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 0.0,
+        "payer_liability": 0.0,
+        "adjustment_reason_code": "CO-96",
+        "line_status": "DENIED"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250421-125",
+    "member_id": "MBR-10002",
+    "provider_id": "PRV-30003",
+    "date_of_service": "2025-04-21",
+    "received_at": "2025-04-21T09:00:00Z",
+    "adjudicated_at": "2025-04-21T09:01:00Z",
+    "status": "PARTIALLY_PAID",
+    "totals": {
+      "billed_amount": 345.0,
+      "allowed_amount": 230.0,
+      "member_liability": 40.0,
+      "payer_liability": 190.0
     },
     "denial_reasons": [
       {
         "code": "NOT_COVERED",
-        "description": "Procedure not covered under member plan",
+        "description": "Not covered under Basic EPO benefit",
+        "procedure_code": "80053"
+      }
+    ],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "99215",
+        "billed_amount": 345.0,
+        "allowed_amount": 230.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 40.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 40.0,
+        "payer_liability": 190.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      },
+      {
+        "line_number": 2,
+        "procedure_code": "80053",
+        "billed_amount": 0.0,
+        "allowed_amount": 0.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 0.0,
+        "payer_liability": 0.0,
+        "adjustment_reason_code": "CO-96",
+        "line_status": "DENIED"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250717-126",
+    "member_id": "MBR-10004",
+    "provider_id": "PRV-30010",
+    "date_of_service": "2025-07-17",
+    "received_at": "2025-07-17T09:00:00Z",
+    "adjudicated_at": "2025-07-17T09:01:00Z",
+    "status": "PARTIALLY_PAID",
+    "totals": {
+      "billed_amount": 172.5,
+      "allowed_amount": 115.0,
+      "member_liability": 30.0,
+      "payer_liability": 85.0
+    },
+    "denial_reasons": [
+      {
+        "code": "NOT_COVERED",
+        "description": "Not covered under Basic EPO benefit",
         "procedure_code": "30520"
       }
     ],
     "line_detail": [
       {
         "line_number": 1,
+        "procedure_code": "99213",
+        "billed_amount": 172.5,
+        "allowed_amount": 115.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 30.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 30.0,
+        "payer_liability": 85.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      },
+      {
+        "line_number": 2,
         "procedure_code": "30520",
         "billed_amount": 0.0,
         "allowed_amount": 0.0,
@@ -4169,12 +4210,12 @@
     ]
   },
   {
-    "claim_id": "CLM-20250702-128",
-    "member_id": "MBR-10004",
-    "provider_id": "PRV-30011",
-    "date_of_service": "2025-07-02",
-    "received_at": "2025-07-02T09:00:00Z",
-    "adjudicated_at": "2025-07-02T09:01:00Z",
+    "claim_id": "CLM-20250323-127",
+    "member_id": "MBR-10038",
+    "provider_id": "PRV-30006",
+    "date_of_service": "2025-03-23",
+    "received_at": "2025-03-23T09:00:00Z",
+    "adjudicated_at": "2025-03-23T09:01:00Z",
     "status": "DENIED",
     "totals": {
       "billed_amount": 0.0,
@@ -4206,12 +4247,12 @@
     ]
   },
   {
-    "claim_id": "CLM-20250709-129",
-    "member_id": "MBR-10009",
-    "provider_id": "PRV-10017",
-    "date_of_service": "2025-07-09",
-    "received_at": "2025-07-09T09:00:00Z",
-    "adjudicated_at": "2025-07-09T09:01:00Z",
+    "claim_id": "CLM-20250124-128",
+    "member_id": "MBR-10004",
+    "provider_id": "PRV-30001",
+    "date_of_service": "2025-01-24",
+    "received_at": "2025-01-24T09:00:00Z",
+    "adjudicated_at": "2025-01-24T09:01:00Z",
     "status": "DENIED",
     "totals": {
       "billed_amount": 0.0,
@@ -4223,6 +4264,598 @@
       {
         "code": "NOT_COVERED",
         "description": "Procedure not covered under member plan",
+        "procedure_code": "30520"
+      }
+    ],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "30520",
+        "billed_amount": 0.0,
+        "allowed_amount": 0.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 0.0,
+        "payer_liability": 0.0,
+        "adjustment_reason_code": "CO-96",
+        "line_status": "DENIED"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250424-129",
+    "member_id": "MBR-10002",
+    "provider_id": "PRV-30006",
+    "date_of_service": "2025-04-24",
+    "received_at": "2025-04-24T09:00:00Z",
+    "adjudicated_at": "2025-04-24T09:01:00Z",
+    "status": "DENIED",
+    "totals": {
+      "billed_amount": 0.0,
+      "allowed_amount": 0.0,
+      "member_liability": 0.0,
+      "payer_liability": 0.0
+    },
+    "denial_reasons": [
+      {
+        "code": "NOT_COVERED",
+        "description": "Procedure not covered under member plan",
+        "procedure_code": "42820"
+      }
+    ],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "42820",
+        "billed_amount": 0.0,
+        "allowed_amount": 0.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 0.0,
+        "payer_liability": 0.0,
+        "adjustment_reason_code": "CO-96",
+        "line_status": "DENIED"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250127-130",
+    "member_id": "MBR-10030",
+    "provider_id": "PRV-30003",
+    "date_of_service": "2025-01-27",
+    "received_at": "2025-01-27T09:00:00Z",
+    "adjudicated_at": "2025-01-27T09:01:00Z",
+    "status": "DENIED",
+    "totals": {
+      "billed_amount": 0.0,
+      "allowed_amount": 0.0,
+      "member_liability": 0.0,
+      "payer_liability": 0.0
+    },
+    "denial_reasons": [
+      {
+        "code": "NOT_COVERED",
+        "description": "Procedure not covered under member plan",
+        "procedure_code": "42820"
+      }
+    ],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "42820",
+        "billed_amount": 0.0,
+        "allowed_amount": 0.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 0.0,
+        "payer_liability": 0.0,
+        "adjustment_reason_code": "CO-96",
+        "line_status": "DENIED"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250217-131",
+    "member_id": "MBR-10025",
+    "provider_id": "PRV-30007",
+    "date_of_service": "2025-02-17",
+    "received_at": "2025-02-17T09:00:00Z",
+    "adjudicated_at": "2025-02-17T09:01:00Z",
+    "status": "DENIED",
+    "totals": {
+      "billed_amount": 0.0,
+      "allowed_amount": 0.0,
+      "member_liability": 0.0,
+      "payer_liability": 0.0
+    },
+    "denial_reasons": [
+      {
+        "code": "NOT_COVERED",
+        "description": "Procedure not covered under member plan",
+        "procedure_code": "30520"
+      }
+    ],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "30520",
+        "billed_amount": 0.0,
+        "allowed_amount": 0.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 0.0,
+        "payer_liability": 0.0,
+        "adjustment_reason_code": "CO-96",
+        "line_status": "DENIED"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250523-132",
+    "member_id": "MBR-10010",
+    "provider_id": "PRV-10018",
+    "date_of_service": "2025-05-23",
+    "received_at": "2025-05-23T09:00:00Z",
+    "adjudicated_at": "2025-05-23T09:01:00Z",
+    "status": "DENIED",
+    "totals": {
+      "billed_amount": 0.0,
+      "allowed_amount": 0.0,
+      "member_liability": 0.0,
+      "payer_liability": 0.0
+    },
+    "denial_reasons": [
+      {
+        "code": "NOT_COVERED",
+        "description": "Procedure not covered under member plan",
+        "procedure_code": "30520"
+      }
+    ],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "30520",
+        "billed_amount": 0.0,
+        "allowed_amount": 0.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 0.0,
+        "payer_liability": 0.0,
+        "adjustment_reason_code": "CO-96",
+        "line_status": "DENIED"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250107-133",
+    "member_id": "MBR-10001",
+    "provider_id": "PRV-10007",
+    "date_of_service": "2025-01-07",
+    "received_at": "2025-01-07T09:00:00Z",
+    "adjudicated_at": "2025-01-07T09:01:00Z",
+    "status": "DENIED",
+    "totals": {
+      "billed_amount": 0.0,
+      "allowed_amount": 0.0,
+      "member_liability": 0.0,
+      "payer_liability": 0.0
+    },
+    "denial_reasons": [
+      {
+        "code": "NOT_COVERED",
+        "description": "Procedure not covered under member plan",
+        "procedure_code": "42820"
+      }
+    ],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "42820",
+        "billed_amount": 0.0,
+        "allowed_amount": 0.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 0.0,
+        "payer_liability": 0.0,
+        "adjustment_reason_code": "CO-96",
+        "line_status": "DENIED"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250522-134",
+    "member_id": "MBR-10009",
+    "provider_id": "PRV-10007",
+    "date_of_service": "2025-05-22",
+    "received_at": "2025-05-22T09:00:00Z",
+    "adjudicated_at": "2025-05-22T09:01:00Z",
+    "status": "DENIED",
+    "totals": {
+      "billed_amount": 0.0,
+      "allowed_amount": 0.0,
+      "member_liability": 0.0,
+      "payer_liability": 0.0
+    },
+    "denial_reasons": [
+      {
+        "code": "NOT_COVERED",
+        "description": "Procedure not covered under member plan",
+        "procedure_code": "30140"
+      }
+    ],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "30140",
+        "billed_amount": 0.0,
+        "allowed_amount": 0.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 0.0,
+        "payer_liability": 0.0,
+        "adjustment_reason_code": "CO-96",
+        "line_status": "DENIED"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250603-135",
+    "member_id": "MBR-10014",
+    "provider_id": "PRV-10015",
+    "date_of_service": "2025-06-03",
+    "received_at": "2025-06-03T09:00:00Z",
+    "adjudicated_at": "2025-06-03T09:01:00Z",
+    "status": "DENIED",
+    "totals": {
+      "billed_amount": 0.0,
+      "allowed_amount": 0.0,
+      "member_liability": 0.0,
+      "payer_liability": 0.0
+    },
+    "denial_reasons": [
+      {
+        "code": "NOT_COVERED",
+        "description": "Procedure not covered under member plan",
+        "procedure_code": "31240"
+      }
+    ],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "31240",
+        "billed_amount": 0.0,
+        "allowed_amount": 0.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 0.0,
+        "payer_liability": 0.0,
+        "adjustment_reason_code": "CO-96",
+        "line_status": "DENIED"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250104-136",
+    "member_id": "MBR-10017",
+    "provider_id": "PRV-10014",
+    "date_of_service": "2025-01-04",
+    "received_at": "2025-01-04T09:00:00Z",
+    "adjudicated_at": "2025-01-04T09:01:00Z",
+    "status": "DENIED",
+    "totals": {
+      "billed_amount": 0.0,
+      "allowed_amount": 0.0,
+      "member_liability": 0.0,
+      "payer_liability": 0.0
+    },
+    "denial_reasons": [
+      {
+        "code": "NOT_COVERED",
+        "description": "Procedure not covered under member plan",
+        "procedure_code": "30520"
+      }
+    ],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "30520",
+        "billed_amount": 0.0,
+        "allowed_amount": 0.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 0.0,
+        "payer_liability": 0.0,
+        "adjustment_reason_code": "CO-96",
+        "line_status": "DENIED"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250410-137",
+    "member_id": "MBR-10007",
+    "provider_id": "PRV-10013",
+    "date_of_service": "2025-04-10",
+    "received_at": "2025-04-10T09:00:00Z",
+    "adjudicated_at": "2025-04-10T09:01:00Z",
+    "status": "DENIED",
+    "totals": {
+      "billed_amount": 0.0,
+      "allowed_amount": 0.0,
+      "member_liability": 0.0,
+      "payer_liability": 0.0
+    },
+    "denial_reasons": [
+      {
+        "code": "AUTH_REQUIRED_NOT_ON_FILE",
+        "description": "Prior authorization required and not on file",
+        "procedure_code": "30520"
+      }
+    ],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "30520",
+        "billed_amount": 0.0,
+        "allowed_amount": 0.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 0.0,
+        "payer_liability": 0.0,
+        "adjustment_reason_code": "CO-96",
+        "line_status": "DENIED"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250705-138",
+    "member_id": "MBR-10008",
+    "provider_id": "PRV-10015",
+    "date_of_service": "2025-07-05",
+    "received_at": "2025-07-05T09:00:00Z",
+    "adjudicated_at": "2025-07-05T09:01:00Z",
+    "status": "DENIED",
+    "totals": {
+      "billed_amount": 0.0,
+      "allowed_amount": 0.0,
+      "member_liability": 0.0,
+      "payer_liability": 0.0
+    },
+    "denial_reasons": [
+      {
+        "code": "AUTH_REQUIRED_NOT_ON_FILE",
+        "description": "Prior authorization required and not on file",
+        "procedure_code": "42820"
+      }
+    ],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "42820",
+        "billed_amount": 0.0,
+        "allowed_amount": 0.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 0.0,
+        "payer_liability": 0.0,
+        "adjustment_reason_code": "CO-96",
+        "line_status": "DENIED"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250820-139",
+    "member_id": "MBR-10019",
+    "provider_id": "PRV-10004",
+    "date_of_service": "2025-08-20",
+    "received_at": "2025-08-20T09:00:00Z",
+    "adjudicated_at": "2025-08-20T09:01:00Z",
+    "status": "DENIED",
+    "totals": {
+      "billed_amount": 0.0,
+      "allowed_amount": 0.0,
+      "member_liability": 0.0,
+      "payer_liability": 0.0
+    },
+    "denial_reasons": [
+      {
+        "code": "AUTH_REQUIRED_NOT_ON_FILE",
+        "description": "Prior authorization required and not on file",
+        "procedure_code": "31240"
+      }
+    ],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "31240",
+        "billed_amount": 0.0,
+        "allowed_amount": 0.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 0.0,
+        "payer_liability": 0.0,
+        "adjustment_reason_code": "CO-96",
+        "line_status": "DENIED"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250514-140",
+    "member_id": "MBR-10020",
+    "provider_id": "PRV-10003",
+    "date_of_service": "2025-05-14",
+    "received_at": "2025-05-14T09:00:00Z",
+    "adjudicated_at": "2025-05-14T09:01:00Z",
+    "status": "DENIED",
+    "totals": {
+      "billed_amount": 0.0,
+      "allowed_amount": 0.0,
+      "member_liability": 0.0,
+      "payer_liability": 0.0
+    },
+    "denial_reasons": [
+      {
+        "code": "AUTH_REQUIRED_NOT_ON_FILE",
+        "description": "Prior authorization required and not on file",
+        "procedure_code": "31240"
+      }
+    ],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "31240",
+        "billed_amount": 0.0,
+        "allowed_amount": 0.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 0.0,
+        "payer_liability": 0.0,
+        "adjustment_reason_code": "CO-96",
+        "line_status": "DENIED"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250213-141",
+    "member_id": "MBR-10022",
+    "provider_id": "PRV-10003",
+    "date_of_service": "2025-02-13",
+    "received_at": "2025-02-13T09:00:00Z",
+    "adjudicated_at": "2025-02-13T09:01:00Z",
+    "status": "DENIED",
+    "totals": {
+      "billed_amount": 0.0,
+      "allowed_amount": 0.0,
+      "member_liability": 0.0,
+      "payer_liability": 0.0
+    },
+    "denial_reasons": [
+      {
+        "code": "AUTH_REQUIRED_NOT_ON_FILE",
+        "description": "Prior authorization required and not on file",
+        "procedure_code": "30520"
+      }
+    ],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "30520",
+        "billed_amount": 0.0,
+        "allowed_amount": 0.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 0.0,
+        "payer_liability": 0.0,
+        "adjustment_reason_code": "CO-96",
+        "line_status": "DENIED"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250319-142",
+    "member_id": "MBR-10029",
+    "provider_id": "PRV-10005",
+    "date_of_service": "2025-03-19",
+    "received_at": "2025-03-19T09:00:00Z",
+    "adjudicated_at": "2025-03-19T09:01:00Z",
+    "status": "DENIED",
+    "totals": {
+      "billed_amount": 0.0,
+      "allowed_amount": 0.0,
+      "member_liability": 0.0,
+      "payer_liability": 0.0
+    },
+    "denial_reasons": [
+      {
+        "code": "AUTH_REQUIRED_NOT_ON_FILE",
+        "description": "Prior authorization required and not on file",
+        "procedure_code": "30140"
+      }
+    ],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "30140",
+        "billed_amount": 0.0,
+        "allowed_amount": 0.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 0.0,
+        "payer_liability": 0.0,
+        "adjustment_reason_code": "CO-96",
+        "line_status": "DENIED"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250207-143",
+    "member_id": "MBR-10031",
+    "provider_id": "PRV-10002",
+    "date_of_service": "2025-02-07",
+    "received_at": "2025-02-07T09:00:00Z",
+    "adjudicated_at": "2025-02-07T09:01:00Z",
+    "status": "DENIED",
+    "totals": {
+      "billed_amount": 0.0,
+      "allowed_amount": 0.0,
+      "member_liability": 0.0,
+      "payer_liability": 0.0
+    },
+    "denial_reasons": [
+      {
+        "code": "AUTH_REQUIRED_NOT_ON_FILE",
+        "description": "Prior authorization required and not on file",
+        "procedure_code": "30520"
+      }
+    ],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "30520",
+        "billed_amount": 0.0,
+        "allowed_amount": 0.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 0.0,
+        "payer_liability": 0.0,
+        "adjustment_reason_code": "CO-96",
+        "line_status": "DENIED"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250422-144",
+    "member_id": "MBR-10033",
+    "provider_id": "PRV-10005",
+    "date_of_service": "2025-04-22",
+    "received_at": "2025-04-22T09:00:00Z",
+    "adjudicated_at": "2025-04-22T09:01:00Z",
+    "status": "DENIED",
+    "totals": {
+      "billed_amount": 0.0,
+      "allowed_amount": 0.0,
+      "member_liability": 0.0,
+      "payer_liability": 0.0
+    },
+    "denial_reasons": [
+      {
+        "code": "AUTH_REQUIRED_NOT_ON_FILE",
+        "description": "Prior authorization required and not on file",
         "procedure_code": "42821"
       }
     ],
@@ -4243,345 +4876,12 @@
     ]
   },
   {
-    "claim_id": "CLM-20250403-130",
-    "member_id": "MBR-10001",
-    "provider_id": "PRV-10008",
-    "date_of_service": "2025-04-03",
-    "received_at": "2025-04-03T09:00:00Z",
-    "adjudicated_at": "2025-04-03T09:01:00Z",
-    "status": "DENIED",
-    "totals": {
-      "billed_amount": 0.0,
-      "allowed_amount": 0.0,
-      "member_liability": 0.0,
-      "payer_liability": 0.0
-    },
-    "denial_reasons": [
-      {
-        "code": "NOT_COVERED",
-        "description": "Procedure not covered under member plan",
-        "procedure_code": "30140"
-      }
-    ],
-    "line_detail": [
-      {
-        "line_number": 1,
-        "procedure_code": "30140",
-        "billed_amount": 0.0,
-        "allowed_amount": 0.0,
-        "deductible_applied": 0.0,
-        "copay_applied": 0.0,
-        "coinsurance_applied": 0.0,
-        "member_liability": 0.0,
-        "payer_liability": 0.0,
-        "adjustment_reason_code": "CO-96",
-        "line_status": "DENIED"
-      }
-    ]
-  },
-  {
-    "claim_id": "CLM-20250102-131",
-    "member_id": "MBR-10007",
-    "provider_id": "PRV-10005",
-    "date_of_service": "2025-01-02",
-    "received_at": "2025-01-02T09:00:00Z",
-    "adjudicated_at": "2025-01-02T09:01:00Z",
-    "status": "DENIED",
-    "totals": {
-      "billed_amount": 0.0,
-      "allowed_amount": 0.0,
-      "member_liability": 0.0,
-      "payer_liability": 0.0
-    },
-    "denial_reasons": [
-      {
-        "code": "AUTH_REQUIRED_NOT_ON_FILE",
-        "description": "Prior authorization required and not on file",
-        "procedure_code": "42820"
-      }
-    ],
-    "line_detail": [
-      {
-        "line_number": 1,
-        "procedure_code": "42820",
-        "billed_amount": 0.0,
-        "allowed_amount": 0.0,
-        "deductible_applied": 0.0,
-        "copay_applied": 0.0,
-        "coinsurance_applied": 0.0,
-        "member_liability": 0.0,
-        "payer_liability": 0.0,
-        "adjustment_reason_code": "CO-96",
-        "line_status": "DENIED"
-      }
-    ]
-  },
-  {
-    "claim_id": "CLM-20250403-132",
-    "member_id": "MBR-10008",
-    "provider_id": "PRV-10013",
-    "date_of_service": "2025-04-03",
-    "received_at": "2025-04-03T09:00:00Z",
-    "adjudicated_at": "2025-04-03T09:01:00Z",
-    "status": "DENIED",
-    "totals": {
-      "billed_amount": 0.0,
-      "allowed_amount": 0.0,
-      "member_liability": 0.0,
-      "payer_liability": 0.0
-    },
-    "denial_reasons": [
-      {
-        "code": "AUTH_REQUIRED_NOT_ON_FILE",
-        "description": "Prior authorization required and not on file",
-        "procedure_code": "30520"
-      }
-    ],
-    "line_detail": [
-      {
-        "line_number": 1,
-        "procedure_code": "30520",
-        "billed_amount": 0.0,
-        "allowed_amount": 0.0,
-        "deductible_applied": 0.0,
-        "copay_applied": 0.0,
-        "coinsurance_applied": 0.0,
-        "member_liability": 0.0,
-        "payer_liability": 0.0,
-        "adjustment_reason_code": "CO-96",
-        "line_status": "DENIED"
-      }
-    ]
-  },
-  {
-    "claim_id": "CLM-20250127-133",
-    "member_id": "MBR-10019",
-    "provider_id": "PRV-10003",
-    "date_of_service": "2025-01-27",
-    "received_at": "2025-01-27T09:00:00Z",
-    "adjudicated_at": "2025-01-27T09:01:00Z",
-    "status": "DENIED",
-    "totals": {
-      "billed_amount": 0.0,
-      "allowed_amount": 0.0,
-      "member_liability": 0.0,
-      "payer_liability": 0.0
-    },
-    "denial_reasons": [
-      {
-        "code": "AUTH_REQUIRED_NOT_ON_FILE",
-        "description": "Prior authorization required and not on file",
-        "procedure_code": "30140"
-      }
-    ],
-    "line_detail": [
-      {
-        "line_number": 1,
-        "procedure_code": "30140",
-        "billed_amount": 0.0,
-        "allowed_amount": 0.0,
-        "deductible_applied": 0.0,
-        "copay_applied": 0.0,
-        "coinsurance_applied": 0.0,
-        "member_liability": 0.0,
-        "payer_liability": 0.0,
-        "adjustment_reason_code": "CO-96",
-        "line_status": "DENIED"
-      }
-    ]
-  },
-  {
-    "claim_id": "CLM-20250217-134",
-    "member_id": "MBR-10020",
-    "provider_id": "PRV-10007",
-    "date_of_service": "2025-02-17",
-    "received_at": "2025-02-17T09:00:00Z",
-    "adjudicated_at": "2025-02-17T09:01:00Z",
-    "status": "DENIED",
-    "totals": {
-      "billed_amount": 0.0,
-      "allowed_amount": 0.0,
-      "member_liability": 0.0,
-      "payer_liability": 0.0
-    },
-    "denial_reasons": [
-      {
-        "code": "AUTH_REQUIRED_NOT_ON_FILE",
-        "description": "Prior authorization required and not on file",
-        "procedure_code": "42820"
-      }
-    ],
-    "line_detail": [
-      {
-        "line_number": 1,
-        "procedure_code": "42820",
-        "billed_amount": 0.0,
-        "allowed_amount": 0.0,
-        "deductible_applied": 0.0,
-        "copay_applied": 0.0,
-        "coinsurance_applied": 0.0,
-        "member_liability": 0.0,
-        "payer_liability": 0.0,
-        "adjustment_reason_code": "CO-96",
-        "line_status": "DENIED"
-      }
-    ]
-  },
-  {
-    "claim_id": "CLM-20250523-135",
-    "member_id": "MBR-10022",
-    "provider_id": "PRV-10009",
-    "date_of_service": "2025-05-23",
-    "received_at": "2025-05-23T09:00:00Z",
-    "adjudicated_at": "2025-05-23T09:01:00Z",
-    "status": "DENIED",
-    "totals": {
-      "billed_amount": 0.0,
-      "allowed_amount": 0.0,
-      "member_liability": 0.0,
-      "payer_liability": 0.0
-    },
-    "denial_reasons": [
-      {
-        "code": "AUTH_REQUIRED_NOT_ON_FILE",
-        "description": "Prior authorization required and not on file",
-        "procedure_code": "30520"
-      }
-    ],
-    "line_detail": [
-      {
-        "line_number": 1,
-        "procedure_code": "30520",
-        "billed_amount": 0.0,
-        "allowed_amount": 0.0,
-        "deductible_applied": 0.0,
-        "copay_applied": 0.0,
-        "coinsurance_applied": 0.0,
-        "member_liability": 0.0,
-        "payer_liability": 0.0,
-        "adjustment_reason_code": "CO-96",
-        "line_status": "DENIED"
-      }
-    ]
-  },
-  {
-    "claim_id": "CLM-20250415-136",
-    "member_id": "MBR-10029",
-    "provider_id": "PRV-10002",
-    "date_of_service": "2025-04-15",
-    "received_at": "2025-04-15T09:00:00Z",
-    "adjudicated_at": "2025-04-15T09:01:00Z",
-    "status": "DENIED",
-    "totals": {
-      "billed_amount": 0.0,
-      "allowed_amount": 0.0,
-      "member_liability": 0.0,
-      "payer_liability": 0.0
-    },
-    "denial_reasons": [
-      {
-        "code": "AUTH_REQUIRED_NOT_ON_FILE",
-        "description": "Prior authorization required and not on file",
-        "procedure_code": "31240"
-      }
-    ],
-    "line_detail": [
-      {
-        "line_number": 1,
-        "procedure_code": "31240",
-        "billed_amount": 0.0,
-        "allowed_amount": 0.0,
-        "deductible_applied": 0.0,
-        "copay_applied": 0.0,
-        "coinsurance_applied": 0.0,
-        "member_liability": 0.0,
-        "payer_liability": 0.0,
-        "adjustment_reason_code": "CO-96",
-        "line_status": "DENIED"
-      }
-    ]
-  },
-  {
-    "claim_id": "CLM-20250123-137",
-    "member_id": "MBR-10031",
-    "provider_id": "PRV-10006",
-    "date_of_service": "2025-01-23",
-    "received_at": "2025-01-23T09:00:00Z",
-    "adjudicated_at": "2025-01-23T09:01:00Z",
-    "status": "DENIED",
-    "totals": {
-      "billed_amount": 0.0,
-      "allowed_amount": 0.0,
-      "member_liability": 0.0,
-      "payer_liability": 0.0
-    },
-    "denial_reasons": [
-      {
-        "code": "AUTH_REQUIRED_NOT_ON_FILE",
-        "description": "Prior authorization required and not on file",
-        "procedure_code": "42820"
-      }
-    ],
-    "line_detail": [
-      {
-        "line_number": 1,
-        "procedure_code": "42820",
-        "billed_amount": 0.0,
-        "allowed_amount": 0.0,
-        "deductible_applied": 0.0,
-        "copay_applied": 0.0,
-        "coinsurance_applied": 0.0,
-        "member_liability": 0.0,
-        "payer_liability": 0.0,
-        "adjustment_reason_code": "CO-96",
-        "line_status": "DENIED"
-      }
-    ]
-  },
-  {
-    "claim_id": "CLM-20250124-138",
-    "member_id": "MBR-10033",
-    "provider_id": "PRV-10010",
-    "date_of_service": "2025-01-24",
-    "received_at": "2025-01-24T09:00:00Z",
-    "adjudicated_at": "2025-01-24T09:01:00Z",
-    "status": "DENIED",
-    "totals": {
-      "billed_amount": 0.0,
-      "allowed_amount": 0.0,
-      "member_liability": 0.0,
-      "payer_liability": 0.0
-    },
-    "denial_reasons": [
-      {
-        "code": "AUTH_REQUIRED_NOT_ON_FILE",
-        "description": "Prior authorization required and not on file",
-        "procedure_code": "31240"
-      }
-    ],
-    "line_detail": [
-      {
-        "line_number": 1,
-        "procedure_code": "31240",
-        "billed_amount": 0.0,
-        "allowed_amount": 0.0,
-        "deductible_applied": 0.0,
-        "copay_applied": 0.0,
-        "coinsurance_applied": 0.0,
-        "member_liability": 0.0,
-        "payer_liability": 0.0,
-        "adjustment_reason_code": "CO-96",
-        "line_status": "DENIED"
-      }
-    ]
-  },
-  {
-    "claim_id": "CLM-20250720-139",
+    "claim_id": "CLM-20250318-145",
     "member_id": "MBR-10034",
-    "provider_id": "PRV-10006",
-    "date_of_service": "2025-07-20",
-    "received_at": "2025-07-20T09:00:00Z",
-    "adjudicated_at": "2025-07-20T09:01:00Z",
+    "provider_id": "PRV-10008",
+    "date_of_service": "2025-03-18",
+    "received_at": "2025-03-18T09:00:00Z",
+    "adjudicated_at": "2025-03-18T09:01:00Z",
     "status": "DENIED",
     "totals": {
       "billed_amount": 0.0,
@@ -4593,13 +4893,13 @@
       {
         "code": "AUTH_REQUIRED_NOT_ON_FILE",
         "description": "Prior authorization required and not on file",
-        "procedure_code": "31240"
+        "procedure_code": "30520"
       }
     ],
     "line_detail": [
       {
         "line_number": 1,
-        "procedure_code": "31240",
+        "procedure_code": "30520",
         "billed_amount": 0.0,
         "allowed_amount": 0.0,
         "deductible_applied": 0.0,
@@ -4613,12 +4913,12 @@
     ]
   },
   {
-    "claim_id": "CLM-20250104-140",
+    "claim_id": "CLM-20250403-146",
     "member_id": "MBR-10039",
     "provider_id": "PRV-10005",
-    "date_of_service": "2025-01-04",
-    "received_at": "2025-01-04T09:00:00Z",
-    "adjudicated_at": "2025-01-04T09:01:00Z",
+    "date_of_service": "2025-04-03",
+    "received_at": "2025-04-03T09:00:00Z",
+    "adjudicated_at": "2025-04-03T09:01:00Z",
     "status": "DENIED",
     "totals": {
       "billed_amount": 0.0,
@@ -4630,13 +4930,13 @@
       {
         "code": "AUTH_REQUIRED_NOT_ON_FILE",
         "description": "Prior authorization required and not on file",
-        "procedure_code": "30520"
+        "procedure_code": "42820"
       }
     ],
     "line_detail": [
       {
         "line_number": 1,
-        "procedure_code": "30520",
+        "procedure_code": "42820",
         "billed_amount": 0.0,
         "allowed_amount": 0.0,
         "deductible_applied": 0.0,
@@ -4650,198 +4950,105 @@
     ]
   },
   {
-    "claim_id": "CLM-20250410-141",
+    "claim_id": "CLM-20250704-147",
     "member_id": "MBR-10049",
-    "provider_id": "PRV-51388",
-    "date_of_service": "2025-04-10",
-    "received_at": "2025-04-10T09:00:00Z",
-    "adjudicated_at": "2025-04-10T09:01:00Z",
+    "provider_id": "PRV-58124",
+    "date_of_service": "2025-07-04",
+    "received_at": "2025-07-04T09:00:00Z",
+    "adjudicated_at": "2025-07-04T09:01:00Z",
     "status": "PAID",
     "totals": {
-      "billed_amount": 126.0,
-      "allowed_amount": 84.0,
-      "member_liability": 33.6,
-      "payer_liability": 50.4
+      "billed_amount": 277.5,
+      "allowed_amount": 185.0,
+      "member_liability": 74.0,
+      "payer_liability": 111.0
     },
     "denial_reasons": [],
     "line_detail": [
       {
         "line_number": 1,
-        "procedure_code": "99213",
-        "billed_amount": 126.0,
-        "allowed_amount": 84.0,
+        "procedure_code": "99205",
+        "billed_amount": 277.5,
+        "allowed_amount": 185.0,
         "deductible_applied": 0.0,
         "copay_applied": 0.0,
-        "coinsurance_applied": 33.6,
-        "member_liability": 33.6,
-        "payer_liability": 50.4,
+        "coinsurance_applied": 74.0,
+        "member_liability": 74.0,
+        "payer_liability": 111.0,
         "adjustment_reason_code": "CO-45",
         "line_status": "PAID"
       }
     ]
   },
   {
-    "claim_id": "CLM-20250820-142",
+    "claim_id": "CLM-20250428-148",
     "member_id": "MBR-10027",
-    "provider_id": "PRV-53978",
-    "date_of_service": "2025-08-20",
-    "received_at": "2025-08-20T09:00:00Z",
-    "adjudicated_at": "2025-08-20T09:01:00Z",
+    "provider_id": "PRV-51753",
+    "date_of_service": "2025-04-28",
+    "received_at": "2025-04-28T09:00:00Z",
+    "adjudicated_at": "2025-04-28T09:01:00Z",
     "status": "PAID",
     "totals": {
-      "billed_amount": 252.0,
-      "allowed_amount": 168.0,
-      "member_liability": 67.2,
-      "payer_liability": 100.8
+      "billed_amount": 277.5,
+      "allowed_amount": 185.0,
+      "member_liability": 74.0,
+      "payer_liability": 111.0
     },
     "denial_reasons": [],
     "line_detail": [
       {
         "line_number": 1,
-        "procedure_code": "99215",
-        "billed_amount": 252.0,
-        "allowed_amount": 168.0,
+        "procedure_code": "99205",
+        "billed_amount": 277.5,
+        "allowed_amount": 185.0,
         "deductible_applied": 0.0,
         "copay_applied": 0.0,
-        "coinsurance_applied": 67.2,
-        "member_liability": 67.2,
-        "payer_liability": 100.8,
+        "coinsurance_applied": 74.0,
+        "member_liability": 74.0,
+        "payer_liability": 111.0,
         "adjustment_reason_code": "CO-45",
         "line_status": "PAID"
       }
     ]
   },
   {
-    "claim_id": "CLM-20250213-143",
+    "claim_id": "CLM-20250319-149",
     "member_id": "MBR-10001",
-    "provider_id": "PRV-56238",
-    "date_of_service": "2025-02-13",
-    "received_at": "2025-02-13T09:00:00Z",
-    "adjudicated_at": "2025-02-13T09:01:00Z",
+    "provider_id": "PRV-50111",
+    "date_of_service": "2025-03-19",
+    "received_at": "2025-03-19T09:00:00Z",
+    "adjudicated_at": "2025-03-19T09:01:00Z",
     "status": "PAID",
     "totals": {
-      "billed_amount": 252.0,
-      "allowed_amount": 168.0,
-      "member_liability": 67.2,
-      "payer_liability": 100.8
+      "billed_amount": 202.5,
+      "allowed_amount": 135.0,
+      "member_liability": 54.0,
+      "payer_liability": 81.0
     },
     "denial_reasons": [],
     "line_detail": [
       {
         "line_number": 1,
-        "procedure_code": "99215",
-        "billed_amount": 252.0,
-        "allowed_amount": 168.0,
+        "procedure_code": "99204",
+        "billed_amount": 202.5,
+        "allowed_amount": 135.0,
         "deductible_applied": 0.0,
         "copay_applied": 0.0,
-        "coinsurance_applied": 67.2,
-        "member_liability": 67.2,
-        "payer_liability": 100.8,
+        "coinsurance_applied": 54.0,
+        "member_liability": 54.0,
+        "payer_liability": 81.0,
         "adjustment_reason_code": "CO-45",
         "line_status": "PAID"
       }
     ]
   },
   {
-    "claim_id": "CLM-20250205-144",
+    "claim_id": "CLM-20250327-150",
     "member_id": "MBR-10046",
-    "provider_id": "PRV-54406",
-    "date_of_service": "2025-02-05",
-    "received_at": "2025-02-05T09:00:00Z",
-    "adjudicated_at": "2025-02-05T09:01:00Z",
-    "status": "PAID",
-    "totals": {
-      "billed_amount": 202.5,
-      "allowed_amount": 135.0,
-      "member_liability": 54.0,
-      "payer_liability": 81.0
-    },
-    "denial_reasons": [],
-    "line_detail": [
-      {
-        "line_number": 1,
-        "procedure_code": "99204",
-        "billed_amount": 202.5,
-        "allowed_amount": 135.0,
-        "deductible_applied": 0.0,
-        "copay_applied": 0.0,
-        "coinsurance_applied": 54.0,
-        "member_liability": 54.0,
-        "payer_liability": 81.0,
-        "adjustment_reason_code": "CO-45",
-        "line_status": "PAID"
-      }
-    ]
-  },
-  {
-    "claim_id": "CLM-20250310-145",
-    "member_id": "MBR-10150",
-    "provider_id": "PRV-58080",
-    "date_of_service": "2025-03-10",
-    "received_at": "2025-03-10T09:00:00Z",
-    "adjudicated_at": "2025-03-10T09:01:00Z",
-    "status": "PAID",
-    "totals": {
-      "billed_amount": 49.5,
-      "allowed_amount": 33.0,
-      "member_liability": 13.2,
-      "payer_liability": 19.8
-    },
-    "denial_reasons": [],
-    "line_detail": [
-      {
-        "line_number": 1,
-        "procedure_code": "99211",
-        "billed_amount": 49.5,
-        "allowed_amount": 33.0,
-        "deductible_applied": 0.0,
-        "copay_applied": 0.0,
-        "coinsurance_applied": 13.2,
-        "member_liability": 13.2,
-        "payer_liability": 19.8,
-        "adjustment_reason_code": "CO-45",
-        "line_status": "PAID"
-      }
-    ]
-  },
-  {
-    "claim_id": "CLM-20250117-146",
-    "member_id": "MBR-10174",
-    "provider_id": "PRV-52740",
-    "date_of_service": "2025-01-17",
-    "received_at": "2025-01-17T09:00:00Z",
-    "adjudicated_at": "2025-01-17T09:01:00Z",
-    "status": "PAID",
-    "totals": {
-      "billed_amount": 202.5,
-      "allowed_amount": 135.0,
-      "member_liability": 54.0,
-      "payer_liability": 81.0
-    },
-    "denial_reasons": [],
-    "line_detail": [
-      {
-        "line_number": 1,
-        "procedure_code": "99204",
-        "billed_amount": 202.5,
-        "allowed_amount": 135.0,
-        "deductible_applied": 0.0,
-        "copay_applied": 0.0,
-        "coinsurance_applied": 54.0,
-        "member_liability": 54.0,
-        "payer_liability": 81.0,
-        "adjustment_reason_code": "CO-45",
-        "line_status": "PAID"
-      }
-    ]
-  },
-  {
-    "claim_id": "CLM-20250312-147",
-    "member_id": "MBR-10100",
-    "provider_id": "PRV-56900",
-    "date_of_service": "2025-03-12",
-    "received_at": "2025-03-12T09:00:00Z",
-    "adjudicated_at": "2025-03-12T09:01:00Z",
+    "provider_id": "PRV-56225",
+    "date_of_service": "2025-03-27",
+    "received_at": "2025-03-27T09:00:00Z",
+    "adjudicated_at": "2025-03-27T09:01:00Z",
     "status": "PAID",
     "totals": {
       "billed_amount": 126.0,
@@ -4867,43 +5074,12 @@
     ]
   },
   {
-    "claim_id": "CLM-20250504-148",
-    "member_id": "MBR-10057",
-    "provider_id": "PRV-51261",
-    "date_of_service": "2025-05-04",
-    "received_at": "2025-05-04T09:00:00Z",
-    "adjudicated_at": "2025-05-04T09:01:00Z",
-    "status": "PAID",
-    "totals": {
-      "billed_amount": 49.5,
-      "allowed_amount": 33.0,
-      "member_liability": 13.2,
-      "payer_liability": 19.8
-    },
-    "denial_reasons": [],
-    "line_detail": [
-      {
-        "line_number": 1,
-        "procedure_code": "99211",
-        "billed_amount": 49.5,
-        "allowed_amount": 33.0,
-        "deductible_applied": 0.0,
-        "copay_applied": 0.0,
-        "coinsurance_applied": 13.2,
-        "member_liability": 13.2,
-        "payer_liability": 19.8,
-        "adjustment_reason_code": "CO-45",
-        "line_status": "PAID"
-      }
-    ]
-  },
-  {
-    "claim_id": "CLM-20250306-149",
-    "member_id": "MBR-10049",
-    "provider_id": "PRV-54041",
-    "date_of_service": "2025-03-06",
-    "received_at": "2025-03-06T09:00:00Z",
-    "adjudicated_at": "2025-03-06T09:01:00Z",
+    "claim_id": "CLM-20250423-151",
+    "member_id": "MBR-10150",
+    "provider_id": "PRV-55485",
+    "date_of_service": "2025-04-23",
+    "received_at": "2025-04-23T09:00:00Z",
+    "adjudicated_at": "2025-04-23T09:01:00Z",
     "status": "PAID",
     "totals": {
       "billed_amount": 87.0,
@@ -4929,31 +5105,1628 @@
     ]
   },
   {
-    "claim_id": "CLM-20250602-150",
-    "member_id": "MBR-10036",
-    "provider_id": "PRV-53204",
-    "date_of_service": "2025-06-02",
-    "received_at": "2025-06-02T09:00:00Z",
-    "adjudicated_at": "2025-06-02T09:01:00Z",
+    "claim_id": "CLM-20250728-152",
+    "member_id": "MBR-10174",
+    "provider_id": "PRV-59739",
+    "date_of_service": "2025-07-28",
+    "received_at": "2025-07-28T09:00:00Z",
+    "adjudicated_at": "2025-07-28T09:01:00Z",
     "status": "PAID",
     "totals": {
-      "billed_amount": 186.0,
-      "allowed_amount": 124.0,
-      "member_liability": 49.6,
-      "payer_liability": 74.4
+      "billed_amount": 126.0,
+      "allowed_amount": 84.0,
+      "member_liability": 33.6,
+      "payer_liability": 50.4
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "99213",
+        "billed_amount": 126.0,
+        "allowed_amount": 84.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 33.6,
+        "member_liability": 33.6,
+        "payer_liability": 50.4,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250318-153",
+    "member_id": "MBR-10100",
+    "provider_id": "PRV-55254",
+    "date_of_service": "2025-03-18",
+    "received_at": "2025-03-18T09:00:00Z",
+    "adjudicated_at": "2025-03-18T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 202.5,
+      "allowed_amount": 135.0,
+      "member_liability": 54.0,
+      "payer_liability": 81.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "99204",
+        "billed_amount": 202.5,
+        "allowed_amount": 135.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 54.0,
+        "member_liability": 54.0,
+        "payer_liability": 81.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250503-154",
+    "member_id": "MBR-10057",
+    "provider_id": "PRV-55148",
+    "date_of_service": "2025-05-03",
+    "received_at": "2025-05-03T09:00:00Z",
+    "adjudicated_at": "2025-05-03T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 277.5,
+      "allowed_amount": 185.0,
+      "member_liability": 74.0,
+      "payer_liability": 111.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "99205",
+        "billed_amount": 277.5,
+        "allowed_amount": 185.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 74.0,
+        "member_liability": 74.0,
+        "payer_liability": 111.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250412-155",
+    "member_id": "MBR-10049",
+    "provider_id": "PRV-55229",
+    "date_of_service": "2025-04-12",
+    "received_at": "2025-04-12T09:00:00Z",
+    "adjudicated_at": "2025-04-12T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 202.5,
+      "allowed_amount": 135.0,
+      "member_liability": 54.0,
+      "payer_liability": 81.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "99204",
+        "billed_amount": 202.5,
+        "allowed_amount": 135.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 54.0,
+        "member_liability": 54.0,
+        "payer_liability": 81.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250708-156",
+    "member_id": "MBR-10036",
+    "provider_id": "PRV-58045",
+    "date_of_service": "2025-07-08",
+    "received_at": "2025-07-08T09:00:00Z",
+    "adjudicated_at": "2025-07-08T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 49.5,
+      "allowed_amount": 33.0,
+      "member_liability": 13.2,
+      "payer_liability": 19.8
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "99211",
+        "billed_amount": 49.5,
+        "allowed_amount": 33.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 13.2,
+        "member_liability": 13.2,
+        "payer_liability": 19.8,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250612-157",
+    "member_id": "MBR-10093",
+    "provider_id": "PRV-20009",
+    "date_of_service": "2025-06-12",
+    "received_at": "2025-06-12T09:00:00Z",
+    "adjudicated_at": "2025-06-12T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 330.0,
+      "allowed_amount": 220.0,
+      "member_liability": 0.0,
+      "payer_liability": 220.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "99396",
+        "billed_amount": 330.0,
+        "allowed_amount": 220.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 0.0,
+        "payer_liability": 220.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250523-158",
+    "member_id": "MBR-10055",
+    "provider_id": "PRV-10010",
+    "date_of_service": "2025-05-23",
+    "received_at": "2025-05-23T09:00:00Z",
+    "adjudicated_at": "2025-05-23T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 277.5,
+      "allowed_amount": 185.0,
+      "member_liability": 0.0,
+      "payer_liability": 185.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "99395",
+        "billed_amount": 277.5,
+        "allowed_amount": 185.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 0.0,
+        "payer_liability": 185.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250315-159",
+    "member_id": "MBR-10037",
+    "provider_id": "PRV-10009",
+    "date_of_service": "2025-03-15",
+    "received_at": "2025-03-15T09:00:00Z",
+    "adjudicated_at": "2025-03-15T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 330.0,
+      "allowed_amount": 220.0,
+      "member_liability": 0.0,
+      "payer_liability": 220.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "99396",
+        "billed_amount": 330.0,
+        "allowed_amount": 220.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 0.0,
+        "payer_liability": 220.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250322-160",
+    "member_id": "MBR-10175",
+    "provider_id": "PRV-20008",
+    "date_of_service": "2025-03-22",
+    "received_at": "2025-03-22T09:00:00Z",
+    "adjudicated_at": "2025-03-22T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 277.5,
+      "allowed_amount": 185.0,
+      "member_liability": 0.0,
+      "payer_liability": 185.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "99395",
+        "billed_amount": 277.5,
+        "allowed_amount": 185.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 0.0,
+        "payer_liability": 185.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250810-161",
+    "member_id": "MBR-10105",
+    "provider_id": "PRV-10021",
+    "date_of_service": "2025-08-10",
+    "received_at": "2025-08-10T09:00:00Z",
+    "adjudicated_at": "2025-08-10T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 277.5,
+      "allowed_amount": 185.0,
+      "member_liability": 0.0,
+      "payer_liability": 185.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "99395",
+        "billed_amount": 277.5,
+        "allowed_amount": 185.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 0.0,
+        "payer_liability": 185.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250505-162",
+    "member_id": "MBR-10087",
+    "provider_id": "PRV-10003",
+    "date_of_service": "2025-05-05",
+    "received_at": "2025-05-05T09:00:00Z",
+    "adjudicated_at": "2025-05-05T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 277.5,
+      "allowed_amount": 185.0,
+      "member_liability": 0.0,
+      "payer_liability": 185.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "99395",
+        "billed_amount": 277.5,
+        "allowed_amount": 185.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 0.0,
+        "payer_liability": 185.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250219-163",
+    "member_id": "MBR-10043",
+    "provider_id": "PRV-10014",
+    "date_of_service": "2025-02-19",
+    "received_at": "2025-02-19T09:00:00Z",
+    "adjudicated_at": "2025-02-19T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 5100.0,
+      "allowed_amount": 3400.0,
+      "member_liability": 340.0,
+      "payer_liability": 3060.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "30140",
+        "billed_amount": 5100.0,
+        "allowed_amount": 3400.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 340.0,
+        "member_liability": 340.0,
+        "payer_liability": 3060.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250409-164",
+    "member_id": "MBR-10043",
+    "provider_id": "PRV-10009",
+    "date_of_service": "2025-04-09",
+    "received_at": "2025-04-09T09:00:00Z",
+    "adjudicated_at": "2025-04-09T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 5100.0,
+      "allowed_amount": 3400.0,
+      "member_liability": 340.0,
+      "payer_liability": 3060.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "30140",
+        "billed_amount": 5100.0,
+        "allowed_amount": 3400.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 340.0,
+        "member_liability": 340.0,
+        "payer_liability": 3060.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250510-165",
+    "member_id": "MBR-10043",
+    "provider_id": "PRV-10011",
+    "date_of_service": "2025-05-10",
+    "received_at": "2025-05-10T09:00:00Z",
+    "adjudicated_at": "2025-05-10T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 5100.0,
+      "allowed_amount": 3400.0,
+      "member_liability": 340.0,
+      "payer_liability": 3060.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "30140",
+        "billed_amount": 5100.0,
+        "allowed_amount": 3400.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 340.0,
+        "member_liability": 340.0,
+        "payer_liability": 3060.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250507-166",
+    "member_id": "MBR-10043",
+    "provider_id": "PRV-10007",
+    "date_of_service": "2025-05-07",
+    "received_at": "2025-05-07T09:00:00Z",
+    "adjudicated_at": "2025-05-07T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 5100.0,
+      "allowed_amount": 3400.0,
+      "member_liability": 340.0,
+      "payer_liability": 3060.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "30140",
+        "billed_amount": 5100.0,
+        "allowed_amount": 3400.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 340.0,
+        "member_liability": 340.0,
+        "payer_liability": 3060.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250625-167",
+    "member_id": "MBR-10043",
+    "provider_id": "PRV-10008",
+    "date_of_service": "2025-06-25",
+    "received_at": "2025-06-25T09:00:00Z",
+    "adjudicated_at": "2025-06-25T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 5100.0,
+      "allowed_amount": 3400.0,
+      "member_liability": 340.0,
+      "payer_liability": 3060.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "30140",
+        "billed_amount": 5100.0,
+        "allowed_amount": 3400.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 340.0,
+        "member_liability": 340.0,
+        "payer_liability": 3060.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250417-168",
+    "member_id": "MBR-10043",
+    "provider_id": "PRV-10012",
+    "date_of_service": "2025-04-17",
+    "received_at": "2025-04-17T09:00:00Z",
+    "adjudicated_at": "2025-04-17T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 5100.0,
+      "allowed_amount": 3400.0,
+      "member_liability": 340.0,
+      "payer_liability": 3060.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "30140",
+        "billed_amount": 5100.0,
+        "allowed_amount": 3400.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 340.0,
+        "member_liability": 340.0,
+        "payer_liability": 3060.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250804-169",
+    "member_id": "MBR-10043",
+    "provider_id": "PRV-10008",
+    "date_of_service": "2025-08-04",
+    "received_at": "2025-08-04T09:00:00Z",
+    "adjudicated_at": "2025-08-04T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 5100.0,
+      "allowed_amount": 3400.0,
+      "member_liability": 340.0,
+      "payer_liability": 3060.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "30140",
+        "billed_amount": 5100.0,
+        "allowed_amount": 3400.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 340.0,
+        "member_liability": 340.0,
+        "payer_liability": 3060.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250506-170",
+    "member_id": "MBR-10043",
+    "provider_id": "PRV-10003",
+    "date_of_service": "2025-05-06",
+    "received_at": "2025-05-06T09:00:00Z",
+    "adjudicated_at": "2025-05-06T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 5100.0,
+      "allowed_amount": 3400.0,
+      "member_liability": 340.0,
+      "payer_liability": 3060.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "30140",
+        "billed_amount": 5100.0,
+        "allowed_amount": 3400.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 340.0,
+        "member_liability": 340.0,
+        "payer_liability": 3060.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250122-171",
+    "member_id": "MBR-10043",
+    "provider_id": "PRV-10010",
+    "date_of_service": "2025-01-22",
+    "received_at": "2025-01-22T09:00:00Z",
+    "adjudicated_at": "2025-01-22T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 5100.0,
+      "allowed_amount": 3400.0,
+      "member_liability": 340.0,
+      "payer_liability": 3060.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "30140",
+        "billed_amount": 5100.0,
+        "allowed_amount": 3400.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 340.0,
+        "member_liability": 340.0,
+        "payer_liability": 3060.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250108-172",
+    "member_id": "MBR-10043",
+    "provider_id": "PRV-10013",
+    "date_of_service": "2025-01-08",
+    "received_at": "2025-01-08T09:00:00Z",
+    "adjudicated_at": "2025-01-08T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 5100.0,
+      "allowed_amount": 3400.0,
+      "member_liability": 340.0,
+      "payer_liability": 3060.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "30140",
+        "billed_amount": 5100.0,
+        "allowed_amount": 3400.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 340.0,
+        "member_liability": 340.0,
+        "payer_liability": 3060.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250714-173",
+    "member_id": "MBR-10062",
+    "provider_id": "PRV-10004",
+    "date_of_service": "2025-07-14",
+    "received_at": "2025-07-14T09:00:00Z",
+    "adjudicated_at": "2025-07-14T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 4200.0,
+      "allowed_amount": 2800.0,
+      "member_liability": 280.0,
+      "payer_liability": 2520.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "42820",
+        "billed_amount": 4200.0,
+        "allowed_amount": 2800.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 280.0,
+        "member_liability": 280.0,
+        "payer_liability": 2520.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250316-174",
+    "member_id": "MBR-10062",
+    "provider_id": "PRV-10001",
+    "date_of_service": "2025-03-16",
+    "received_at": "2025-03-16T09:00:00Z",
+    "adjudicated_at": "2025-03-16T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 4200.0,
+      "allowed_amount": 2800.0,
+      "member_liability": 280.0,
+      "payer_liability": 2520.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "42820",
+        "billed_amount": 4200.0,
+        "allowed_amount": 2800.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 280.0,
+        "member_liability": 280.0,
+        "payer_liability": 2520.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250312-175",
+    "member_id": "MBR-10062",
+    "provider_id": "PRV-10004",
+    "date_of_service": "2025-03-12",
+    "received_at": "2025-03-12T09:00:00Z",
+    "adjudicated_at": "2025-03-12T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 4200.0,
+      "allowed_amount": 2800.0,
+      "member_liability": 280.0,
+      "payer_liability": 2520.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "42820",
+        "billed_amount": 4200.0,
+        "allowed_amount": 2800.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 280.0,
+        "member_liability": 280.0,
+        "payer_liability": 2520.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250518-176",
+    "member_id": "MBR-10062",
+    "provider_id": "PRV-10005",
+    "date_of_service": "2025-05-18",
+    "received_at": "2025-05-18T09:00:00Z",
+    "adjudicated_at": "2025-05-18T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 4200.0,
+      "allowed_amount": 2800.0,
+      "member_liability": 280.0,
+      "payer_liability": 2520.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "42820",
+        "billed_amount": 4200.0,
+        "allowed_amount": 2800.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 280.0,
+        "member_liability": 280.0,
+        "payer_liability": 2520.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250213-177",
+    "member_id": "MBR-10062",
+    "provider_id": "PRV-10013",
+    "date_of_service": "2025-02-13",
+    "received_at": "2025-02-13T09:00:00Z",
+    "adjudicated_at": "2025-02-13T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 4200.0,
+      "allowed_amount": 2800.0,
+      "member_liability": 280.0,
+      "payer_liability": 2520.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "42820",
+        "billed_amount": 4200.0,
+        "allowed_amount": 2800.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 280.0,
+        "member_liability": 280.0,
+        "payer_liability": 2520.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250428-178",
+    "member_id": "MBR-10062",
+    "provider_id": "PRV-10010",
+    "date_of_service": "2025-04-28",
+    "received_at": "2025-04-28T09:00:00Z",
+    "adjudicated_at": "2025-04-28T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 4200.0,
+      "allowed_amount": 2800.0,
+      "member_liability": 280.0,
+      "payer_liability": 2520.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "42820",
+        "billed_amount": 4200.0,
+        "allowed_amount": 2800.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 280.0,
+        "member_liability": 280.0,
+        "payer_liability": 2520.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250710-179",
+    "member_id": "MBR-10062",
+    "provider_id": "PRV-10013",
+    "date_of_service": "2025-07-10",
+    "received_at": "2025-07-10T09:00:00Z",
+    "adjudicated_at": "2025-07-10T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 4200.0,
+      "allowed_amount": 2800.0,
+      "member_liability": 280.0,
+      "payer_liability": 2520.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "42820",
+        "billed_amount": 4200.0,
+        "allowed_amount": 2800.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 280.0,
+        "member_liability": 280.0,
+        "payer_liability": 2520.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250716-180",
+    "member_id": "MBR-10062",
+    "provider_id": "PRV-10008",
+    "date_of_service": "2025-07-16",
+    "received_at": "2025-07-16T09:00:00Z",
+    "adjudicated_at": "2025-07-16T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 4200.0,
+      "allowed_amount": 2800.0,
+      "member_liability": 280.0,
+      "payer_liability": 2520.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "42820",
+        "billed_amount": 4200.0,
+        "allowed_amount": 2800.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 280.0,
+        "member_liability": 280.0,
+        "payer_liability": 2520.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250521-181",
+    "member_id": "MBR-10062",
+    "provider_id": "PRV-10009",
+    "date_of_service": "2025-05-21",
+    "received_at": "2025-05-21T09:00:00Z",
+    "adjudicated_at": "2025-05-21T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 4200.0,
+      "allowed_amount": 2800.0,
+      "member_liability": 280.0,
+      "payer_liability": 2520.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "42820",
+        "billed_amount": 4200.0,
+        "allowed_amount": 2800.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 280.0,
+        "member_liability": 280.0,
+        "payer_liability": 2520.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250129-182",
+    "member_id": "MBR-10062",
+    "provider_id": "PRV-10010",
+    "date_of_service": "2025-01-29",
+    "received_at": "2025-01-29T09:00:00Z",
+    "adjudicated_at": "2025-01-29T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 4200.0,
+      "allowed_amount": 2800.0,
+      "member_liability": 280.0,
+      "payer_liability": 2520.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "42820",
+        "billed_amount": 4200.0,
+        "allowed_amount": 2800.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 280.0,
+        "member_liability": 280.0,
+        "payer_liability": 2520.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250130-183",
+    "member_id": "MBR-10097",
+    "provider_id": "PRV-10005",
+    "date_of_service": "2025-01-30",
+    "received_at": "2025-01-30T09:00:00Z",
+    "adjudicated_at": "2025-01-30T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 6150.0,
+      "allowed_amount": 4100.0,
+      "member_liability": 410.0,
+      "payer_liability": 3690.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "30520",
+        "billed_amount": 6150.0,
+        "allowed_amount": 4100.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 410.0,
+        "member_liability": 410.0,
+        "payer_liability": 3690.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250718-184",
+    "member_id": "MBR-10097",
+    "provider_id": "PRV-10009",
+    "date_of_service": "2025-07-18",
+    "received_at": "2025-07-18T09:00:00Z",
+    "adjudicated_at": "2025-07-18T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 6150.0,
+      "allowed_amount": 4100.0,
+      "member_liability": 410.0,
+      "payer_liability": 3690.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "30520",
+        "billed_amount": 6150.0,
+        "allowed_amount": 4100.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 410.0,
+        "member_liability": 410.0,
+        "payer_liability": 3690.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250730-185",
+    "member_id": "MBR-10097",
+    "provider_id": "PRV-10006",
+    "date_of_service": "2025-07-30",
+    "received_at": "2025-07-30T09:00:00Z",
+    "adjudicated_at": "2025-07-30T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 6150.0,
+      "allowed_amount": 4100.0,
+      "member_liability": 410.0,
+      "payer_liability": 3690.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "30520",
+        "billed_amount": 6150.0,
+        "allowed_amount": 4100.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 410.0,
+        "member_liability": 410.0,
+        "payer_liability": 3690.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250519-186",
+    "member_id": "MBR-10097",
+    "provider_id": "PRV-10014",
+    "date_of_service": "2025-05-19",
+    "received_at": "2025-05-19T09:00:00Z",
+    "adjudicated_at": "2025-05-19T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 6150.0,
+      "allowed_amount": 4100.0,
+      "member_liability": 410.0,
+      "payer_liability": 3690.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "30520",
+        "billed_amount": 6150.0,
+        "allowed_amount": 4100.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 410.0,
+        "member_liability": 410.0,
+        "payer_liability": 3690.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250713-187",
+    "member_id": "MBR-10097",
+    "provider_id": "PRV-10001",
+    "date_of_service": "2025-07-13",
+    "received_at": "2025-07-13T09:00:00Z",
+    "adjudicated_at": "2025-07-13T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 6150.0,
+      "allowed_amount": 4100.0,
+      "member_liability": 410.0,
+      "payer_liability": 3690.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "30520",
+        "billed_amount": 6150.0,
+        "allowed_amount": 4100.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 410.0,
+        "member_liability": 410.0,
+        "payer_liability": 3690.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250714-188",
+    "member_id": "MBR-10097",
+    "provider_id": "PRV-10012",
+    "date_of_service": "2025-07-14",
+    "received_at": "2025-07-14T09:00:00Z",
+    "adjudicated_at": "2025-07-14T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 6150.0,
+      "allowed_amount": 4100.0,
+      "member_liability": 410.0,
+      "payer_liability": 3690.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "30520",
+        "billed_amount": 6150.0,
+        "allowed_amount": 4100.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 410.0,
+        "member_liability": 410.0,
+        "payer_liability": 3690.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250423-189",
+    "member_id": "MBR-10097",
+    "provider_id": "PRV-10009",
+    "date_of_service": "2025-04-23",
+    "received_at": "2025-04-23T09:00:00Z",
+    "adjudicated_at": "2025-04-23T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 6150.0,
+      "allowed_amount": 4100.0,
+      "member_liability": 410.0,
+      "payer_liability": 3690.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "30520",
+        "billed_amount": 6150.0,
+        "allowed_amount": 4100.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 410.0,
+        "member_liability": 410.0,
+        "payer_liability": 3690.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250225-190",
+    "member_id": "MBR-10097",
+    "provider_id": "PRV-10007",
+    "date_of_service": "2025-02-25",
+    "received_at": "2025-02-25T09:00:00Z",
+    "adjudicated_at": "2025-02-25T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 6150.0,
+      "allowed_amount": 4100.0,
+      "member_liability": 410.0,
+      "payer_liability": 3690.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "30520",
+        "billed_amount": 6150.0,
+        "allowed_amount": 4100.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 410.0,
+        "member_liability": 410.0,
+        "payer_liability": 3690.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250127-191",
+    "member_id": "MBR-10097",
+    "provider_id": "PRV-10012",
+    "date_of_service": "2025-01-27",
+    "received_at": "2025-01-27T09:00:00Z",
+    "adjudicated_at": "2025-01-27T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 6150.0,
+      "allowed_amount": 4100.0,
+      "member_liability": 410.0,
+      "payer_liability": 3690.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "30520",
+        "billed_amount": 6150.0,
+        "allowed_amount": 4100.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 410.0,
+        "member_liability": 410.0,
+        "payer_liability": 3690.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250801-192",
+    "member_id": "MBR-10097",
+    "provider_id": "PRV-10011",
+    "date_of_service": "2025-08-01",
+    "received_at": "2025-08-01T09:00:00Z",
+    "adjudicated_at": "2025-08-01T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 6150.0,
+      "allowed_amount": 4100.0,
+      "member_liability": 410.0,
+      "payer_liability": 3690.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "30520",
+        "billed_amount": 6150.0,
+        "allowed_amount": 4100.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 0.0,
+        "coinsurance_applied": 410.0,
+        "member_liability": 410.0,
+        "payer_liability": 3690.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250826-193",
+    "member_id": "MBR-10046",
+    "provider_id": "PRV-10010",
+    "date_of_service": "2025-08-26",
+    "received_at": "2025-08-26T09:00:00Z",
+    "adjudicated_at": "2025-08-26T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 285.0,
+      "allowed_amount": 190.0,
+      "member_liability": 75.0,
+      "payer_liability": 115.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "99202",
+        "billed_amount": 142.5,
+        "allowed_amount": 95.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 25.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 25.0,
+        "payer_liability": 70.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      },
+      {
+        "line_number": 2,
+        "procedure_code": "92504",
+        "billed_amount": 142.5,
+        "allowed_amount": 95.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 50.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 50.0,
+        "payer_liability": 45.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250101-194",
+    "member_id": "MBR-10009",
+    "provider_id": "PRV-10018",
+    "date_of_service": "2025-01-01",
+    "received_at": "2025-01-01T09:00:00Z",
+    "adjudicated_at": "2025-01-01T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 397.5,
+      "allowed_amount": 265.0,
+      "member_liability": 90.0,
+      "payer_liability": 175.0
     },
     "denial_reasons": [],
     "line_detail": [
       {
         "line_number": 1,
         "procedure_code": "99214",
-        "billed_amount": 186.0,
-        "allowed_amount": 124.0,
+        "billed_amount": 255.0,
+        "allowed_amount": 170.0,
         "deductible_applied": 0.0,
-        "copay_applied": 0.0,
-        "coinsurance_applied": 49.6,
-        "member_liability": 49.6,
-        "payer_liability": 74.4,
+        "copay_applied": 40.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 40.0,
+        "payer_liability": 130.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      },
+      {
+        "line_number": 2,
+        "procedure_code": "92557",
+        "billed_amount": 142.5,
+        "allowed_amount": 95.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 50.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 50.0,
+        "payer_liability": 45.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250814-195",
+    "member_id": "MBR-10014",
+    "provider_id": "PRV-10014",
+    "date_of_service": "2025-08-14",
+    "received_at": "2025-08-14T09:00:00Z",
+    "adjudicated_at": "2025-08-14T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 427.5,
+      "allowed_amount": 285.0,
+      "member_liability": 90.0,
+      "payer_liability": 195.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "99205",
+        "billed_amount": 375.0,
+        "allowed_amount": 250.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 40.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 40.0,
+        "payer_liability": 210.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      },
+      {
+        "line_number": 2,
+        "procedure_code": "92551",
+        "billed_amount": 52.5,
+        "allowed_amount": 35.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 50.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 50.0,
+        "payer_liability": -15.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250124-196",
+    "member_id": "MBR-10092",
+    "provider_id": "PRV-10016",
+    "date_of_service": "2025-01-24",
+    "received_at": "2025-01-24T09:00:00Z",
+    "adjudicated_at": "2025-01-24T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 360.0,
+      "allowed_amount": 240.0,
+      "member_liability": 90.0,
+      "payer_liability": 150.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "99204",
+        "billed_amount": 277.5,
+        "allowed_amount": 185.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 40.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 40.0,
+        "payer_liability": 145.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      },
+      {
+        "line_number": 2,
+        "procedure_code": "92552",
+        "billed_amount": 82.5,
+        "allowed_amount": 55.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 50.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 50.0,
+        "payer_liability": 5.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250406-197",
+    "member_id": "MBR-10171",
+    "provider_id": "PRV-10015",
+    "date_of_service": "2025-04-06",
+    "received_at": "2025-04-06T09:00:00Z",
+    "adjudicated_at": "2025-04-06T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 210.0,
+      "allowed_amount": 140.0,
+      "member_liability": 65.0,
+      "payer_liability": 75.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "99211",
+        "billed_amount": 67.5,
+        "allowed_amount": 45.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 15.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 15.0,
+        "payer_liability": 30.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      },
+      {
+        "line_number": 2,
+        "procedure_code": "92504",
+        "billed_amount": 142.5,
+        "allowed_amount": 95.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 50.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 50.0,
+        "payer_liability": 45.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250610-198",
+    "member_id": "MBR-10176",
+    "provider_id": "PRV-10014",
+    "date_of_service": "2025-06-10",
+    "received_at": "2025-06-10T09:00:00Z",
+    "adjudicated_at": "2025-06-10T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 285.0,
+      "allowed_amount": 190.0,
+      "member_liability": 75.0,
+      "payer_liability": 115.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "99202",
+        "billed_amount": 142.5,
+        "allowed_amount": 95.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 25.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 25.0,
+        "payer_liability": 70.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      },
+      {
+        "line_number": 2,
+        "procedure_code": "92557",
+        "billed_amount": 142.5,
+        "allowed_amount": 95.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 50.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 50.0,
+        "payer_liability": 45.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250705-199",
+    "member_id": "MBR-10043",
+    "provider_id": "PRV-10012",
+    "date_of_service": "2025-07-05",
+    "received_at": "2025-07-05T09:00:00Z",
+    "adjudicated_at": "2025-07-05T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 172.5,
+      "allowed_amount": 115.0,
+      "member_liability": 0,
+      "payer_liability": 115.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "99213",
+        "billed_amount": 172.5,
+        "allowed_amount": 115.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 30.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 0,
+        "payer_liability": 115.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250713-200",
+    "member_id": "MBR-10062",
+    "provider_id": "PRV-10004",
+    "date_of_service": "2025-07-13",
+    "received_at": "2025-07-13T09:00:00Z",
+    "adjudicated_at": "2025-07-13T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 172.5,
+      "allowed_amount": 115.0,
+      "member_liability": 0,
+      "payer_liability": 115.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "99213",
+        "billed_amount": 172.5,
+        "allowed_amount": 115.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 30.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 0,
+        "payer_liability": 115.0,
+        "adjustment_reason_code": "CO-45",
+        "line_status": "PAID"
+      }
+    ]
+  },
+  {
+    "claim_id": "CLM-20250420-201",
+    "member_id": "MBR-10097",
+    "provider_id": "PRV-10011",
+    "date_of_service": "2025-04-20",
+    "received_at": "2025-04-20T09:00:00Z",
+    "adjudicated_at": "2025-04-20T09:01:00Z",
+    "status": "PAID",
+    "totals": {
+      "billed_amount": 172.5,
+      "allowed_amount": 115.0,
+      "member_liability": 0,
+      "payer_liability": 115.0
+    },
+    "denial_reasons": [],
+    "line_detail": [
+      {
+        "line_number": 1,
+        "procedure_code": "99213",
+        "billed_amount": 172.5,
+        "allowed_amount": 115.0,
+        "deductible_applied": 0.0,
+        "copay_applied": 30.0,
+        "coinsurance_applied": 0.0,
+        "member_liability": 0,
+        "payer_liability": 115.0,
         "adjustment_reason_code": "CO-45",
         "line_status": "PAID"
       }

@@ -376,7 +376,6 @@ def _paid_line(line_num, code, pricing):
 
 
 def _denied_line(line_num, code):
-    desc, _ = CODE_META[code]
     return {
         "line_number": line_num,
         "procedure_code": code,
@@ -416,9 +415,16 @@ def _make_claim(cid, member_id, provider_id, dos, status, lines, denial_reasons=
     }
 
 
-def generate_claims(members, fee_schedules):
+def _first_active_surgical_code(member):
+    """Return the first active ENT_SURGICAL auth code for a member, or None."""
+    for a in member["authorizations"]:
+        if a["procedure_code"] in ENT_SURGICAL and a["expiration_date"] >= "2025-06-01":
+            return a["procedure_code"]
+    return None
+
+
+def generate_claims(members, fee_schedules, counter):
     fs_map = {f["procedure_code"]: f for f in fee_schedules}
-    counter = [1]
 
     def next_cid(dos):
         cid = f"CLM-{dos.replace('-', '')}-{counter[0]:03d}"
@@ -431,7 +437,6 @@ def generate_claims(members, fee_schedules):
         return f"PRV-{random.randint(s, e):05d}"
 
     def oon_provider(plan_id):
-        # Use a provider number outside any plan's network
         return f"PRV-{random.randint(50001, 59999):05d}"
 
     # Partition members by plan
@@ -440,7 +445,6 @@ def generate_claims(members, fee_schedules):
         pid = m["enrollment"]["plan_id"]
         by_plan.setdefault(pid, []).append(m)
 
-    # Gold members with valid (active) surgical ENT auth
     def has_active_auth(member, code):
         return any(
             a["procedure_code"] == code and a["expiration_date"] >= "2025-06-01"
@@ -463,14 +467,16 @@ def generate_claims(members, fee_schedules):
         m for m in by_plan.get("PLN-PREMIER-004", [])
         if m not in premier_with_ent_auth
     ]
-    silver_bronze = by_plan.get("PLN-SILVER-002", []) + by_plan.get("PLN-BRONZE-003", [])
+    sv_pool = by_plan.get("PLN-SILVER-002", [])
+    bz_pool = by_plan.get("PLN-BRONZE-003", [])
+    silver_bronze = sv_pool + bz_pool
     basic_members = by_plan.get("PLN-BASIC-005", [])
     all_members_pool = members * 3
     random.shuffle(all_members_pool)
 
     claims = []
 
-    # Category 1: 70 paid in-net GP visits
+    # Category 1: 70 paid in-net GP visits (includes preventive-eligible codes via GP_CORE + GP_LAB)
     gp_paid_codes = GP_CORE + GP_LAB
     for i in range(70):
         m = all_members_pool[i]
@@ -484,7 +490,6 @@ def generate_claims(members, fee_schedules):
         ))
 
     # Category 2: 30 paid in-net ENT diagnostic
-    # Use non-Premier members (no auth needed)
     non_premier = [m for m in members if m["enrollment"]["plan_id"] != "PLN-PREMIER-004"]
     random.shuffle(non_premier)
     pool2 = (non_premier * 3)[:30]
@@ -498,13 +503,12 @@ def generate_claims(members, fee_schedules):
             next_cid(dos), m["member_id"], in_net_provider(plan_id), dos, "PAID", [line]
         ))
 
-    # Category 3: 10 paid in-net ENT surgical with valid auth
+    # Category 3: 10 paid in-net ENT surgical with valid auth (Gold members)
     surgical_members = gold_with_surgical_auth * 5
     random.shuffle(surgical_members)
     for i in range(10):
         m = surgical_members[i % len(surgical_members)]
         plan_id = m["enrollment"]["plan_id"]
-        # Pick a code the member has active auth for
         valid_codes = [a["procedure_code"] for a in m["authorizations"]
                        if a["procedure_code"] in ENT_SURGICAL and a["expiration_date"] >= "2025-06-01"]
         if not valid_codes:
@@ -517,8 +521,9 @@ def generate_claims(members, fee_schedules):
             next_cid(dos), m["member_id"], in_net_provider(plan_id), dos, "PAID", [line]
         ))
 
-    # Category 4: 10 partially paid mixed-line claims (1 PAID GP + 1 DENIED surgical)
-    mixed_members = (silver_bronze * 3)[:10]
+    # Category 4: 10 partially paid mixed-line claims — 5 Silver + 5 Bronze
+    # Explicit per-plan slices guarantee both plans appear.
+    mixed_members = (sv_pool * 3)[:5] + (bz_pool * 3)[:5]
     for m in mixed_members:
         plan_id = m["enrollment"]["plan_id"]
         gp_code = random.choice(GP_CORE)
@@ -535,10 +540,65 @@ def generate_claims(members, fee_schedules):
             next_cid(dos), m["member_id"], in_net_provider(plan_id), dos, "PARTIALLY_PAID", lines, dr
         ))
 
-    # Category 5: 10 denied not covered
-    denied_nc_members = silver_bronze[:5] + (basic_members * 2)[:5]
-    random.shuffle(denied_nc_members)
-    for m in denied_nc_members[:10]:
+    # Category 4b: 2 Gold PARTIALLY_PAID (GP paid + ENT surgical denied — no auth)
+    gold_no_auth_pool = (gold_without_surgical_auth * 3)[:2]
+    for m in gold_no_auth_pool:
+        plan_id = m["enrollment"]["plan_id"]
+        gp_code = random.choice(GP_CORE)
+        surgical_code = random.choice(ENT_SURGICAL)
+        dos = _random_dos()
+        pr = _compute_line_in_network(gp_code)
+        paid_ln = _paid_line(1, gp_code, pr)
+        denied_ln = _denied_line(2, surgical_code)
+        dr = [{"code": "AUTH_REQUIRED_NOT_ON_FILE",
+               "description": "Prior authorization required and not on file",
+               "procedure_code": surgical_code}]
+        claims.append(_make_claim(
+            next_cid(dos), m["member_id"], in_net_provider(plan_id), dos, "PARTIALLY_PAID",
+            [paid_ln, denied_ln], dr
+        ))
+
+    # Category 4c: 2 Premier PARTIALLY_PAID (GP paid + ENT diag denied — no auth)
+    premier_no_auth_pool = (premier_without_ent_auth * 3)[:2]
+    for m in premier_no_auth_pool:
+        plan_id = m["enrollment"]["plan_id"]
+        gp_code = random.choice(GP_CORE)
+        ent_code = random.choice(ENT_DIAG)
+        dos = _random_dos()
+        pr = _compute_line_in_network(gp_code)
+        paid_ln = _paid_line(1, gp_code, pr)
+        denied_ln = _denied_line(2, ent_code)
+        dr = [{"code": "AUTH_REQUIRED_NOT_ON_FILE",
+               "description": "Prior authorization required and not on file",
+               "procedure_code": ent_code}]
+        claims.append(_make_claim(
+            next_cid(dos), m["member_id"], in_net_provider(plan_id), dos, "PARTIALLY_PAID",
+            [paid_ln, denied_ln], dr
+        ))
+
+    # Category 4d: 2 Basic PARTIALLY_PAID (GP core paid + excluded code denied)
+    basic_pool = (basic_members * 3)[:2]
+    excluded_codes_sorted = sorted(BASIC_EXCLUDED)
+    for m in basic_pool:
+        plan_id = m["enrollment"]["plan_id"]
+        gp_code = random.choice(GP_CORE)
+        excl_code = random.choice(excluded_codes_sorted)
+        dos = _random_dos()
+        pr = _compute_line_in_network(gp_code)
+        paid_ln = _paid_line(1, gp_code, pr)
+        denied_ln = _denied_line(2, excl_code)
+        dr = [{"code": "NOT_COVERED",
+               "description": "Not covered under Basic EPO benefit",
+               "procedure_code": excl_code}]
+        claims.append(_make_claim(
+            next_cid(dos), m["member_id"], in_net_provider(plan_id), dos, "PARTIALLY_PAID",
+            [paid_ln, denied_ln], dr
+        ))
+
+    # Category 5: 10 denied not covered — Silver (3), Bronze (3), Basic (4)
+    # Explicit per-plan slices guarantee Bronze appears regardless of combined list order.
+    denied_nc_members = (sv_pool * 3)[:3] + (bz_pool * 3)[:3] + (basic_members * 3)[:4]
+    for m in denied_nc_members:
         plan_id = m["enrollment"]["plan_id"]
         if plan_id in ("PLN-SILVER-002", "PLN-BRONZE-003"):
             code = random.choice(ENT_SURGICAL)
@@ -555,11 +615,10 @@ def generate_claims(members, fee_schedules):
             next_cid(dos), m["member_id"], in_net_provider(plan_id), dos, "DENIED", [denied_ln], dr
         ))
 
-    # Category 6: 10 denied auth required not on file
-    no_auth_members = (gold_without_surgical_auth * 5)[:10]
-    if len(no_auth_members) < 10:
-        no_auth_members += (premier_without_ent_auth * 5)[:(10 - len(no_auth_members))]
-    for m in no_auth_members[:10]:
+    # Category 6: 10 denied auth required not on file — 8 Gold + 2 Premier
+    # Reserve 2 slots for Premier so that plan always has DENIED claims.
+    no_auth_members = (gold_without_surgical_auth * 5)[:8] + (premier_without_ent_auth * 3)[:2]
+    for m in no_auth_members:
         plan_id = m["enrollment"]["plan_id"]
         if plan_id == "PLN-GOLD-001":
             code = random.choice(ENT_SURGICAL)
@@ -586,7 +645,93 @@ def generate_claims(members, fee_schedules):
             next_cid(dos), m["member_id"], oon_provider(plan_id), dos, "PAID", [line]
         ))
 
+    # Category 8: 6 preventive in-network claims (99395/99396, copay=0, ml=0)
+    non_basic = [m for m in members if m["enrollment"]["plan_id"] != "PLN-BASIC-005"]
+    random.shuffle(non_basic)
+    prev_pool = (non_basic * 3)[:6]
+    for m in prev_pool:
+        plan_id = m["enrollment"]["plan_id"]
+        code = random.choice(GP_PREV)
+        dos = _random_dos()
+        pr = _compute_line_in_network(code)
+        line = _paid_line(1, code, pr)
+        claims.append(_make_claim(
+            next_cid(dos), m["member_id"], in_net_provider(plan_id), dos, "PAID", [line]
+        ))
+
+    # Category 9: OOP bridge — 3 Gold members with surgical auth each receive 10 surgical claims.
+    # Gold OOP=$2000; 42820 ml=$280/claim; 10 claims=$2800 > $2000 so OOP will be met after
+    # reconcile_accumulators. add_oop_met_claims then generates the capped follow-on claims.
+    bridge_candidates = []
+    for m in gold_with_surgical_auth:
+        code = _first_active_surgical_code(m)
+        if code is not None and len(bridge_candidates) < 3:
+            bridge_candidates.append((m, code))
+
+    for (m, code) in bridge_candidates:
+        plan_id = m["enrollment"]["plan_id"]
+        for _ in range(10):
+            dos = _random_dos()
+            pr = _compute_line_in_network(code)
+            line = _paid_line(1, code, pr)
+            claims.append(_make_claim(
+                next_cid(dos), m["member_id"], in_net_provider(plan_id), dos, "PAID", [line]
+            ))
+
+    # Category 10: 6 all-paid multi-line claims (GP + ENT diag, both lines PAID)
+    # Silver/Bronze: both code types covered without auth
+    sb_pool = list(silver_bronze)
+    random.shuffle(sb_pool)
+    multiline_pool = (sb_pool * 3)[:6]
+    for m in multiline_pool:
+        plan_id = m["enrollment"]["plan_id"]
+        gp_code = random.choice(GP_CORE)
+        ent_code = random.choice(ENT_DIAG)
+        dos = _random_dos()
+        pr1 = _compute_line_in_network(gp_code)
+        pr2 = _compute_line_in_network(ent_code)
+        line1 = _paid_line(1, gp_code, pr1)
+        line2 = _paid_line(2, ent_code, pr2)
+        claims.append(_make_claim(
+            next_cid(dos), m["member_id"], in_net_provider(plan_id), dos, "PAID", [line1, line2]
+        ))
+
     return claims
+
+
+def add_oop_met_claims(members, fee_schedules, counter):
+    """Generate 1 OOP-capped PAID claim for each member whose OOP max is met (up to 3).
+
+    Called after reconcile_accumulators so met flags are accurate. The generated
+    claims have member_liability=0 because oop_remaining=0 is passed to
+    _compute_line_in_network.
+    """
+    def next_cid(dos):
+        cid = f"CLM-{dos.replace('-', '')}-{counter[0]:03d}"
+        counter[0] += 1
+        return cid
+
+    def in_net_provider(plan_id):
+        pm = PLAN_BY_ID[plan_id]
+        s, e = pm["net_range"]
+        return f"PRV-{random.randint(s, e):05d}"
+
+    oop_met_members = [
+        m for m in members
+        if m["accumulators"]["individual_oop_max"]["met"]
+    ][:3]
+
+    oop_claims = []
+    gp_code = "99213"
+    for m in oop_met_members:
+        plan_id = m["enrollment"]["plan_id"]
+        dos = _random_dos()
+        pr = _compute_line_in_network(gp_code, oop_remaining=0)
+        line = _paid_line(1, gp_code, pr)
+        oop_claims.append(_make_claim(
+            next_cid(dos), m["member_id"], in_net_provider(plan_id), dos, "PAID", [line]
+        ))
+    return oop_claims
 
 
 # ── Accumulator reconciliation ─────────────────────────────────────────────────
@@ -618,7 +763,10 @@ def reconcile_accumulators(members, claims):
         oop_used = round(min(total_oop, oop_limit), 2)
 
         member["accumulators"]["individual_deductible"]["used"] = ded_used
-        member["accumulators"]["individual_deductible"]["met"] = (total_coins >= ded_limit and ded_limit > 0)
+        # Zero-deductible plans (Premier) are considered met at all times (0 >= 0).
+        member["accumulators"]["individual_deductible"]["met"] = (
+            ded_limit == 0 or total_coins >= ded_limit
+        )
         member["accumulators"]["individual_oop_max"]["used"] = oop_used
         member["accumulators"]["individual_oop_max"]["met"] = (total_oop >= oop_limit)
 
@@ -644,7 +792,12 @@ def main():
     fee_schedules = generate_fee_schedules()
     plans = generate_plans()
     members = generate_members(plans)
-    claims = generate_claims(members, fee_schedules)
+    counter = [1]
+    claims = generate_claims(members, fee_schedules, counter)
+    reconcile_accumulators(members, claims)
+    oop_claims = add_oop_met_claims(members, fee_schedules, counter)
+    claims.extend(oop_claims)
+    # Re-run so OOP-met claims (ml=0) are included in the final accumulator state.
     reconcile_accumulators(members, claims)
     write_files(DATA_DIR, plans, fee_schedules, members, claims)
 

@@ -52,9 +52,10 @@ def test_member_met_flags_consistent(seed_data):
         acc = m["accumulators"]
         ded = acc["individual_deductible"]
         oop = acc["individual_oop_max"]
-        if ded["limit"] > 0:
-            assert ded["met"] == (ded["used"] >= ded["limit"]), \
-                f"{m['member_id']} deductible met flag wrong: used={ded['used']} limit={ded['limit']}"
+        # Zero-deductible plans (Premier, limit=0) are met at all times: 0 >= 0.
+        expected_ded_met = (ded["limit"] == 0 or ded["used"] >= ded["limit"])
+        assert ded["met"] == expected_ded_met, \
+            f"{m['member_id']} deductible met flag wrong: used={ded['used']} limit={ded['limit']}"
         assert oop["met"] == (oop["used"] >= oop["limit"]), \
             f"{m['member_id']} oop_max met flag wrong: used={oop['used']} limit={oop['limit']}"
 
@@ -208,7 +209,6 @@ def test_scenario_not_covered_denials(seed_data):
 
 def test_scenario_oon_claims(seed_data):
     """≥5 paid OON claims (identified by non-zero coinsurance on all paid lines, no copay)."""
-    oon_providers = set()
     plan_networks = {}
     for p in seed_data["plans"]:
         for pid in p["network_provider_ids"]:
@@ -231,6 +231,57 @@ def test_scenario_members_with_no_claims(seed_data):
     members_with_claims = {c["member_id"] for c in seed_data["claims"]}
     no_claims = [m for m in seed_data["members"] if m["member_id"] not in members_with_claims]
     assert len(no_claims) >= 60, f"Only {len(no_claims)} members without claims (need ≥60)"
+
+
+def test_seed_data_outcomes_per_plan(seed_data):
+    """Every plan must have at least one PAID, DENIED, and PARTIALLY_PAID claim."""
+    member_plan = {m["member_id"]: m["enrollment"]["plan_id"] for m in seed_data["members"]}
+    plan_outcomes: dict[str, set] = {}
+    for c in seed_data["claims"]:
+        plan_id = member_plan.get(c["member_id"])
+        if plan_id:
+            plan_outcomes.setdefault(plan_id, set()).add(c["status"])
+    for plan in seed_data["plans"]:
+        pid = plan["plan_id"]
+        outcomes = plan_outcomes.get(pid, set())
+        assert "PAID" in outcomes, f"{pid} has no PAID claims"
+        assert "DENIED" in outcomes, f"{pid} has no DENIED claims"
+        assert "PARTIALLY_PAID" in outcomes, f"{pid} has no PARTIALLY_PAID claims"
+
+
+def test_preventive_claims(seed_data):
+    """≥5 PAID preventive claims (99395/99396) with member_liability=0."""
+    preventive_codes = {"99395", "99396"}
+    count = sum(
+        1 for c in seed_data["claims"]
+        if c["status"] == "PAID" and
+           len(c["line_detail"]) == 1 and
+           c["line_detail"][0]["procedure_code"] in preventive_codes and
+           c["line_detail"][0]["member_liability"] == 0.0
+    )
+    assert count >= 5, f"Only {count} preventive claims with $0 member liability (need ≥5)"
+
+
+def test_oop_met_claims(seed_data):
+    """≥3 PAID claims where the member's OOP max is met and claim member_liability=0."""
+    members_by_id = {m["member_id"]: m for m in seed_data["members"]}
+    count = sum(
+        1 for c in seed_data["claims"]
+        if c["status"] == "PAID" and
+           c["totals"]["member_liability"] == 0.0 and
+           members_by_id[c["member_id"]]["accumulators"]["individual_oop_max"]["met"]
+    )
+    assert count >= 3, f"Only {count} OOP-capped PAID claims for OOP-met members (need ≥3)"
+
+
+def test_all_paid_multiline_claims(seed_data):
+    """≥5 claims with ≥2 lines where every line has line_status PAID."""
+    count = sum(
+        1 for c in seed_data["claims"]
+        if len(c["line_detail"]) >= 2 and
+           all(line["line_status"] == "PAID" for line in c["line_detail"])
+    )
+    assert count >= 5, f"Only {count} all-paid multi-line claims (need ≥5)"
 
 
 # ── Plan and fee schedule basic checks ────────────────────────────────────────

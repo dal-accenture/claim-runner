@@ -19,13 +19,13 @@
       "plan_year": "2025",
       "individual_deductible": {
         "limit": 750.0,
-        "used": 67.2,
+        "used": 54.0,
         "met": false
       },
       "family_deductible": null,
       "individual_oop_max": {
         "limit": 4500.0,
-        "used": 147.2,
+        "used": 134.0,
         "met": false
       },
       "family_oop_max": null
@@ -58,7 +58,7 @@
       "family_deductible": null,
       "individual_oop_max": {
         "limit": 5000.0,
-        "used": 50.0,
+        "used": 90.0,
         "met": false
       },
       "family_oop_max": null
@@ -124,7 +124,7 @@
       "family_deductible": null,
       "individual_oop_max": {
         "limit": 5000.0,
-        "used": 40.0,
+        "used": 70.0,
         "met": false
       },
       "family_oop_max": null
@@ -223,7 +223,7 @@
       "family_deductible": null,
       "individual_oop_max": {
         "limit": 2000.0,
-        "used": 40.0,
+        "used": 65.0,
         "met": false
       },
       "family_oop_max": null
@@ -256,7 +256,7 @@
       "family_deductible": null,
       "individual_oop_max": {
         "limit": 2000.0,
-        "used": 50.0,
+        "used": 75.0,
         "met": false
       },
       "family_oop_max": null
@@ -289,7 +289,7 @@
       "family_deductible": null,
       "individual_oop_max": {
         "limit": 4500.0,
-        "used": 25.0,
+        "used": 115.0,
         "met": false
       },
       "family_oop_max": null
@@ -383,12 +383,12 @@
       "individual_deductible": {
         "limit": 0.0,
         "used": 0.0,
-        "met": false
+        "met": true
       },
       "family_deductible": null,
       "individual_oop_max": {
         "limit": 1500.0,
-        "used": 0.0,
+        "used": 30.0,
         "met": false
       },
       "family_oop_max": null
@@ -454,7 +454,7 @@
       "family_deductible": null,
       "individual_oop_max": {
         "limit": 4500.0,
-        "used": 55.0,
+        "used": 145.0,
         "met": false
       },
       "family_oop_max": null
@@ -482,12 +482,12 @@
       "individual_deductible": {
         "limit": 0.0,
         "used": 0.0,
-        "met": false
+        "met": true
       },
       "family_deductible": null,
       "individual_oop_max": {
         "limit": 1500.0,
-        "used": 30.0,
+        "used": 70.0,
         "met": false
       },
       "family_oop_max": null
@@ -515,7 +515,7 @@
       "individual_deductible": {
         "limit": 0.0,
         "used": 0.0,
-        "met": false
+        "met": true
       },
       "family_deductible": null,
       "individual_oop_max": {
@@ -705,7 +705,7 @@
       "individual_deductible": {
         "limit": 0.0,
         "used": 0.0,
-        "met": false
+        "met": true
       },
       "family_deductible": null,
       "individual_oop_max": {
@@ -889,7 +889,7 @@
       "individual_deductible": {
         "limit": 0.0,
         "used": 0.0,
-        "met": false
+        "met": true
       },
       "family_deductible": null,
       "individual_oop_max": {
@@ -921,13 +921,13 @@
       "plan_year": "2025",
       "individual_deductible": {
         "limit": 750.0,
-        "used": 67.2,
+        "used": 74.0,
         "met": false
       },
       "family_deductible": null,
       "individual_oop_max": {
         "limit": 4500.0,
-        "used": 197.2,
+        "used": 204.0,
         "met": false
       },
       "family_oop_max": null
@@ -1186,7 +1186,7 @@
       "individual_deductible": {
         "limit": 0.0,
         "used": 0.0,
-        "met": false
+        "met": true
       },
       "family_deductible": null,
       "individual_oop_max": {
@@ -1218,13 +1218,13 @@
       "plan_year": "2025",
       "individual_deductible": {
         "limit": 750.0,
-        "used": 49.6,
+        "used": 13.2,
         "met": false
       },
       "family_deductible": null,
       "individual_oop_max": {
         "limit": 4500.0,
-        "used": 89.6,
+        "used": 53.2,
         "met": false
       },
       "family_oop_max": null
@@ -1351,7 +1351,7 @@
       "individual_deductible": {
         "limit": 0.0,
         "used": 0.0,
-        "met": false
+        "met": true
       },
       "family_deductible": null,
       "individual_oop_max": {
@@ -1384,7 +1384,7 @@
       "individual_deductible": {
         "limit": 0.0,
         "used": 0.0,
-        "met": false
+        "met": true
       },
       "family_deductible": null,
       "individual_oop_max": {
@@ -1480,8 +1480,8 @@
       "family_deductible": null,
       "individual_oop_max": {
         "limit": 2000.0,
-        "used": 380.0,
-        "met": false
+        "used": 2000.0,
+        "met": true
       },
       "family_oop_max": null
     },
@@ -1548,7 +1548,7 @@
       "individual_deductible": {
         "limit": 0.0,
         "used": 0.0,
-        "met": false
+        "met": true
       },
       "family_deductible": null,
       "individual_oop_max": {
@@ -1580,13 +1580,13 @@
       "plan_year": "2025",
       "individual_deductible": {
         "limit": 750.0,
-        "used": 56.8,
+        "used": 36.4,
         "met": false
       },
       "family_deductible": null,
       "individual_oop_max": {
         "limit": 4500.0,
-        "used": 56.8,
+        "used": 111.4,
         "met": false
       },
       "family_oop_max": null
@@ -1679,13 +1679,13 @@
       "plan_year": "2025",
       "individual_deductible": {
         "limit": 750.0,
-        "used": 56.8,
+        "used": 128.0,
         "met": false
       },
       "family_deductible": null,
       "individual_oop_max": {
         "limit": 4500.0,
-        "used": 151.8,
+        "used": 223.0,
         "met": false
       },
       "family_oop_max": null
@@ -1845,7 +1845,7 @@
       "individual_deductible": {
         "limit": 0.0,
         "used": 0.0,
-        "met": false
+        "met": true
       },
       "family_deductible": null,
       "individual_oop_max": {
@@ -1957,12 +1957,12 @@
       "individual_deductible": {
         "limit": 0.0,
         "used": 0.0,
-        "met": false
+        "met": true
       },
       "family_deductible": null,
       "individual_oop_max": {
         "limit": 1500.0,
-        "used": 45.7,
+        "used": 106.5,
         "met": false
       },
       "family_oop_max": null
@@ -2146,8 +2146,8 @@
       "family_deductible": null,
       "individual_oop_max": {
         "limit": 2000.0,
-        "used": 560.0,
-        "met": false
+        "used": 2000.0,
+        "met": true
       },
       "family_oop_max": null
     },
@@ -2181,7 +2181,7 @@
       "individual_deductible": {
         "limit": 0.0,
         "used": 0.0,
-        "met": false
+        "met": true
       },
       "family_deductible": null,
       "individual_oop_max": {
@@ -2470,7 +2470,7 @@
       "individual_deductible": {
         "limit": 0.0,
         "used": 0.0,
-        "met": false
+        "met": true
       },
       "family_deductible": null,
       "individual_oop_max": {
@@ -2627,7 +2627,7 @@
       "individual_deductible": {
         "limit": 0.0,
         "used": 0.0,
-        "met": false
+        "met": true
       },
       "family_deductible": null,
       "individual_oop_max": {
@@ -3212,7 +3212,7 @@
       "family_deductible": null,
       "individual_oop_max": {
         "limit": 4500.0,
-        "used": 2.2,
+        "used": 92.2,
         "met": false
       },
       "family_oop_max": null
@@ -3240,7 +3240,7 @@
       "individual_deductible": {
         "limit": 0.0,
         "used": 0.0,
-        "met": false
+        "met": true
       },
       "family_deductible": null,
       "individual_oop_max": {
@@ -3306,7 +3306,7 @@
       "individual_deductible": {
         "limit": 0.0,
         "used": 0.0,
-        "met": false
+        "met": true
       },
       "family_deductible": null,
       "individual_oop_max": {
@@ -3371,14 +3371,14 @@
       "plan_year": "2025",
       "individual_deductible": {
         "limit": 250.0,
-        "used": 0.0,
-        "met": false
+        "used": 250.0,
+        "met": true
       },
       "family_deductible": null,
       "individual_oop_max": {
         "limit": 2000.0,
-        "used": 0.0,
-        "met": false
+        "used": 2000.0,
+        "met": true
       },
       "family_oop_max": null
     },
@@ -3477,13 +3477,13 @@
       "plan_year": "2025",
       "individual_deductible": {
         "limit": 750.0,
-        "used": 33.6,
+        "used": 54.0,
         "met": false
       },
       "family_deductible": null,
       "individual_oop_max": {
         "limit": 4500.0,
-        "used": 73.6,
+        "used": 94.0,
         "met": false
       },
       "family_oop_max": null
@@ -3511,7 +3511,7 @@
       "individual_deductible": {
         "limit": 0.0,
         "used": 0.0,
-        "met": false
+        "met": true
       },
       "family_deductible": null,
       "individual_oop_max": {
@@ -4025,7 +4025,7 @@
       "individual_deductible": {
         "limit": 0.0,
         "used": 0.0,
-        "met": false
+        "met": true
       },
       "family_deductible": null,
       "individual_oop_max": {
@@ -4091,7 +4091,7 @@
       "individual_deductible": {
         "limit": 0.0,
         "used": 0.0,
-        "met": false
+        "met": true
       },
       "family_deductible": null,
       "individual_oop_max": {
@@ -4387,7 +4387,7 @@
       "individual_deductible": {
         "limit": 0.0,
         "used": 0.0,
-        "met": false
+        "met": true
       },
       "family_deductible": null,
       "individual_oop_max": {
@@ -4750,7 +4750,7 @@
       "individual_deductible": {
         "limit": 0.0,
         "used": 0.0,
-        "met": false
+        "met": true
       },
       "family_deductible": null,
       "individual_oop_max": {
@@ -4868,7 +4868,7 @@
       "individual_deductible": {
         "limit": 0.0,
         "used": 0.0,
-        "met": false
+        "met": true
       },
       "family_deductible": null,
       "individual_oop_max": {
@@ -4992,7 +4992,7 @@
       "individual_deductible": {
         "limit": 0.0,
         "used": 0.0,
-        "met": false
+        "met": true
       },
       "family_deductible": null,
       "individual_oop_max": {
@@ -5287,13 +5287,13 @@
       "plan_year": "2025",
       "individual_deductible": {
         "limit": 250.0,
-        "used": 13.2,
+        "used": 23.2,
         "met": false
       },
       "family_deductible": null,
       "individual_oop_max": {
         "limit": 2000.0,
-        "used": 38.2,
+        "used": 48.2,
         "met": false
       },
       "family_oop_max": null
@@ -5769,7 +5769,7 @@
       "individual_deductible": {
         "limit": 0.0,
         "used": 0.0,
-        "met": false
+        "met": true
       },
       "family_deductible": null,
       "individual_oop_max": {
@@ -5967,7 +5967,7 @@
       "individual_deductible": {
         "limit": 0.0,
         "used": 0.0,
-        "met": false
+        "met": true
       },
       "family_deductible": null,
       "individual_oop_max": {
@@ -6024,7 +6024,7 @@
       "family_deductible": null,
       "individual_oop_max": {
         "limit": 7000.0,
-        "used": 50.0,
+        "used": 115.0,
         "met": false
       },
       "family_oop_max": null
@@ -6117,13 +6117,13 @@
       "plan_year": "2025",
       "individual_deductible": {
         "limit": 1000.0,
-        "used": 54.0,
+        "used": 33.6,
         "met": false
       },
       "family_deductible": null,
       "individual_oop_max": {
         "limit": 5000.0,
-        "used": 94.0,
+        "used": 73.6,
         "met": false
       },
       "family_oop_max": null
@@ -6151,7 +6151,7 @@
       "individual_deductible": {
         "limit": 0.0,
         "used": 0.0,
-        "met": false
+        "met": true
       },
       "family_deductible": null,
       "individual_oop_max": {
@@ -6189,7 +6189,7 @@
       "family_deductible": null,
       "individual_oop_max": {
         "limit": 4500.0,
-        "used": 0.0,
+        "used": 75.0,
         "met": false
       },
       "family_oop_max": null
@@ -6283,7 +6283,7 @@
       "individual_deductible": {
         "limit": 0.0,
         "used": 0.0,
-        "met": false
+        "met": true
       },
       "family_deductible": null,
       "individual_oop_max": {
@@ -6567,7 +6567,7 @@
       "individual_deductible": {
         "limit": 0.0,
         "used": 0.0,
-        "met": false
+        "met": true
       },
       "family_deductible": null,
       "individual_oop_max": {
@@ -6691,7 +6691,7 @@
       "individual_deductible": {
         "limit": 0.0,
         "used": 0.0,
-        "met": false
+        "met": true
       },
       "family_deductible": null,
       "individual_oop_max": {
@@ -7034,7 +7034,7 @@
       "individual_deductible": {
         "limit": 0.0,
         "used": 0.0,
-        "met": false
+        "met": true
       },
       "family_deductible": null,
       "individual_oop_max": {
