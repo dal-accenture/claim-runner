@@ -12,17 +12,26 @@ both the calling service and the implementing service.
 
 ## Claims Manager → Benefits Determiner
 
-**Method:** `GET`
+**Method:** `POST`
 **Path:** `/benefits/determine`
 **Caller env var:** `BENEFITS_DETERMINER_URL` (default `http://localhost:8081`)
 
-### Query Parameters
+### Request Body
 
-| Parameter | Type | Required | Description |
+```json
+{
+  "member_id": "MBR-10042",
+  "provider_id": "PRV-90210",
+  "procedure_codes": ["99213", "42820"],
+  "date_of_service": "2025-09-01"
+}
+```
+
+| Field | Type | Required | Description |
 |---|---|---|---|
 | `member_id` | string | Yes | Member identifier |
 | `provider_id` | string | Yes | Rendering provider identifier |
-| `procedure_codes` | string (CSV) | Yes | Comma-separated procedure codes from all claim lines |
+| `procedure_codes` | array of strings | Yes | Procedure codes from all claim lines |
 | `date_of_service` | string (YYYY-MM-DD) | Yes | Date of service |
 
 ### Response
