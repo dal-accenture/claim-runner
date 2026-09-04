@@ -3,7 +3,7 @@
 **Intake ID:** 0007-effective-date-eligibility
 **Pod:** claim-runner
 **Pod spec number:** claim-runner/007
-**Status:** Allocated
+**Status:** Draft
 **Constitution references:** Technology Stack, Data Layer, Spec Scope, Adjudication Flow
 **Source:** control pod session 2026-09-03
 
